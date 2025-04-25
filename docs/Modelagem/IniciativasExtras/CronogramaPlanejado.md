@@ -22,7 +22,7 @@ Este documento apresenta o cronograma planejado para a execução dos três mód
 | 26/04 (Sáb)  | 2h             | Produção do Diagrama de Componentes                                    | Pendente   |
 | 26/04 (Sáb)  | 1h             | Estudo inicial sobre Diagrama de Implantação                           | Pendente   |
 | 27/04 (Dom)  | 2h             | Modelagem e finalização do Diagrama de Implantação                     | Pendente   |
-
+| 27/04 (Dom)  | 2h             | Tempo extra para terminar coisas pendentes do módulo                   | -          |
 
 ## Planejamento Módulo Modelagem Dinâmica
 
@@ -38,6 +38,7 @@ Este documento apresenta o cronograma planejado para a execução dos três mód
 | 29/04 (Ter)  | 1h             | Estudo sobre Diagrama de Estados                                       | Pendente   |
 | 29/04 (Ter)  | 1h             | Início do Diagrama de Estados                                          | Pendente   |
 | 30/04 (Qua)  | 2h             | Conclusão do Diagrama de Estados                                       | Pendente   |
+| 30/04 (Dom)  | 2h             | Tempo extra para terminar coisas pendentes do módulo                   | -          |
 
 
 ## Planejamento Módulo Modelagem Organizacional OU Casos de Uso
@@ -50,7 +51,7 @@ Este documento apresenta o cronograma planejado para a execução dos três mód
 | 01/05 (Qui)  | 3h             | Produção do Diagrama de Casos de Uso                                   | Pendente   |
 | 01/05 (Qui)  | 2h             | Revisão geral e ajustes nos diagramas                                  | Pendente   |
 | 01/05 (Qui)  | 1h             | Atualização do GitHub Pages                                            | Pendente   |
-
+| 01/05 (Dom)  | 2h             | Tempo extra para terminar coisas pendentes do módulo                   | -          |
 
 ## Histórico de versão
 
