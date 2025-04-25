@@ -50,3 +50,10 @@ Este documento apresenta o cronograma planejado para a execução dos três mód
 | 01/05 (Qui)  | 3h             | Produção do Diagrama de Casos de Uso                                   | Pendente   |
 | 01/05 (Qui)  | 2h             | Revisão geral e ajustes nos diagramas                                  | Pendente   |
 | 01/05 (Qui)  | 1h             | Atualização do GitHub Pages                                            | Pendente   |
+
+
+## Histórico de versão
+
+| Versão | Alteração | Responsável | Data |
+| - | - | - | - |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 24/04/2024 |
