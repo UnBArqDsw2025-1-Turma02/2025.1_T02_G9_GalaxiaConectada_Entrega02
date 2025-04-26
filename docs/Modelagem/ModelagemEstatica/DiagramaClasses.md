@@ -82,14 +82,14 @@ Com o objetivo de construir o diagrama da forma mais completa e mais correta pos
 - **Símbolo**: Linha tracejada com seta aberta (vazia) apontando para a interface.
 
 
-# Conceitos Importantes
+### Conceitos Importantes
 
-## Superclasse
+### Superclasse
 
 - **Definição**: Uma superclasse é uma classe mais genérica que contém atributos e métodos comuns a várias outras classes.
 - **Exemplo**: A classe **Usuario** pode ser a superclasse de **Aluno** e **Instrutor**, pois ambos compartilham características como `nome`, `e-mail` e `senha`.
 
-## Subclasse
+### Subclasse
 
 - **Definição**: Uma subclasse é uma classe mais específica que herda tudo da superclasse e pode adicionar seus próprios atributos e comportamentos.
 - **Exemplo**: **Aluno** seria uma subclasse de **Usuario**, podendo acrescentar, por exemplo, um atributo `progressoNosCursos`.
