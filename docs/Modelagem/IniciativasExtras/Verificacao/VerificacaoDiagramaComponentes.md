@@ -13,9 +13,9 @@
 
 ## Introdução
 
-Com base na Apostila UML [1] e em referências consolidadas da engenharia de software, o Diagrama de Componentes é um dos principais instrumentos da modelagem estrutural, sendo usado para representar a arquitetura física do sistema e suas dependências. Ele revela os módulos, suas interações e a separação entre funcionalidades, servindo como base para decisões de implementação e integração.
+Com base na Apostila UML [1] e no artigo da [IBM - Component Diagrams](https://www.ibm.com/docs/en/dmrt/9.5.0?topic=diagrams-component), o Diagrama de Componentes é um dos principais instrumentos da modelagem estrutural, uma vez que é usado para representar a arquitetura física do sistema e suas dependências. Com isso, ele revela os módulos, suas interações e a separação entre funcionalidades, o que serve como base para decisões de implementação e integração.
 
-Neste projeto, o diagrama foi desenvolvido para o sistema **Galáxia Conectada**, refletindo a disposição dos principais componentes do sistema, incluindo autenticação, gestão de cursos, banco de dados, interfaces e serviços externos.
+Neste projeto, o diagrama foi desenvolvido para o sistema **Galáxia Conectada** ao refletir a disposição dos principais componentes do sistema, como autenticação, gestão de cursos, banco de dados, interfaces e serviços externos.
 
 ## Objetivos
 
@@ -66,9 +66,7 @@ A verificação foi apoiada por literaturas, ferramentas online e guias de boas 
 
 ## Observações
 
-- O diagrama avaliado segue corretamente as normas visuais da UML.
-- Foram utilizados nomes significativos e interfaces estão bem representadas.
-- Em futuras versões, recomenda-se detalhar os artefatos associados e reforçar os relacionamentos internos de integração.
+
 
 ## Conclusão
 
