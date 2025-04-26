@@ -29,6 +29,8 @@ Após essa etapa, foi aplicada a verificação do diagrama, utilizando uma tabel
 
 ## Tabela de Verificação para as Classes
 
+**Tabela 1:** Perguntas para a verificação das classes.
+
 | ID  | Pergunta de Verificação   | Explicação            | Rastreabilidade   |
 |-----|---------------------------|-----------------------|-------------------|
 | C01 | O nome da classe começa com letra maiúscula?                                             | Seguir convenções de nomenclatura.                                       | [Webel IT Australia](https://www.webel.com.au/node/669) |
@@ -50,6 +52,8 @@ Após essa etapa, foi aplicada a verificação do diagrama, utilizando uma tabel
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 ## Tabela de Verificação para os Relacionamentos das Classes
+
+**Tabela 1:** Perguntas para a verificação do diagrama
 
 | ID  | Pergunta de Verificação  | Explicação  | Rastreabilidade  |
 |-----|--------------------------|-------------|------------------|
