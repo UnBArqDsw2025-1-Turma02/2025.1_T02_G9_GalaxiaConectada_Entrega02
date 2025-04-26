@@ -47,6 +47,7 @@ A partir dessa base, será feita uma investigação detalhada das entidades envo
 
 ## Conclusão
 
+A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibilitou a representação estruturada das principais entidades do sistema e suas interações.
 
 ## Bibliografia
 
@@ -64,3 +65,4 @@ A partir dessa base, será feita uma investigação detalhada das entidades envo
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
 | 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
+| 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2024 |
