@@ -79,7 +79,7 @@ A verificação do Diagrama de Classes desenvolvido para o projeto Galáxia Cone
 
 ## Bibliografia
 
-1. APOSTILA UML. Seção sobre representação de classes. Disponível em: [Apostila UML](#). Acesso em: 25 abr. 2025.
+1. APOSTILA UML. Seção sobre representação de classes. Disponíbilizada pela professora. Acesso em: 25 abr. 2025.
 2. BÓSON TREINAMENTOS. Introdução à UML – Unified Modeling Language. Disponível em: https://www.youtube.com/watch?v=C3xYBT3o_5k. Acesso em: 25 abr. 2025.
 3. BÓSON TREINAMENTOS. Curso de UML: O que é um diagrama de Classes. Disponível em: https://www.youtube.com/watch?v=JQSsqMCVi1k. Acesso em: 25 abr. 2025.
 4. CREATELY. Class Diagram Relationships. Disponível em: https://creately.com/guides/class-diagram-relationships/. Acesso em: 25 abr. 2025.
