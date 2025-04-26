@@ -42,45 +42,20 @@ Com o objetivo de construir o diagrama da forma mais completa e mais correta pos
 
 ### Os relacionamentos:
 
-#### 1. Dependência
+A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama de classes.
 
-- **O que é**: Representa uma ligação fraca e temporária entre classes, onde uma classe *depende* da outra para realizar alguma operação momentânea.
-- **Exemplo no projeto**: O **BotImportador** depende da **IntegracaoExterna** para buscar dados, mas não mantém uma referência fixa a ela.
-- **Símbolo**: Linha tracejada com seta.
-  
-- **Observação**: Como há muitas desses relacionamentos, a fim de deixar o diagrama mais legível, as relações de dependência não serão representadas no diagrama.
+**Tabela 1:** Tipos de Relacionamentos
 
-#### 2. Associação
+| Tipo de Relacionamento | O que é | Exemplo no Projeto | Símbolo | Observação/Extra |
+|:-----------------------|:--------|:-------------------|:--------|:-----------------|
+| Dependência | Representa uma ligação fraca e temporária entre classes. | O `BotImportador` depende da `IntegracaoExterna` para buscar dados, mas não mantém referência fixa. | Linha tracejada com seta. | Não será representado no diagrama para manter a legibilidade. |
+| Associação | Representa um vínculo estruturado entre classes; uma classe conhece a outra e pode enviar mensagens. | A `WebUI` se associa ao `APICursos` para exibir cursos e módulos. | Linha contínua simples. | Pode indicar cardinalidade (ex: "um para muitos", "muitos para muitos"). |
+| Agregação | Um tipo especial de associação ("parte-todo") com baixa rigidez; partes podem existir sem o todo. | Um `Curso` agrega vários `Módulos`; módulos podem existir mesmo se o curso for excluído. | Linha contínua com losango branco no "todo". | — |
+| Composição | Relação forte de "parte-todo"; a parte não existe sem o todo. | Um `Quiz` é composto por várias `Questões`; se o quiz for apagado, as questões também desaparecem. | Linha contínua com losango preto no "todo". | — |
+| Generalização | Representa uma relação "é-um"; herança de atributos e comportamentos. | `EventoAstronomico` como superclasse de `Eclipse` e `ChuvaDeMeteoros`. | Linha contínua com seta aberta (vazia) para a superclasse. | — |
+| Realização | Representa a implementação de uma interface por uma classe concreta. | `ServicoNotificacoes` realiza (implementa) a interface `INotificacoes`. | Linha tracejada com seta aberta (vazia) para a interface. | — |
 
-- **O que é**: Representa um vínculo estruturado entre classes. Uma classe conhece a outra e pode enviar mensagens para ela a qualquer momento.
-- **Exemplo no projeto**: A **WebUI** se associa ao **APICursos** para exibir cursos e módulos ao usuário.
-- **Símbolo**: Linha contínua simples.
-- **Cardinalidade**: Pode indicar quantos objetos de uma classe se relacionam com quantos objetos de outra (ex: "um para muitos", "muitos para muitos").
-
-#### 3. Agregação
-
-- **O que é**: É um tipo especial de associação que indica uma relação "parte-todo", mas com menor rigidez. As partes podem existir independentemente do todo.
-- **Exemplo no projeto**: Um **Curso** agrega vários **Módulos**. Se o curso for excluído, os módulos ainda podem existir.
-- **Símbolo**: Linha contínua com losango branco na extremidade do "todo".
-
-#### 4. Composição
-
-- **O que é**: É uma relação mais forte de "parte-todo", onde a parte não pode existir sem o todo. Se o todo for destruído, a parte também é destruída.
-- **Exemplo no projeto**: Um **Quiz** é composto por várias **Questões**. Se o quiz for apagado, as questões também deixarão de existir.
-- **Símbolo**: Linha contínua com losango preto na extremidade do "todo".
-
-#### 5. Generalização
-
-- **O que é**: Representa uma relação "é-um" entre classes. Uma classe mais específica herda atributos e comportamentos de uma classe mais genérica.
-- **Exemplo no projeto**: **EventoAstronomico** poderia ser uma superclasse de eventos como **Eclipse** e **ChuvaDeMeteoros**.
-- **Símbolo**: Linha contínua com seta aberta (vazia) apontando para a superclasse.
-
-#### 6. Realização
-
-- **O que é**: Representa a implementação de uma interface por uma classe concreta.
-- **Exemplo no projeto**: A classe **ServicoNotificacoes** realiza (implementa) a interface **INotificacoes**.
-- **Símbolo**: Linha tracejada com seta aberta (vazia) apontando para a interface.
-
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 ### Conceitos Importantes
 
@@ -99,7 +74,8 @@ Com o objetivo de construir o diagrama da forma mais completa e mais correta pos
 
 Antes de elaborar o diagrama diretamente no drawi.o, foi criada a tabela abaixo com base nas classes que seriam criadas ao se analisar os requisitos, os atores e as informações do 5W2H.
 
-**Tabela 1:** Classes do Sistema.
+**Tabela 2:** Classes do Sistema.
+
 | Classe                 | O que é | Atributos            | Métodos   | Relacionamentos    |
 |------------------------|---------|----------------------|-----------|--------------------|
 | **Usuario**            | Representa o usuário do sistema, responsável por interações básicas como login, criação de tópicos e envio de mensagens. | - `id: Int` (private)<br>- `nome: String` (private)<br>- `email: String` (private)<br>- `senha: String` (private)<br>- `dataCadastro: DateTime` (private)    | + `login(): Boolean`<br>+ `logout(): Void`<br>+ `editarPerfil(novoNome: String): Void`                                       | - Perfil (1:1, agregação)<br> - MensagemPrivada (1:*, associação, “envia/recebe”)<br> - Topico (1:*, associação, “cria”)<br> - Comentario (1:*, associação, “escreve”) |
