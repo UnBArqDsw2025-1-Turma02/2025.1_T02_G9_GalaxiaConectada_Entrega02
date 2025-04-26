@@ -13,14 +13,19 @@
 
 ## Introdução
 
+Ao considerar a Apostila UML [1], o Diagrama de Classes é um dos elementos centrais da modelagem estática em UML, usado para representar a estrutura de um sistema por meio de suas classes, atributos, métodos e relacionamentos. Com isso em mente, no projeto Galáxia Conectada, esse diagrama foi elaborado para modelar as entidades como usuários, cursos e conteúdos interativos. 
 
+A verificação, por sua vez, é um processo o qual avalia se o diagrama foi construído corretamente, conforme os critérios da UML, o que permite a identificação de erros ainda nas fases iniciais do desenvolvimento e garante a consistência e qualidade do sistema final.
 
 ## Objetivos
 
+Este artefato tem como objetivo realizar a verificação do diagrama de classes criado para o projeto Galáxia Conectada ao garantir que ele atenda aos critérios de qualidade, de clareza e de precisão definidos pela UML. COm isso, a verificação busca assegurar que todas as classes e seus relacionamentos estejam corretamente representados, que os elementos obrigatórios estejam presentes e que o diagrama seja coerente com os requisitos funcionais da plataforma.
 
 ## Metodologia
 
+Como o desenvolvimento do projeto está sendo conduzido por uma única estudante de Engenharia de Software, a metodologia adotada para criação e verificação do diagrama de classes foi estruturada em etapas progressivas. Primeiramente, foi realizada uma pesquisa teórica sobre a linguagem UML, com foco no entendimento detalhado da estrutura e das regras do diagrama de classes. Em seguida, com base nos requisitos levantados para o projeto Galáxia Conectada, foi feito o esboço inicial do diagrama, representando as entidades e seus relacionamentos principais.
 
+Após essa etapa, foi aplicada a verificação do diagrama, utilizando uma tabela de verificação previamente definida com critérios técnicos. Cada item da tabela será analisado e os pontos que apresentarem problemas serão corrigidos com base nas boas práticas da modelagem orientada a objetos.
 
 ## Tabela de Verificação para as Classes
 
@@ -65,6 +70,8 @@
 ## Observações
 
 ## Conclusão
+
+A verificação do Diagrama de Classes desenvolvido para o projeto Galáxia Conectada demonstrou-se uma etapa fundamental para assegurar a qualidade e a coerência do modelo proposto. Por meio desse processo, foi possível identificar e corrigir inconsistências, alinhar a estrutura do sistema aos requisitos estabelecidos e garantir que a representação estivesse em conformidade com as normas da UML. 
 
 ## Bibliografia
 
