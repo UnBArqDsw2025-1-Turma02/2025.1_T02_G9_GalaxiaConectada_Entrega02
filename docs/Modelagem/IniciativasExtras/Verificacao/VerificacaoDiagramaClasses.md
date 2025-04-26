@@ -68,8 +68,28 @@
 
 ## Bibliografia
 
+### 📚 Bibliografia
+
+1. APOSTILA UML. Seção sobre representação de classes. Disponível em: [Apostila UML](#). Acesso em: 25 abr. 2025.
+2. BÓSON TREINAMENTOS. Introdução à UML – Unified Modeling Language. Disponível em: https://www.youtube.com/watch?v=C3xYBT3o_5k. Acesso em: 25 abr. 2025.
+3. BÓSON TREINAMENTOS. Curso de UML: O que é um diagrama de Classes. Disponível em: https://www.youtube.com/watch?v=JQSsqMCVi1k. Acesso em: 25 abr. 2025.
+4. CREATELY. Class Diagram Relationships. Disponível em: https://creately.com/guides/class-diagram-relationships/. Acesso em: 25 abr. 2025.
+5. EZ KNOWLEDGE. Comprehensive Guide to UML Class Diagrams. Disponível em: https://www.ez-knowledge.com/comprehensive-guide-to-uml-class-diagrams/. Acesso em: 25 abr. 2025.
+6. GEEKSFORGEEKS. Unified Modeling Language (UML) Class Diagrams. Disponível em: https://www.geeksforgeeks.org/unified-modeling-language-uml-class-diagrams/. Acesso em: 25 abr. 2025.
+7. GURU99. UML Relationships with Example. Disponível em: https://www.guru99.com/uml-relationships-with-example.html. Acesso em: 25 abr. 2025.
+8. IBM. Diagrams Relationships in Class. Disponível em: https://www.ibm.com/docs/en/dmrt/9.5.0?topic=diagrams-relationships-in-class. Acesso em: 25 abr. 2025.
+9. TUTORIALSPOINT. UML Association vs Aggregation vs Composition. Disponível em: https://www.tutorialspoint.com/uml/uml_association_vs_aggregation_vs_composition.htm. Acesso em: 25 abr. 2025.
+10. UML DIAGRAMS. Class Reference. Disponível em: https://www.uml-diagrams.org/class-reference.html. Acesso em: 25 abr. 2025.
+11. UML DIAGRAMS. Class Diagrams Overview. Disponível em: https://www.uml-diagrams.org/class-diagrams-overview.html. Acesso em: 25 abr. 2025.
+12. UNIVERSITY OF CAPE TOWN. Software Engineering Notes. Disponível em: https://www.cs.uct.ac.za/mit_notes/software/htmls/ch05s09.html. Acesso em: 25 abr. 2025.
+13. VISUAL PARADIGM. UML Aggregation vs Composition. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/. Acesso em: 25 abr. 2025.
+14. WEBEL IT AUSTRALIA. UML Class Diagrams. Disponível em: https://www.webel.com.au/node/669. Acesso em: 25 abr. 2025.
+
+
 ## Histórico de versão
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
 | 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
+| 1.1 | Adição da tabela de verificação das classes| Larissa Stéfane | 25/04/2024 |
+| 1.2 | Adição da tabela de verificação do diagrama das classes | Larissa Stéfane | 25/04/2024 |
