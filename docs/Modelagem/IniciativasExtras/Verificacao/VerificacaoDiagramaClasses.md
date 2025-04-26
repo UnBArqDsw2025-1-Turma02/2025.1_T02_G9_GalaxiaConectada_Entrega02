@@ -42,9 +42,23 @@
 | C14 | Os métodos estão nomeados utilizando verbos no infinitivo?                               | Seguir convenções de nomenclatura melhora a clareza sobre o comportamento da classe.                           | [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) |
 | C15 | Os métodos estão representados com seus parâmetros e tipos?                              | Detalhar métodos com seus parâmetros e tipos garante clareza na definição do comportamento da classe.          | [UML Diagrams](https://www.uml-diagrams.org/class-reference.html) |
 
-
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 ## Tabela de Verificação para os Relacionamentos das Classes
+
+| ID  | Pergunta de Verificação                                                                 | Explicação (Resumida)                                                                                          | Rastreabilidade                                                                                                                                   |
+|-----|------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| R01 | Todos os relacionamentos entre classes estão identificados?                             | Garantir que todas as interações entre classes estejam representadas.                                          | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+| R02 | Os tipos de relacionamento (associação, dependência, generalização) estão corretamente aplicados? | Aplicar corretamente os tipos de relacionamento define a natureza da interação entre classes.                  | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+| R03 | As associações possuem nomes descritivos que indicam o propósito da relação?             | Nomes claros em associações facilitam o entendimento do diagrama.                                              | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+| R04 | As direções das associações estão corretamente indicadas?                                | Direcionar associações mostra o fluxo de comunicação entre classes.                                            | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+| R05 | As multiplicidades nas associações estão corretamente especificadas?                     | Definir multiplicidades esclarece quantas instâncias de uma classe estão relacionadas a outra.                 | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+| R06 | As generalizações (heranças) estão corretamente aplicadas onde apropriado?               | Utilizar herança quando uma classe é uma especialização de outra promove reutilização e organização.           | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+| R07 | As dependências estão representadas quando uma classe utiliza ou depende de outra?       | Mostrar dependências evidencia acoplamentos entre classes.                                                     | [Sourcemaking](https://sourcemaking.com/uml/modeling-business-systems/internal-view/constructing-class-diagrams) |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+ 
+
 
 
 ## Observações
