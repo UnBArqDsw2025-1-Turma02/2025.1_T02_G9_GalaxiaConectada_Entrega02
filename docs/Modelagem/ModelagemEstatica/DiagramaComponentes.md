@@ -13,9 +13,11 @@
 
 ## Introdução
 
-Segundo a Apostila UML – Linguagem de Modelagem Unificada [1] e o guia da plataforma UML Diagrams [2], um **componente** é uma unidade física de software (código-fonte, biblioteca, executável) que encapsula um conjunto de funcionalidades. O **Diagrama de Componentes** representa visualmente esses módulos e suas dependências, mostrando quais artefatos (ex.: arquivos .jar, .dll, .py) são necessários para executar cada parte do sistema. No projeto Galáxia Conectada — uma plataforma educacional de astronomia — esse diagrama expõe módulos como Interface Web, API de Cursos, Serviço de Notificações, Banco de Dados e Integração com APIs externas (ex.: NASA).
+Segundo a Apostila UML – Linguagem de Modelagem Unificada [1] e o guia da plataforma UML Diagrams [2], um **componente** é uma unidade física de software (código-fonte, biblioteca, executável) que encapsula um conjunto de funcionalidades. Com base nisso, o **Diagrama de Componentes** representa visualmente esses módulos e suas dependências, e assim mostra quais artefatos (ex.: arquivos .jar, .dll, .py) são necessários para executar cada parte do sistema. No projeto Galáxia Conectada, esse diagrama expõe módulos como Interface Web, API de Cursos, Serviço de Notificações, Banco de Dados e Integração com APIs externas (ex.: NASA).
 
 ## Objetivos
+
+Tem em base o conceito de componentes e diagrama de componentes, busca-se os seguintes objetivos: 
 
 - Apresentar de forma clara os componentes físicos do sistema Galáxia Conectada.  
 - Evidenciar interfaces providas e requeridas por cada módulo.  
@@ -23,10 +25,7 @@ Segundo a Apostila UML – Linguagem de Modelagem Unificada [1] e o guia da plat
 
 ## Metodologia
 
-1. **Levantamento arquitetural** — identificação de módulos principais a partir dos requisitos funcionais, do rich-picture e do 5W2H.  
-2. **Modelagem inicial** — esboço no Draw.io das caixas de componentes e suas interfaces.  
-3. **Verificação** — aplicação de checklist de boas práticas UML (notação, nomenclatura, coesão).  
-4. **Refino** — ajustes visuais e de nomenclatura para maximizar legibilidade e rastreabilidade.  
+A metodologia adotada para a elaboração do Diagrama de Componentes do projeto Galáxia Conectada compreenderá quatro etapas principais: inicialmente será realizado o levantamento arquitetural, no qual serão identificados os módulos centrais do sistema a partir dos requisitos funcionais, do rich-picture e da análise 5W2H; em seguida, proceder-se-á à modelagem inicial no Draw.io, esboçando cada componente e as interfaces que proverá ou requererá; posteriormente, aplicar-se-á a verificação por meio de um checklist de boas práticas UML, avaliando notação, nomenclatura, coesão e clareza das dependências; por fim, conduzir-se-ão ajustes visuais e de nomenclatura para otimizar a legibilidade, a rastreabilidade e a conformidade do diagrama com os padrões estabelecidos.
 
 ## Investigação dos Componentes Necessários
 
@@ -39,6 +38,8 @@ Segundo a Apostila UML – Linguagem de Modelagem Unificada [1] e o guia da plat
 | **IntegracaoExterna**    | Coletar notícias astronômicas de APIs públicas (NASA, ESA)      | integracao-api.py          | —                                | IFonteNoticias                    |
 | **BotImportador**        | Agendar e executar importação de notícias externas              | bot_import.py              | IFonteNoticias                   | IntegracaoExterna                 |
 | **ServicoRecomendacao**  | Calcular e fornecer recomendações de conteúdo                    | recommender.jar            | IRecomendacao                    | IDatabase, IUsuario               |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 ## Diagrama de Componentes
 
