@@ -5,6 +5,7 @@
 - [Introdução](#Introdução)
 - [Objetivos](#Objetivos)
 - [Metodologia](#Metodologia)
+- [Os Tipos de Relacionamentos](#Os-Tipos-de-Relacionamentos)
 - [Investigação das Classes Necessárias](#Investigação-das-Classes-Necessárias)
 - [Diagrama de Classes](#Diagrama-de-Classes)
 - [Conclusão](#Conclusão)
@@ -35,6 +36,64 @@ Como base para a definição das classes, serão utilizadas as informações col
 
 A partir dessa base, será feita uma investigação detalhada das entidades envolvidas no sistema. Após a definição preliminar das classes, o diagrama será elaborado e, em seguida, verificado de acordo com uma [tabela de verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md) baseada nos critérios sintáticos e semânticos da UML. Com isso, ajustes e melhorias serão aplicados conforme necessário.
 
+## Os Tipos de Relacionamentos
+
+Com o objetivo de construir o diagrama da forma mais completa e mais correta possível, foi realizado um estudo por meio do artigo [Class Diagram | Unified Modeling Language (UML)](https://www.geeksforgeeks.org/unified-modeling-language-uml-class-diagrams/) [2](#ref2) sobre os tipos de relacionamentos necessários para o sistema da **Galáxia Conectada**. Esses relacionamentos descrevem como as classes interagem e se conectam entre si, cada um com seu próprio significado e nível de acoplamento.
+
+### Os relacionamentos:
+
+#### 1. Dependência
+
+- **O que é**: Representa uma ligação fraca e temporária entre classes, onde uma classe *depende* da outra para realizar alguma operação momentânea.
+- **Exemplo no projeto**: O **BotImportador** depende da **IntegracaoExterna** para buscar dados, mas não mantém uma referência fixa a ela.
+- **Símbolo**: Linha tracejada com seta.
+  
+- **Observação**: Como há muitas desses relacionamentos, a fim de deixar o diagrama mais legível, as relações de dependência não serão representadas no diagrama.
+
+#### 2. Associação
+
+- **O que é**: Representa um vínculo estruturado entre classes. Uma classe conhece a outra e pode enviar mensagens para ela a qualquer momento.
+- **Exemplo no projeto**: A **WebUI** se associa ao **APICursos** para exibir cursos e módulos ao usuário.
+- **Símbolo**: Linha contínua simples.
+- **Cardinalidade**: Pode indicar quantos objetos de uma classe se relacionam com quantos objetos de outra (ex: "um para muitos", "muitos para muitos").
+
+#### 3. Agregação
+
+- **O que é**: É um tipo especial de associação que indica uma relação "parte-todo", mas com menor rigidez. As partes podem existir independentemente do todo.
+- **Exemplo no projeto**: Um **Curso** agrega vários **Módulos**. Se o curso for excluído, os módulos ainda podem existir.
+- **Símbolo**: Linha contínua com losango branco na extremidade do "todo".
+
+#### 4. Composição
+
+- **O que é**: É uma relação mais forte de "parte-todo", onde a parte não pode existir sem o todo. Se o todo for destruído, a parte também é destruída.
+- **Exemplo no projeto**: Um **Quiz** é composto por várias **Questões**. Se o quiz for apagado, as questões também deixarão de existir.
+- **Símbolo**: Linha contínua com losango preto na extremidade do "todo".
+
+#### 5. Generalização
+
+- **O que é**: Representa uma relação "é-um" entre classes. Uma classe mais específica herda atributos e comportamentos de uma classe mais genérica.
+- **Exemplo no projeto**: **EventoAstronomico** poderia ser uma superclasse de eventos como **Eclipse** e **ChuvaDeMeteoros**.
+- **Símbolo**: Linha contínua com seta aberta (vazia) apontando para a superclasse.
+
+#### 6. Realização
+
+- **O que é**: Representa a implementação de uma interface por uma classe concreta.
+- **Exemplo no projeto**: A classe **ServicoNotificacoes** realiza (implementa) a interface **INotificacoes**.
+- **Símbolo**: Linha tracejada com seta aberta (vazia) apontando para a interface.
+
+
+# Conceitos Importantes
+
+## Superclasse
+
+- **Definição**: Uma superclasse é uma classe mais genérica que contém atributos e métodos comuns a várias outras classes.
+- **Exemplo**: A classe **Usuario** pode ser a superclasse de **Aluno** e **Instrutor**, pois ambos compartilham características como `nome`, `e-mail` e `senha`.
+
+## Subclasse
+
+- **Definição**: Uma subclasse é uma classe mais específica que herda tudo da superclasse e pode adicionar seus próprios atributos e comportamentos.
+- **Exemplo**: **Aluno** seria uma subclasse de **Usuario**, podendo acrescentar, por exemplo, um atributo `progressoNosCursos`.
+
 
 ## Investigação das Classes Necessárias
 
@@ -43,8 +102,8 @@ Antes de elaborar o diagrama diretamente no drawi.o, foi criada a tabela abaixo 
 **Tabela 1:** Classes do Sistema.
 | Classe                 | Atributos            | Métodos   | Relacionamentos    |
 |------------------------|----------------------|-----------|--------------------|
-| **Usuario**            | - `id: Int` (private)<br>- `nome: String` (public)<br>- `email: String` (private)<br>- `senha: String` (private)<br>- `dataCadastro: DateTime` (public)    | + `login(): Boolean`<br>+ `logout(): Void`<br>+ `editarPerfil(novoNome: String): Void`                                       | - Perfil (1:1, agregação)<br> - MensagemPrivada (1:*, associação, “envia/recebe”)<br> - Topico (1:*, associação, “cria”)<br> - Comentario (1:*, associação, “escreve”) |
-| **Perfil**             | - `nivel: Int` (private)<br>- `xp: Int` (private)<br>- `linguagem: String` (public)<br>- `avatarUrl: String` (public)                                       | + `atualizarNivel(): Void`<br>+ `adicionarXp(valor: Int): Void`                                                               | Usuario (1:1, agregação)                                                                                                                                       |
+| **Usuario**            | - `id: Int` (private)<br>- `nome: String` (private)<br>- `email: String` (private)<br>- `senha: String` (private)<br>- `dataCadastro: DateTime` (public)    | + `login(): Boolean`<br>+ `logout(): Void`<br>+ `editarPerfil(novoNome: String): Void`                                       | - Perfil (1:1, agregação)<br> - MensagemPrivada (1:*, associação, “envia/recebe”)<br> - Topico (1:*, associação, “cria”)<br> - Comentario (1:*, associação, “escreve”) |
+| **Perfil**             | - `nivel: Int` (private)<br>- `xp: Int` (private)<br>- `linguagem: String` (private)<br>- `avatarUrl: String` (public)                                       | + `atualizarNivel(): Void`<br>+ `adicionarXp(valor: Int): Void`                                                               | Usuario (1:1, agregação)                                                                                                                                       |
 | **Notificacao**        | - `id: Int` (private)<br>- `mensagem: String` (public)<br>- `data: DateTime` (public)<br>- `lida: Boolean` (private)                                        | + `enviarPara(u: Usuario): Void`<br>+ `marcarComoLida(): Void`                                                                 | Usuario ( *:1, associação, “recebe”)                                                                                                                           |
 | **Reputacao**          | - `pontos: Int` (private)<br>- `nivelReputacao: String` (public)                                                                                           | + `atualizarPontos(valor: Int): Void`<br>+ `calcularNivel(): String`                                                           | Usuario (1:1, associação, “possui”)                                                                                                                            |
 | **Conquista**          | - `id: Int` (private)<br>- `titulo: String` (public)<br>- `descricao: String` (public)<br>- `dataConquista: DateTime` (public)                              | + `concederA(u: Usuario): Void`                                                                                                | Usuario ( *:*, associação, “ganha”)                                                                                                                            |
@@ -100,3 +159,5 @@ A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibil
 | 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2024 |
 | 1.2 | Criação da tabela de investigação das classes | Larissa Stéfane | 25/04/2024 |
 | 1.3 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
+| 1.4 | Adição da análise dos tipos de relacionamentos | Larissa Stéfane | 26/04/2024 |
+
