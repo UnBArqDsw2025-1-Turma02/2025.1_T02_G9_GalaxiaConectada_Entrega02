@@ -62,12 +62,12 @@ A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama 
 ### Superclasse
 
 - **Definição**: Uma superclasse é uma classe mais genérica que contém atributos e métodos comuns a várias outras classes.
-- **Exemplo**: A classe **Usuario** pode ser a superclasse de **Aluno** e **Instrutor**, pois ambos compartilham características como `nome`, `e-mail` e `senha`.
+- **Exemplo**: A classe **Conteúdo** pode ser a superclasse de **Artigo** e **Vídeo**, pois ambos compartilham características como `título`, `descrição` e `Data de publicação`.
 
 ### Subclasse
 
 - **Definição**: Uma subclasse é uma classe mais específica que herda tudo da superclasse e pode adicionar seus próprios atributos e comportamentos.
-- **Exemplo**: **Aluno** seria uma subclasse de **Usuario**, podendo acrescentar, por exemplo, um atributo `progressoNosCursos`.
+- **Exemplo**: **Artigo** seria uma subclasse de **Conteúdo**.
 
 
 ## Investigação das Classes Necessárias
@@ -154,3 +154,4 @@ A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibil
 | 1.3 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
 | 1.4 | Adição da análise dos tipos de relacionamentos | Larissa Stéfane | 26/04/2024 |
 | 1.5 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
+| 1.6 | Reorganização das super e subclasses | Larissa Stéfane | 26/04/2024 |
