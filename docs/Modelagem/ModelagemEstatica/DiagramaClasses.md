@@ -39,3 +39,6 @@
 
 ## Histórico de versão
 
+| Versão | Alteração | Responsável | Data |
+| - | - | - | - |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
