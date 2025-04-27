@@ -85,4 +85,6 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 | - | - | - | - |
 | 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
 | 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2024 |
-| 1.2 | Criação da tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
+| 1.2 | Criação da tabela de investigação dos componentes | Larissa Stéfane | 26/04/2024 |
+| 1.3 | Atualização das tabela dos componentes | Larissa Stéfane | 27/04/2024 |
+| 1.4 | Correção da tabela dos componentes | Larissa Stéfane | 26/04/2024 |
