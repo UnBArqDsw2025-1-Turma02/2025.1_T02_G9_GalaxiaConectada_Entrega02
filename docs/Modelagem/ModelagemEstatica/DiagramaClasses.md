@@ -134,12 +134,24 @@ Abaixo, há o Diagrama de Classes criado:
 <div align="center">
     Figura 1: o Diagrama de Classes
     <br>
-    <img src="Modelagem/Imagens/DiagramaClasses.png">
+    <img src="../Imagens/DiagramaClasses.png">
     <br>
-     <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
 </div>
 
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaClasses.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/c2ce08725e586ded2ce70e36e0e6b7c1db54715f/docs/Modelagem/Imagens/DiagramaClasses.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
 
 
 ## Conclusão
