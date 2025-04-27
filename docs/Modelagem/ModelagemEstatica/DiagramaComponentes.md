@@ -34,8 +34,6 @@ A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento 
 
 **Tabela 1:** Componentes
 
-**Tabela Detalhada dos Elementos da Plataforma: Galáxia Conectada**
-
 | #   | Tipo de Elemento                            | Nome (Componente/Pacote/Subsistema) | Descrição / Estrutura Interna Potencial                                                                                                                               | Interfaces Providas (Exemplos)                 | Dependências / Interfaces Requeridas (Exemplos)          | Artefatos Potenciais (`<<manifest>>`)                                          |
 | :-- | :------------------------------------------ | :---------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------------------------------------- |
 | 1   | **Pacote** | `<<package>> Galáxia Conectada Site`  | Pacote raiz que contém todos os elementos da plataforma web.                                                                                                          | -                                                 | -                                                        | -                                                                             |
@@ -71,15 +69,6 @@ A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento 
 | 31  | **Interface** | `INotificacoes`                     | Contrato para solicitar o envio de notificações.                                                                                                                    | -                                                 | -                                                        | -                                                                             |
 | 32  | **Interface** | `IIntegracaoExterna`                | Contrato para acessar dados coletados de fontes externas pelos bots.                                                                                                | -                                                 | -                                                        | -                                                                             |
 | 33  | **Interface** | `IPersistencia`                     | Contrato (muitas vezes implícito) para interagir com o mecanismo de persistência (Banco de Dados).                                                                   | -                                                 | -                                                        | -                                                                             |
-
-**Observações:**
-
-* **Tipo de Elemento:** Agora especifica claramente "Parte Interna (`NomeDoSubsistema`) - Componente" para os componentes que residem dentro de um subsistema, indicando seu papel naquela estrutura hierárquica, mas confirmando que ainda são componentes.
-* **Nome:** Removi o símbolo `↳`.
-* **Plataforma/Site:** Ajustei a nomenclatura na linha 1 para refletir que é um site/plataforma web.
-* **Conteúdo:** O restante do conteúdo (descrições, interfaces, dependências, artefatos) permanece o mesmo da versão anterior que você indicou como referência.
-
-Espero que este formato fique mais claro e fácil de acompanhar!
 
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
