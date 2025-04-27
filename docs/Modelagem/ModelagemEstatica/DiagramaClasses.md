@@ -127,6 +127,18 @@ Com base na análise da tabela das classes e no significado e relevância dos re
 
 ## Diagrama de Classes 
 
+Abaixo, há o Diagrama de Classes criado:
+
+**Observação:** Para analisaro Diagrama de Classes de forma ampliada e em seus detalhes, clique na imagem e ela será aberta em uma nova aba, a qual lhe permitirá explorá-lo com um zoom.
+
+<div align="center">
+    Figura 1: o Diagrama de Classes
+    <br>
+    <img src="Modelagem/Imagens/DiagramaClasses.png">
+    <br>
+     <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
 
 
 
