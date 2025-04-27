@@ -5,8 +5,8 @@
 - [Introdução](#Introdução)
 - [Objetivos](#Objetivos)
 - [Metodologia](#Metodologia)
-- [Os Tipos de Relacionamentos](#Os-Tipos-de-Relacionamentos)
 - [Investigação das Classes Necessárias](#Investigação-das-Classes-Necessárias)
+- [Os Tipos de Relacionamentos](#Os-Tipos-de-Relacionamentos)
 - [Diagrama de Classes](#Diagrama-de-Classes)
 - [Conclusão](#Conclusão)
 - [Bibliografia](#Bibliografia)
@@ -36,45 +36,12 @@ Como base para a definição das classes, serão utilizadas as informações col
 
 A partir dessa base, será feita uma investigação detalhada das entidades envolvidas no sistema. Após a definição preliminar das classes, o diagrama será elaborado e, em seguida, verificado de acordo com uma [tabela de verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md) baseada nos critérios sintáticos e semânticos da UML. Com isso, ajustes e melhorias serão aplicados conforme necessário.
 
-## Os Tipos de Relacionamentos
-
-Com o objetivo de construir o diagrama da forma mais completa e mais correta possível, foi realizado um estudo por meio do artigo [Class Diagram | Unified Modeling Language (UML)](https://www.geeksforgeeks.org/unified-modeling-language-uml-class-diagrams/) [2](#ref2) sobre os tipos de relacionamentos necessários para o sistema da **Galáxia Conectada**. Esses relacionamentos descrevem como as classes interagem e se conectam entre si, cada um com seu próprio significado e nível de acoplamento.
-
-### Os relacionamentos:
-
-A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama de classes.
-
-**Tabela 1:** Tipos de Relacionamentos
-
-| Tipo de Relacionamento | O que é | Exemplo no Projeto | Símbolo | Observação/Extra |
-|:-----------------------|:--------|:-------------------|:--------|:-----------------|
-| Dependência | Representa uma ligação fraca e temporária entre classes. | O `BotImportador` depende da `IntegracaoExterna` para buscar dados, mas não mantém referência fixa. | Linha tracejada com seta. | Não será representado no diagrama para manter a legibilidade. |
-| Associação | Representa um vínculo estruturado entre classes; uma classe conhece a outra e pode enviar mensagens. | A `WebUI` se associa ao `APICursos` para exibir cursos e módulos. | Linha contínua simples. | Pode indicar cardinalidade (ex: "um para muitos", "muitos para muitos"). |
-| Agregação | Um tipo especial de associação ("parte-todo") com baixa rigidez; partes podem existir sem o todo. | Um `Curso` agrega vários `Módulos`; módulos podem existir mesmo se o curso for excluído. | Linha contínua com losango branco no "todo". | — |
-| Composição | Relação forte de "parte-todo"; a parte não existe sem o todo. | Um `Quiz` é composto por várias `Questões`; se o quiz for apagado, as questões também desaparecem. | Linha contínua com losango preto no "todo". | — |
-| Generalização | Representa uma relação "é-um"; herança de atributos e comportamentos. | `EventoAstronomico` como superclasse de `Eclipse` e `ChuvaDeMeteoros`. | Linha contínua com seta aberta (vazia) para a superclasse. | — |
-| Realização | Representa a implementação de uma interface por uma classe concreta. | `ServicoNotificacoes` realiza (implementa) a interface `INotificacoes`. | Linha tracejada com seta aberta (vazia) para a interface. | — |
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-### Conceitos Importantes
-
-### Superclasse
-
-- **Definição**: Uma superclasse é uma classe mais genérica que contém atributos e métodos comuns a várias outras classes.
-- **Exemplo**: A classe **Conteúdo** pode ser a superclasse de **Artigo** e **Vídeo**, pois ambos compartilham características como `título`, `descrição` e `Data de publicação`.
-
-### Subclasse
-
-- **Definição**: Uma subclasse é uma classe mais específica que herda tudo da superclasse e pode adicionar seus próprios atributos e comportamentos.
-- **Exemplo**: **Artigo** seria uma subclasse de **Conteúdo**.
-
 
 ## Investigação das Classes Necessárias
 
 Antes de elaborar o diagrama diretamente no drawi.o, foi criada a tabela abaixo com base nas classes que seriam criadas ao se analisar os requisitos, os atores e as informações do 5W2H.
 
-**Tabela 2:** Classes do Sistema.
+**Tabela 1:** Classes do Sistema.
 ### Tabela de Classes com Tipos de Retorno nos Métodos
 
 | Classe                  | O que é                                                                                  | Atributos                                                                                                                                                                                                                                                            | Métodos                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -118,6 +85,43 @@ Antes de elaborar o diagrama diretamente no drawi.o, foi criada a tabela abaixo 
 
 **Observação:** Inicialmente, tinha-se pensado em fazer o **usuário** como uma superclasse e **Aluno**, **Instrutor**, **Professor_Voluntário** e **Administrador** como suas subclasses. Contudo, percebeu-se que essa abordagem limita a representação de cenários reais onde uma única pessoa pode acumular múltiplas funções simultaneamente, como ser Instrutor e Professor_Voluntário ao mesmo tempo. **A herança estabelece uma relação "é um(a)", e assim força uma instância a pertencer a apenas uma das subclasses mais específicas, o que impede a combinação de papéis**. Por isso, optou-se por um modelo baseado em **composição: Usuario passa a ser uma classe comum**, representando a entidade central da pessoa ou conta no sistema, e ela se relaciona (agrega ou compõe) com outras classes que representam os diferentes Papéis (PapelAluno, PapelInstrutor, PapelProfessorVoluntario, PapelAdministrador). 
  
+
+
+## Os Tipos de Relacionamentos
+
+Com o objetivo de construir o diagrama da forma mais completa e mais correta possível, foi realizado um estudo por meio do artigo [Class Diagram | Unified Modeling Language (UML)](https://www.geeksforgeeks.org/unified-modeling-language-uml-class-diagrams/) [2](#ref2) sobre os tipos de relacionamentos necessários para o sistema da **Galáxia Conectada**. Esses relacionamentos descrevem como as classes interagem e se conectam entre si, cada um com seu próprio significado e nível de acoplamento.
+
+### Os relacionamentos:
+
+A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama de classes.
+
+**Tabela 2:** Tipos de Relacionamentos
+
+| Tipo de Relacionamento | O que é | Exemplo no Projeto | Símbolo | Observação/Extra |
+|:-----------------------|:--------|:-------------------|:--------|:-----------------|
+| Dependência | Representa uma ligação fraca e temporária entre classes. | O `BotImportador` depende da `IntegracaoExterna` para buscar dados, mas não mantém referência fixa. | Linha tracejada com seta. | Não será representado no diagrama para manter a legibilidade. |
+| Associação | Representa um vínculo estruturado entre classes; uma classe conhece a outra e pode enviar mensagens. | A `WebUI` se associa ao `APICursos` para exibir cursos e módulos. | Linha contínua simples. | Pode indicar cardinalidade (ex: "um para muitos", "muitos para muitos"). |
+| Agregação | Um tipo especial de associação ("parte-todo") com baixa rigidez; partes podem existir sem o todo. | Um `Curso` agrega vários `Módulos`; módulos podem existir mesmo se o curso for excluído. | Linha contínua com losango branco no "todo". | — |
+| Composição | Relação forte de "parte-todo"; a parte não existe sem o todo. | Um `Quiz` é composto por várias `Questões`; se o quiz for apagado, as questões também desaparecem. | Linha contínua com losango preto no "todo". | — |
+| Generalização | Representa uma relação "é-um"; herança de atributos e comportamentos. | `EventoAstronomico` como superclasse de `Eclipse` e `ChuvaDeMeteoros`. | Linha contínua com seta aberta (vazia) para a superclasse. | — |
+| Realização | Representa a implementação de uma interface por uma classe concreta. | `ServicoNotificacoes` realiza (implementa) a interface `INotificacoes`. | Linha tracejada com seta aberta (vazia) para a interface. | — |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+### Conceitos Importantes
+
+### Superclasse
+
+- **Definição**: Uma superclasse é uma classe mais genérica que contém atributos e métodos comuns a várias outras classes.
+- **Exemplo**: A classe **Conteúdo** pode ser a superclasse de **Artigo** e **Vídeo**, pois ambos compartilham características como `título`, `descrição` e `Data de publicação`.
+
+### Subclasse
+
+- **Definição**: Uma subclasse é uma classe mais específica que herda tudo da superclasse e pode adicionar seus próprios atributos e comportamentos.
+- **Exemplo**: **Artigo** seria uma subclasse de **Conteúdo**.
+
+### Os Relacionamentos no Diagrama de Classes
+
 ## Diagrama de Classes 
 
 
@@ -152,3 +156,4 @@ A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibil
 | 1.4 | Adição da análise dos tipos de relacionamentos | Larissa Stéfane | 26/04/2024 |
 | 1.5 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
 | 1.6 | Reorganização das super e subclasses | Larissa Stéfane | 26/04/2024 |
+| 1.7 | Adição da Tabela de Relacionamentos | Larissa Stéfane | 26/04/2024 |
