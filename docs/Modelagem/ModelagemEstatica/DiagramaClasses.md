@@ -34,7 +34,7 @@ Como base para a definição das classes, serão utilizadas as informações col
 
 - Informações organizadas por meio da metodologia [5W2H](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H)
 
-A partir dessa base, será feita uma investigação detalhada das entidades envolvidas no sistema. Após a definição preliminar das classes, o diagrama será elaborado e, em seguida, verificado de acordo com uma [tabela de verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md) baseada nos critérios sintáticos e semânticos da UML. Com isso, ajustes e melhorias serão aplicados conforme necessário.
+A partir dessa base, será feita uma investigação detalhada das entidades envolvidas no sistema. AEntão, serão definidas as classes do sistema, junto com seus atributos e métodos. Após compreender e definir bem as classes, serão analisados os relacionamentos de cada um delas. Por fim, o diagrama será elaborado e, em seguida, verificado de acordo com uma [tabela de verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md) baseada nos critérios sintáticos e semânticos da UML. Com isso, ajustes e melhorias serão aplicados conforme necessário.
 
 
 ## Investigação das Classes Necessárias
@@ -120,6 +120,10 @@ A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama 
 - **Exemplo**: **Artigo** seria uma subclasse de **Conteúdo**.
 
 ### Os Relacionamentos no Diagrama de Classes
+
+Com base na análise da tabela das classes e no significado e relevância dos relacionamentos, a tabela 3 mostra os relacionamentos de cada uma das classes da tabela 1.
+
+
 
 ## Diagrama de Classes 
 
