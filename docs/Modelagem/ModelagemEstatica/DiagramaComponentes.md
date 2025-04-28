@@ -72,6 +72,29 @@ A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento 
 ## Diagrama de Componentes
 
 
+<div align="center">
+    Figura 1: o Diagrama de Componentes
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/ea040765f849aa6901c6f263b2e7656ce00f1def/docs/Modelagem/Imagens/DiagramaComponentes.png" width="1000">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="..Imagens/DiagramaComponentes.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/ea040765f849aa6901c6f263b2e7656ce00f1def/docs/Modelagem/Imagens/DiagramaComponentes.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
+
 ## Conclusão
 
 O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do sistema, suas interfaces e dependências. Essa visão facilita o planejamento de implantação, a definição de pipelines de build/deploy e a manutenção evolutiva da plataforma, ao evidenciar claramente quais artefatos e serviços cada componente exige ou oferece.
@@ -106,3 +129,4 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 | 1.6 | Atualização da tabela de componentes | Larissa Stéfane | 27/04/2024 |
 | 1.7 | Atualização da tabela de ligações | Larissa Stéfane | 27/04/2024 |
 | 1.8 | Reorganização da tabela de componentes e retirada da tabela de ligações | Larissa Stéfane | 27/04/2024 |
+| 1.9 | Adição do Diagrama | Larissa Stéfane | 27/04/2024 |
