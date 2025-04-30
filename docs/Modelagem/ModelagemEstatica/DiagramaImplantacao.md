@@ -1,19 +1,100 @@
+# Diagrama de Implantação
 
+## Sumário
 
-## Tabela base com Nós e comunicações para a formação do diagrama de Implantacao
+- [Introdução](#introdução)  
+- [Objetivos](#objetivos)  
+- [Metodologia](#metodologia)  
+- [Tabela de Análise](#Tabela-de-Análise)  
+- [Diagrama de Implantação](#Diagrama-de-Implantação)  
+- [Conclusão](#conclusão)  
+- [Bibliografia](#bibliografia)  
+- [Histórico de versão](#histórico-de-versão)  
 
+## Introdução
 
-**Tabela Base para Diagrama de Implantação - Galáxia Conectada**
+O diagrama de implantação, segundo o artigo [O que é um diagrama de implementação?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml), é um tipo de diagrama estrutural da UML que representa a implementação física de artefatos de software sobre os componentes de hardware. Neste diagrama, utilizam-se elementos gráficos como nódulos (caixas tridimensionais) para representar dispositivos ou ambientes de execução de software, e os artefatos são os produtos gerados pelo desenvolvimento, como arquivos executáveis, bibliotecas ou scripts. 
 
-| Tipo de Nó          | Nome do Nó Sugerido                 | <<Estereótipo>> / Ícone Draw.io | Descrição / Responsabilidade                                                                                                | Artefatos Implantados (Exemplos)                                                                                                                                                                                                                                                            | Ambiente de Execução / Software Chave (Exemplos) | Comunicação Principal (Para/De, Protocolo)                                                                                                                                                                                                                                                            | Requisitos Atendidos (Ex: RNF) |
-| :------------------ | :---------------------------------- | :---------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------- |
-| Dispositivo Cliente | **Dispositivo do Usuário** | `<<device>>` (Computador/Celular) | Acessa a plataforma via navegador (Desktop, Tablet, Celular). Renderiza a interface do usuário.                             | `WebUI` (executado no navegador)                                                                                                                                                                                                                                                          | Navegador Web (Chrome, Firefox, Edge, Safari)    | `[Para]` Balanceador de Carga (HTTPS)                                                                                                                                                                                                                                                                     | RNF01, RNF03, RNF06, RNF09     |
-| Rede / Borda        | **Balanceador de Carga** | (Load Balancer Icon)          | Distribui as requisições dos usuários entre as instâncias do Servidor de Aplicação. Garante alta disponibilidade e escalabilidade. | -                                                                                                                                                                                                                                                                                           | (Ex: Nginx, HAProxy, AWS ELB, GCP Load Balancer) | `[De]` Dispositivo do Usuário (HTTPS)<br>`[Para]` Servidor de Aplicação (HTTP/HTTPS)                                                                                                                                                                                                                        | RNF05                          |
-| Servidor            | **Servidor de Aplicação (Instância)** | `<<server>>` (Server Icon)      | Executa a lógica principal do backend, APIs, serviços e bots. Várias instâncias para escalabilidade e redundância.            | `APIGateway`, `GestaoUsuarios`, `ServicoNotificacoes`, `ServicoBusca`, `ServicoRecomendacoes`, `ServicoCertificados`, `ServicoLocalizacao`, `Subsistema Conteudo Interativo` (e seus módulos), `Subsistema Comunidade` (e seus módulos), `Subsistema Integrações` (e seus módulos), `config.yaml` | Docker Container, Java Runtime (ou Node.js, Python, etc.), Servidor de Aplicação (Tomcat, Kestrel, etc.) | `[De]` Balanceador de Carga (HTTP/HTTPS)<br>`[Para]` Banco de Dados (JDBC/ODBC/TCP)<br>`[Para]` Servidor de Cache (TCP)<br>`[Para]` CDN (HTTPS - Opcional/Invalidação)<br>`[Para]` Serviços Externos (HTTPS/API)<br>`[Para]` Fontes de Dados Externas (HTTPS/API)<br>`[Para]` Nó de Workers (HTTP - se separado) | RNF02, RNF04, RNF05, RNF12     |
-| Servidor            | **Nó de Workers / Bots (Opcional)** | `<<server>>` (Server Icon)      | (Alternativa/Opcional) Executa processos em background (Bots, Sitemap Generator) separadamente para não impactar a API principal. | `BotImportadorNoticias`, `BotImportadorPromocoes`, `SitemapGenerator`, `config.yaml`                                                                                                                                                                                                          | Docker Container, Java Runtime (ou similar)      | `[Para]` Banco de Dados (JDBC/ODBC/TCP)<br>`[Para]` Fontes de Dados Externas (HTTPS/API)<br>`[Para]` CDN (HTTPS/SCP - para Sitemap)<br>`[De]` Servidor de Aplicação (HTTP - se bots são acionados via API)                                                                                           | RF14, RF19, RF20, RNF10         |
-| Servidor            | **Servidor de Banco de Dados** | `<<database>>` (Database Icon)  | Armazena todos os dados persistentes da aplicação (usuários, conteúdo, progresso, fórum, etc.).                           | `<<artifact>> BancoDeDados GalaxiaConectada`, `<<artifact>> schema.sql` (usado na implantação)                                                                                                                                                                                              | PostgreSQL, MySQL, SQL Server, MongoDB (ou outro SGBD) | `[De]` Servidor de Aplicação (JDBC/ODBC/TCP)<br>`[De]` Nó de Workers (JDBC/ODBC/TCP)                                                                                                                                                                                                                 | RF04, RNF04, RNF05             |
-| Servidor / Serviço  | **Servidor de Cache (Opcional)** | `<<server>>` (Server Icon)      | (Opcional, para RNF02) Armazena dados frequentemente acessados em memória para acelerar respostas.                         | `<<artifact>> Cache Engine`                                                                                                                                                                                                                                                                 | Redis, Memcached                                 | `[De]` Servidor de Aplicação (TCP)                                                                                                                                                                                                                                                                        | RNF02                          |
-| Rede / Serviço      | **CDN / Storage de Arquivos** | `<<CDN>>` / (Cloud/Network Icon) | Entrega arquivos estáticos (CSS, JS, Imagens, Vídeos, Certificados gerados, Sitemap) de forma rápida e global.             | `<<artifact>> static-files/`, `<<artifact>> generated-seo-files/`, `<<artifact>> localization_files/` (se não no BD)                                                                                                                                                                           | (Ex: AWS S3 + CloudFront, GCP Cloud Storage + CDN, Azure Blob Storage + CDN) | `[De]` Dispositivo do Usuário (HTTPS - principal)<br>`[De]` Nó de Workers (HTTPS/SCP - upload sitemap)<br>`[De]` Servidor de Aplicação (HTTPS - upload/gerenciamento)                                                                                                                                     | RNF02, RNF10, RNF11            |
-| Nó Externo          | **Serviços Externos** | `<<external>>` (Cloud Icon)     | Serviços de terceiros utilizados pela plataforma.                                                                           | APIs (Email/SMTP, Push Notification, Monitoramento APM)                                                                                                                                                                                                                         | Plataformas de Email, FCM/APNS, Sentry/Datadog   | `[De]` Servidor de Aplicação (HTTPS/API)<br>`[De]` ServicoMonitoramento (HTTPS/API)                                                                                                                                                                                                                | RF12, RF20, RNF05              |
-| Nó Externo          | **Fontes de Dados Externas** | `<<external>>` (Cloud Icon)     | Sites e APIs de onde os Bots buscam informações.                                                                            | APIs (Observatórios, Portais Científicos), Sites E-commerce (para scraping)                                                                                                                                                                                                     | Servidores Web/API de Terceiros                  | `[De]` Nó de Workers / Bots (HTTPS/API/Scraping)<br>`[De]` Servidor de Aplicação (se busca for síncrona)                                                                                                                                                                                       | RF11, RF14, RF19               |
-| Nó Externo          | **Sistemas Parceiros (Opcional)** | `<<external>>` (Cloud Icon)     | Sistemas externos que podem consumir a API pública da Galáxia Conectada.                                                    | -                                                                                                                                                                                                                                                                                           | Aplicações de Parceiros                          | `[De]` PublicAPIGateway (HTTPS/API)                                                                                                                                                                                                                                                               | RF17 (Exemplo)                 |
+Com base nisso, o artigo [O Guia Fácil de Diagramas de Implantação UML](https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-implantacao/#:~:text=Um%20diagrama%20de%20implanta%C3%A7%C3%A3o%20%C3%A9,software%20f%C3%ADsico%20de%20um%20sistema.) fala que esse tipo de diagrama é essencial para entender a arquitetura de execução do sistema ao evidenciar tanto o hardware necessário quanto o middleware que interliga os elementos da solução. Assim, no contexto do projeto Galáxia Conectada, o diagrama de implantação é importante pois permite visualizar de forma clara como a plataforma será distribuída fisicamente — por exemplo, o servidor onde será hospedado os serviços.
+
+## Objetivos
+
+Com isso, ao elaborar o diagrama de implantação, busca-se os seguintes objetivos:
+
+- Representar a arquitetura física de execução do sistema Galáxia Conectada.
+
+- Evidenciar os ambientes de hardware e software onde os componentes serão implantados.
+
+- Demonstrar a distribuição dos artefatos e os canais de comunicação entre os nódulos.
+
+## Metodologia:
+
+A elaboração do diagrama de implantação será conduzida com o apoio da ferramenta Draw.io ao utilizar como base os materiais previamente desenvolvidos ao longo do projeto. Com isso, a construção seguirá uma abordagem sistemática, a partir da análise dos requisitos, diagramas e estrutura do sistema. 
+
+### Etapas da metodologia:
+
+1. Inicialmente será realizada uma análise do material base a partir de:
+
+  - [Requisitos elicitados e documentados na primeira etapa](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
+  - [Diagrama de Classes](/DiagramaClasses.md);
+  - [Diagrama de Componentes](/DiagramaComponentes.md);
+
+2. Com base nessa análise, será criada uma tabela de apoio organizando os tipos de nós (hardware, software, containers etc.) necessários para a modelagem.
+3. Ao utilizar a ferramenta **Draw.io**, será elaborada a versão inicial do diagrama de implantação, com identificação dos nós, artefatos e relações.
+4. Após a construção, o diagrama passará por uma fase de verificação, com o objetivo de garantir sua coerência.
+
+## Tabela de Análise
+
+A tabela 1 abaixo foi elaborada para auxiliar na análise dos tipos de nós necessários para a construção do Diagrama de Implantação do projeto Galáxia Conectada. 
+
+**Tabela 1**: Base para Diagrama de Implantação
+
+| # | Tipo de Nó  | Nome do Nó  | <<Estereótipo>> / Ícone Usado   | Descrição / Responsabilidade   | Artefatos / Componentes Implantados  | Ambiente de Execução / Software Chave  | Comunicação Principal (Para/De, Protocolo)  | Requisitos Atendidos  |
+| - | :---------| :---------------------| :------------------- | :------------- | :--------- | :----- | :-------------------- | :---------- |
+| Dispositivo Usuário | `Navegador Web`   | `<<device>>`    | Acessa a aplicação via browser. Executa o módulo de interface.   | `Module` (Representando UI/Frontend)    | Navegador Web  | [Para] Servidor Web (HTTPS)   | RNF01, RNF09 (Acesso via Browser)  |
+| Servidor           | `Servidor Web`   | `<<server>>`  | Ponto de entrada para requisições dos clientes.   | `Module` (Representando Configuração/Lógica do Servidor Web)                                                                                                                                                         | Nginx / Apache (ou similar)                        | [De] Navegador Web (HTTPS)<br> [Para] Firewall (TCP/IP)   | -                                                                     |
+| Rede / Segurança    | `Firewall` | `<<firewall>>` | Controla o tráfego de rede entre a camada web e os servidores internos.  | -      | Software de Firewall     | [De] Servidor Web (TCP/IP) <br> Para SGBD (TCP/IP)<br> [Para] Servidor de Aplicação 1 (TCP/IP)<br> [Para] Servidor de Aplicação 2 (TCP/IP)   | RNF04 ( Segurança)                                         |
+| Servidor            | `Sistema Gerenciador de Banco de Dados` | `<<database>>`          | Armazena e gerencia os dados da aplicação.                                                                         | `Usuario` (Schema/Dados)<br>`Serviços` (Schema/Dados)<br>`Jogos` (Schema/Dados)<br>`Artigos` (Schema/Dados)                          | SGBD (Ex: PostgreSQL, MySQL)                       | [De] Firewall (TCP/IP)<br> [De] Servidor de Aplicação 1 (TCP/IP) <br> [De] Servidor de Aplicação 2 (TCP/IP) | RF04, RNF04 (Persistência e Segurança de Dados)                     |
+| Servidor            | `Servidor de Aplicação 1 - Serviços`  | `<<server>>`  | Executa a aplicação principal de serviços da Galáxia Conectada.                                                    | `<<interface>> astronomia.war`<br>`web-tools-lib.jar`<br>`<<deployment spec>> web.xml`<br>`Componente Serviço Online`<br>`Componente Serviço de Usuário` - Referentes ao diagrama de Componentes.                                | Java App Server (Tomcat, etc.) + JRE / Docker     | [De] Firewall (TCP/IP) <br> [Para] SGBD (TCP/IP)                 |  RNF02, RNF05  |
+| Servidor            | `Servidor de Aplicação 2 - Jogos`     | `<<server>>`          | execução da aplicação de jogos. | `<<interface>> astronomia.war`<br>`web-tools-lib.jar`<br>`<<deployment spec>> web.xml`<br>`Componente Conteudo Interativo` | Java App Server (Tomcat, etc.) + JRE / Docker     | [De] Firewall (TCP/IP)<br> [Para] SGBD (TCP/IP)                                                                                                                                                                                                                                              | RF08, RF21, RF22, RNF02, RNF05    |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+## Diagrama de Implantação
+
+## Conclusão
+
+A construção do Diagrama de Implantação para o projeto Galáxia Conectada teve como base a Tabela 1, a qual sistematizou os principais nós da infraestrutura de execução da aplicação e incluiu dispositivos de usuário, servidores, rede e banco de dados. Portanto, esse mapeamento permitiu representar, de forma estruturada, como os componentes do sistema são distribuídos fisicamente em seus respectivos ambientes de execução. 
+
+## Bibliografia
+
+<a name="ref1"></a>
+[1] LUCID SOFTWARE INC. O que é diagrama de implementação UML. Lucidchart, 2024. Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml. Acesso em: 28 abr. 2025.
+
+<a name="ref2"></a>
+[2] IBM CORPORATION. Diagramas de implantação. IBM Documentation, 2024. Disponível em: https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams. Acesso em: 28 abr. 2025.
+
+<a name="ref3"></a>
+[3] VISUAL PARADIGM. What is Deployment Diagram?. Visual Paradigm Guide, 2024. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/. Acesso em: 28 abr. 2025.
+
+<a name="ref4"></a>
+[4] EDRAWSOFT. Exemplos de Diagrama de Implantação UML. Edraw, 2024. Disponível em: https://www.edrawsoft.com/pt/deployment-chart-example.html. Acesso em: 28 abr. 2025.
+
+<a name="ref5"></a>
+[5] MAURO DE BONI. Tutorial Draw.io: Como Fazer Diagrama de Implantação da UML. YouTube, 2023. Disponível em: https://www.youtube.com/watch?v=eFFq3SLMQJ4. Acesso em: 30 abr. 2025.
+
+<a name="ref6"></a>
+[6] PROFESSOR PAIVA. Curso de UML - Diagrama de Implantação. YouTube, 2022. Disponível em: https://www.youtube.com/watch?v=DgERD0HgggQ. Acesso em: 30 abr. 2025.
+
+<a name="ref7"></a>
+[7] UML-DIAGRAMS. Deployment Diagrams Overview. UML Diagrams.org, 2024. Disponível em: https://www.uml-diagrams.org/deployment-diagrams-overview.html. Acesso em: 28 abr. 2025.
+
+## Histórico de versão
+
+| Versão | Alteração | Responsável | Data |
+| - | - | - | - |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 28/04/2024 |
+| 1.1 | Adição da Metodologia  | Larissa Stéfane | 28/04/2024 |
+| 1.2 | Criação da tabela Base | Larissa Stéfane | 28/04/2024 |
+| 1.3 | Reestruturação da Tabela base | Larissa Stéfane | 29/04/2024 |
+| 1.4 | Adição do Diagrama de Implantação | Larissa Stéfane | 30/04/2024 |
