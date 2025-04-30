@@ -132,7 +132,7 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
 <div align="center">
     Figura 3: o Diagrama de Componentes: Pacote do Backend
     <br>
-    <img src="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.png" width="1000">
+    <img src="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.png" alt="Diagrama Backend" width="1500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -143,13 +143,36 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/53cf0acfd5aa2490e948ad1c33379fc1ae75b03d/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" alt="Abrir PDF" width="1000">
+<a href="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.pdf" target="_blank">
+  <img src="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.png" alt="Abrir PDF" width="1000">
 </a>
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 </details>
+
+<div align="center">
+    Figura 4: o Diagrama de Componentes Completo
+    <br>
+    <img src="../Imagens/DiagramaComponentesCompleto.drawio.png" alt="Diagrama Completo" width="1500">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaComponentesCompleto.drawio.pdf" target="_blank">
+  <img src="../Imagens/DiagramaComponentesCompleto.drawio.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
 
 
 
@@ -174,6 +197,15 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 <a name="ref5"></a>  
 [5] VISUAL PARADIGM INTERNATIONAL. *UML Component Diagram Guide*. Visual Paradigm, 2024. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-component-diagram/. Acesso em: 25 abr. 2025.  
 
+<a name="ref6"></a>
+[6] IBM CORPORATION. Diagrama de componentes. IBM Documentation. Disponível em: https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=services-component-diagrams. Acesso em: 27 abr. 2025.
+
+<a name="ref7"></a>
+[7] LUCID SOFTWARE INC. Diagrama de componentes UML. Lucidchart. Disponível em: https://www.lucidchart.com/pages/pt/diagrama-de-componentes-uml. Acesso em: 27 abr. 2025.
+
+<a name="ref8"></a>
+[8] CREATELY. Tutorial de Diagrama de Componentes UML. Disponível em: https://creately.com/blog/pt/diagrama/tutorial-de-diagrama-de-componentes-2/. Acesso em: 27 abr. 2025.
+
 ## Histórico de versão
 
 | Versão | Alteração | Responsável | Data |
@@ -188,3 +220,5 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 | 1.7 | Atualização da tabela de ligações | Larissa Stéfane | 27/04/2024 |
 | 1.8 | Reorganização da tabela de componentes e retirada da tabela de ligações | Larissa Stéfane | 27/04/2024 |
 | 1.9 | Adição do Diagrama | Larissa Stéfane | 27/04/2024 |
+| 2.0 | Reestruturação da tabela e adição da legenda | Larissa Stéfane | 28/04/2024 |
+| 2.1 | Adição dos novos Diagramas | Larissa Stéfane | 29/04/2024 |
