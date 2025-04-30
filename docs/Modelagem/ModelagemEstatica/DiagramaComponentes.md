@@ -25,7 +25,9 @@ Tem em base o conceito de componentes e diagrama de componentes, busca-se os seg
 
 ## Metodologia
 
-A metodologia adotada para a elaboração do Diagrama de Componentes do projeto Galáxia Conectada compreenderá quatro etapas principais: 
+A metodologia adotada para a elaboração do Diagrama de Componentes do projeto Galáxia Conectada será estruturada em quatro etapas principais, com o objetivo de garantir consistência com os artefatos previamente desenvolvidos.
+
+### Etapas da metodologia:
 
 1. inicialmente será realizado o levantamento arquitetural, no qual serão identificados os módulos centrais do sistema a partir de:
     - [Rich Picture](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/RichPicture)  elaborado na etapa inicial do projeto;
