@@ -155,6 +155,17 @@ Com base na análise da tabela das classes e no significado e relevância dos re
 
 ## Diagrama de Classes 
 
+Para melhor compreensão do diagrama, a figura 1 mostra a legenda;
+
+<div align="center">
+    Figura 1: Legenda do Diagrama de Classes
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/23fbfeaa8725103ce3389b8fab26be3163ea8687/docs/Modelagem/Imagens/LegendaDiagramaClasses.drawio.png" width="500">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
 Abaixo, há o Diagrama de Classes criado:
 
 **Observação:** Para analisaro Diagrama de Classes de forma ampliada e em seus detalhes, clique na imagem e ela será aberta em uma nova aba, a qual lhe permitirá explorá-lo com um zoom.
@@ -213,3 +224,4 @@ A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibil
 | 1.6 | Reorganização das super e subclasses | Larissa Stéfane | 26/04/2024 |
 | 1.7 | Adição da Tabela de Relacionamentos | Larissa Stéfane | 26/04/2024 |
 | 1.8 | Adição do Diagrama de Classes| Larissa Stéfane | 27/04/2024 |
+| 1.9 | Adição da legenda| Larissa Stéfane | 29/04/2024 |
