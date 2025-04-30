@@ -91,11 +91,26 @@ A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento 
 
 ## Diagrama de Componentes
 
+Para melhor compreensão do diagrama, a figura 1 mostra a legenda;
 
 <div align="center">
-    Figura 1: o Diagrama de Componentes
+    Figura 1: Legenda do Diagrama de Componentes
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/ea040765f849aa6901c6f263b2e7656ce00f1def/docs/Modelagem/Imagens/DiagramaComponentes.png" width="1000">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/53cf0acfd5aa2490e948ad1c33379fc1ae75b03d/docs/Modelagem/Imagens/LegendaDiagramaComponentes.png" width="500">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+Para tornar o diagrama de componentes mais legível, foram adicionadas cores aos elementos. O pacote do site está em amarelo, o pacote do backend em azul, e cada subsistema foi representado com uma cor distinta para facilitar a identificação visual.
+
+Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de componentes será apresentado em três partes: inicialmente, o pacote do site da Galáxia Conectada; em seguida, o pacote do backend; e, por fim, o diagrama completo que reúne ambos os pacotes em uma visão unificada.
+
+
+<div align="center">
+    Figura 2: o Diagrama de Componentes: Pacote do Site
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/53cf0acfd5aa2490e948ad1c33379fc1ae75b03d/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -106,13 +121,36 @@ A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento 
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="..Imagens/DiagramaComponentes.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/ea040765f849aa6901c6f263b2e7656ce00f1def/docs/Modelagem/Imagens/DiagramaComponentes.png" alt="Abrir PDF" width="1000">
+<a href="https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/53cf0acfd5aa2490e948ad1c33379fc1ae75b03d/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" alt="Abrir PDF" width="1000">
 </a>
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 </details>
+
+<div align="center">
+    Figura 3: o Diagrama de Componentes: Pacote do Backend
+    <br>
+    <img src="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.png" width="1000">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/53cf0acfd5aa2490e948ad1c33379fc1ae75b03d/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
 
 
 ## Conclusão
