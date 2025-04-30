@@ -43,6 +43,8 @@ A metodologia adotada para a elaboração do Diagrama de Componentes do projeto 
 
 A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento da Galáxia Conectada.
 
+**Observação:** Varios componentes foram pensados de acordo com os requisitos elicitaos, então suas refeRências estão na coluna de observações.
+
 **Tabela 1:** Componentes
 | #  | Tipo de Elemento | Nome (Componente/Pacote/Subsistema)    | Descrição   | Interfaces Providas   | Interfaces Requeridas | Dependências  | Observações  |
 | -- | ---------------- | -------------------------------------- | ----------- | --------------------- | --------------------- | ------------- | ------------ |
