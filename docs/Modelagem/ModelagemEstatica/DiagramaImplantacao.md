@@ -62,6 +62,39 @@ A tabela 1 abaixo foi elaborada para auxiliar na análise dos tipos de nós nece
 
 ## Diagrama de Implantação
 
+Para melhor compreensão do diagrama, a figura 1 mostra a legenda;
+
+<div align="center">
+    Figura 1: Legenda do Diagrama de Implantação
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/75556a84c6b754819462bcc143af4787c4a62dde/docs/Modelagem/Imagens/LegendaDiagramaImplantacao.drawio.png" width="500">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+<div align="center">
+    Figura 2: o Diagrama de Implantação
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/75556a84c6b754819462bcc143af4787c4a62dde/docs/Modelagem/Imagens/DiagramaImplantacao.png" width="1000">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaImplantacao.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/75556a84c6b754819462bcc143af4787c4a62dde/docs/Modelagem/Imagens/DiagramaImplantacao.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
 ## Conclusão
 
 A construção do Diagrama de Implantação para o projeto Galáxia Conectada teve como base a Tabela 1, a qual sistematizou os principais nós da infraestrutura de execução da aplicação e incluiu dispositivos de usuário, servidores, rede e banco de dados. Portanto, esse mapeamento permitiu representar, de forma estruturada, como os componentes do sistema são distribuídos fisicamente em seus respectivos ambientes de execução. 
