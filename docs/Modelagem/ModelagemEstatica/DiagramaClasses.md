@@ -171,7 +171,7 @@ Abaixo, há o Diagrama de Classes criado:
 **Observação:** Para analisaro Diagrama de Classes de forma ampliada e em seus detalhes, clique na imagem e ela será aberta em uma nova aba, a qual lhe permitirá explorá-lo com um zoom.
 
 <div align="center">
-    Figura 1: o Diagrama de Classes
+    Figura 2: o Diagrama de Classes
     <br>
     <img src="../Imagens/DiagramaClasses.png">
     <br>
