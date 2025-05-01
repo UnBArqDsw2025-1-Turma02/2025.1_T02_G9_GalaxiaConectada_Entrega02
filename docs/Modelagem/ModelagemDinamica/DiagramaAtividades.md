@@ -55,7 +55,7 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 <div align="center">
     Figura 1: Legenda do Diagrama de Atividades
     <br>
-    <img src="" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/5850e355e01ff1a380ebb122ca19172098febbf1/docs/Modelagem/Imagens/LegendaDiagramaAtividade.drawio.png" width="500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -70,7 +70,7 @@ A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 <div align="center">
     Figura 2: o Diagrama de Atividade - Aba Conhecimento
     <br>
-    <img src="../Imagens/DiagramaClasses.png">
+    <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -81,8 +81,8 @@ A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="../Imagens/DiagramaClasses.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/c2ce08725e586ded2ce70e36e0e6b7c1db54715f/docs/Modelagem/Imagens/DiagramaClasses.png" alt="Abrir PDF" width="1000">
+<a href="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.pdf" target="_blank">
+  <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png" alt="Abrir PDF" width="1000">
 </a>
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
@@ -98,7 +98,7 @@ A figura 3 apresenta o diagrama de atividades da aba de Científico
 <div align="center">
     Figura 3: o Diagrama de Atividade - Aba Científico
     <br>
-    <img src="../Imagens/DiagramaClasses.png">
+    <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -109,8 +109,8 @@ A figura 3 apresenta o diagrama de atividades da aba de Científico
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="../Imagens/DiagramaClasses.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/c2ce08725e586ded2ce70e36e0e6b7c1db54715f/docs/Modelagem/Imagens/DiagramaClasses.png" alt="Abrir PDF" width="1000">
+<a href="../Imagens/DiagramaAtividadeCientifico.drawio.pdf" target="_blank">
+  <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png" alt="Abrir PDF" width="1000">
 </a>
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
