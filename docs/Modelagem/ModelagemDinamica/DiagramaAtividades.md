@@ -15,10 +15,21 @@
 
 ## Introdução
 
+A plataforma Galáxia Conectada está sendo desenvolvida na disciplina como uma solução digital abrangente para o ensino e divulgação da Astronomia. Com isso, para organizar e representar um pouco o comportamento e os fluxos de processos do sistema, foram elaborados dois diagramas de atividade conforme a notação UML (Unified Modeling Language).
 
+Segundo a Apostila UML - Unified Modeling Language - Linguagem de Modelagem Unificada em Português [1](#ref1), os diagramas de atividade são uma forma de representar o fluxo sequencial das ações realizadas por uma operação do sistema ao evidenciar as mudanças de estado dos objetos envolvidos, a ordem de execução e a responsabilidade pelas tarefas por meio de raias (swimlanes). Sendo assim, eles são especialmente úteis para modelar fluxos de trabalho, decisões, execuções paralelas e resultados esperados. Além disso, conforme destaca a [IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.7.0?topic=diagrams-activity), esses diagramas são semelhantes a fluxogramas, mas com maior capacidade de representar fluxos paralelos e alternativos.
 
 ## Objetivos
 
+O objetivo deste documento é algumas das atividades desenvolvidas para a plataforma Galáxia Conectada ao evidenciar os principais fluxos funcionais e comportamentais do sistema. De forma mais específica, busca-se:
+
+- Ilustrar os principais processos internos da plataforma;
+
+- Demonstrar a responsabilidade dos atores e componentes por meio das raias;
+
+- Evidenciar os pontos de decisão, bifurcação e encerramento dos fluxos;
+
+- Apoiar a modelagem comportamental dos casos de uso com uma representação visual precisa.
 
 ## Metodologia
 
