@@ -15,6 +15,9 @@
 
 ## Introdução
 
+Ao se desenvolver diagramas de sequência, é essencial compreender que eles representam uma das formas de modelar o comportamento dinâmico de um sistema. Sendo assim, de acordo com a Apostila UML - Unified Modeling Language - Linguagem de Modelagem Unificada em Português [1](#ref1), esse tipo de diagrama descreve, de maneira visual e cronológica, a troca de mensagens entre diferentes objetos envolvidos em uma interação, no cado deste documento, sobre **a aba de trilhas de aprendizado** e da **aba de promoções**. Assim, um ponto importanto sobre a estrutura básica do diagrama de sequência é composta por dois eixos: o eixo vertical, que representa o tempo (de cima para baixo), e o eixo horizontal, que representa os objetos envolvidos, cada um com sua respectiva linha de vida, como é descrito em [IBM - Diagramas de Sequência](https://www.ibm.com/docs/pt-br/rsm/7.5.0?topic=uml-sequence-diagrams) [3](#ref3).
+
+Para o projeto Galáxia Conectada, a elaboração dos diagramas de sequência será baseada nas interações pensadas previamente nos diagramas de classes e de componentes,com o intuito de garantir uma coerência com a estrutura lógica e modular da aplicação. 
 
 
 ## Objetivos
