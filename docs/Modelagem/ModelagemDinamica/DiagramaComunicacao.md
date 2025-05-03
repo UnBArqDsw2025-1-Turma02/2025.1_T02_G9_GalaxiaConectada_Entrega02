@@ -19,12 +19,66 @@ O diagrama de colaboração (ou de comunicação), como é definido na Apostila 
 
 Dessa forma, como o desenvolvimento de diagramas de comunicação é essencial para visualizar como os componentes e objetos do sistema interagem entre si, especialmente em áreas com maior troca de mensagens, esse artefato apresenta os diagramas de comunicação para a aba de fórum e a aba de jogos. 
 
+## Aba Fórum
 
+Tabela 1: Participantes do Diagrama de Comunicação (Fórum)
+
+| #  | Elemento/Participante      | Descrição/Funcionalidade                                                                 |
+|----|----------------------------|------------------------------------------------------------------------------------------|
+| 1  | `entusiasta : Usuario`     | O usuário final que inicia a criação do tópico.                                          |
+| 2  | `: WebUI`                  | A interface no navegador onde o usuário preenche e submete o formulário do tópico.       |
+| 3  | `: APIGateway`             | Recebe a requisição da WebUI e a direciona para os serviços backend apropriados.       |
+| 4  | `: GestaoUsuarios`         | Componente que verifica se o usuário tem permissão para postar no subfórum.              |
+| 5  | `: ModuloForum`            | Orquestrador principal da lógica do fórum: cria tópico/post, chama outros serviços.       |
+| 6  | `topicoCriado : Topico`    | A instância específica do Tópico que está sendo criada neste fluxo.                      |
+| 7  | `postagemInicial : Postagem`| A instância da primeira Postagem associada ao tópico, criada neste fluxo.                |
+| 8  | `: ModuloModeracao`        | Componente que avalia se o conteúdo requer moderação e atualiza seu status.              |
+| 9  | `: ServicoBusca`           | Serviço responsável por indexar o novo conteúdo (tópico e postagem) para buscas futuras. |
+| 10 | `perfilUsuario : Perfil`   | Instância do Perfil do usuário, consultada (indiretamente) para dados de reputação.        |
+| 11 | `: Reputacao`              | Classe/Conceito representando a reputação. O Módulo Fórum interage para adicionar pontos.   |
+| 12 | `: ServicoNotificacoes`    | Serviço para enviar notificações (ex: para inscritos no subfórum, para moderadores).    |
+| 13 | `: ServicoMonitoramento`   | Serviço para registrar logs de eventos importantes (ex: submissão de tópico).            |
+| 14 | `: ServicoConfiguracao`    | Serviço para buscar configurações do fórum (ex: regras de moderação).                    |
+| 15 | `: BancoDeDados`           | Camada de persistência para salvar/buscar todos os dados (tópicos, posts, reputação, etc.). |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+
+Tabela 2: Mensagens e Vínculos do Diagrama de Comunicação (Fórum)
+
+| Etapa        | Vínculo (Mensagem)                                                              | Tipo                                         | Origem -> Destino                           |
+|--------------|---------------------------------------------------------------------------------|----------------------------------------------|---------------------------------------------|
+| 1            | `exibirFormularioNovoTopico()`                                                  | Operação Lógica (Autochamada)                | :WebUI -> :WebUI                            |
+| 2            | `submeterNovoTopico(idSubforum, ..., titulo, textoPost, tags?)`               | Operação Lógica                              | :WebUI -> :APIGateway                       |
+| 2.1          | `logEvento('submissao_novo_topico')`                                            | Operação Lógica                              | :APIGateway -> :ServicoMonitoramento        |
+| 2.2          | `verificarPermissaoPostar(idUsuario, idSubforum)`                               | Operação Lógica                              | :APIGateway -> :GestaoUsuarios              |
+| [permConcedida] 2.3 | `criarTopicoEPostagem(idSubforum, idUsuario, titulo, textoPost, tags?)` | Operação Lógica                              | :APIGateway -> :ModuloForum                 |
+| 2.3.1        | `getConfigsForum(idSubforum)`                                                   | Operação Lógica                              | :ModuloForum -> :ServicoConfiguracao        |
+| 2.3.2        | `<<create>> inserirTopicoBD(titulo, idUsuario, ...)`                          | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
+| 2.3.3        | `<<create>> inserirPostagemBD(idTopicoCriado, textoPost, ...)`                | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
+| 2.3.4        | `atualizarRefUltimoPost(postagemInicial)`                                       | Operação Lógica                              | :ModuloForum -> `topicoCriado : Topico`     |
+| 2.3.5        | `inicializarEstado()`                                                           | Operação Lógica                              | :ModuloForum -> `postagemInicial : Postagem` |
+| 2.3.6        | `getReputacaoUsuarioBD(idUsuario)`                                              | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
+| 2.3.7        | `reputacaoDoUsuario.adicionarPontos(PONTOS_POST, 'Novo Post')`                  | Método da Classe (`Reputacao.adicionarPontos`) | :ModuloForum -> `: Reputacao`               |
+| 2.3.8        | `salvarReputacaoBD(reputacaoDoUsuario)`                                         | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
+| [reqMod] 2.3.9 | `marcarParaRevisao(postagemInicial)`                                            | Operação Lógica                              | :ModuloForum -> :ModuloModeracao            |
+| 2.3.9.1      | `atualizarStatusPostagemBD(idPostagem, 'PENDENTE')`                             | Operação Lógica                              | :ModuloModeracao -> :BancoDeDados           |
+| 2.3.9.2      | `notificarEquipeModeradores(idPostagem)`                                        | Operação Lógica                              | :ModuloModeracao -> :ServicoNotificacoes    |
+| * 2.3.10     | `associarTagAoTopico(topicoCriado, tag)`                                        | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
+| 2.3.11       | `indexarConteudo(topicoCriado)`                                                 | Operação Lógica                              | :ModuloForum -> :ServicoBusca               |
+| 2.3.11.1     | `atualizarIndice(topicoCriado)`                                                 | Operação Lógica (Autochamada)                | :ServicoBusca -> :ServicoBusca              |
+| 2.3.12       | `indexarConteudo(postagemInicial)`                                              | Operação Lógica                              | :ModuloForum -> :ServicoBusca               |
+| 2.3.12.1     | `atualizarIndice(postagemInicial)`                                              | Operação Lógica (Autochamada)                | :ServicoBusca -> :ServicoBusca              |
+| 2.3.13       | `notificarInscritos(idSubforum, topicoCriado)`                                  | Operação Lógica                              | :ModuloForum -> :ServicoNotificacoes        |
+| 3            | `redirecionarParaTopico(idTopicoCriado)`                                        | Operação Lógica (Autochamada)                | :WebUI -> :WebUI                            |
+| 4            | `exibirPaginaTopico(topicoCriado)`                                              | Operação Lógica                              | :WebUI -> entusiasta: Usuario               |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 
 ## Aba Jogos
 
-Tabela 1: Participantes do Diagrama de Comunicação (Jogos Educacionais)
+Tabela 3: Participantes do Diagrama de Comunicação (Jogos Educacionais)
 
 | #  | Elemento/Participante          | Descrição/Funcionalidade                                                                 |
 |----|--------------------------------|------------------------------------------------------------------------------------------|
@@ -49,7 +103,7 @@ Tabela 1: Participantes do Diagrama de Comunicação (Jogos Educacionais)
 
 
 
-Tabela 2: Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais)
+Tabela 4: Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais)
 
 
 | Etapa   | Vínculo (Mensagem)                                                              | Tipo                                            | Origem -> Destino                        |
