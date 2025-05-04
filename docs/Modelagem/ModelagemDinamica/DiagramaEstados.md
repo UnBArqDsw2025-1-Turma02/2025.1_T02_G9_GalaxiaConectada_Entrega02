@@ -67,7 +67,7 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
     <br>
     <img src="" width="500">
     <br>
-    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <b>Autora:</b> <a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/LegendaDiagramaEstados.drawio.png">Larissa Stéfane</a>.
     <br>
 </div>
 
@@ -137,7 +137,7 @@ A Figura 2 mostra o diagrama de estados das promoções
 <div align="center">
     Figura 2: o Diagrama de Estados - Promoções
     <br>
-    <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -148,8 +148,8 @@ A Figura 2 mostra o diagrama de estados das promoções
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.pdf" target="_blank">
-  <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png" alt="Abrir PDF" width="1000">
+<a href="../Imagens/DiagramaEstadosPromocao.drawio.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png" alt="Abrir PDF" width="1000">
 </a>
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
@@ -238,7 +238,7 @@ A figura 3 apresenta o diagrama de estados do Fórum
 <div align="center">
     Figura 3: o Diagrama de Estados - Fórum
     <br>
-    <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosForum.drawio.png">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -249,8 +249,8 @@ A figura 3 apresenta o diagrama de estados do Fórum
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="../Imagens/DiagramaAtividadeCientifico.drawio.pdf" target="_blank">
-  <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png" alt="Abrir PDF" width="1000">
+<a href="../Imagens/DiagramaEstadosForum.drawio.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosForum.drawio.png" alt="Abrir PDF" width="1000">
 </a>
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
