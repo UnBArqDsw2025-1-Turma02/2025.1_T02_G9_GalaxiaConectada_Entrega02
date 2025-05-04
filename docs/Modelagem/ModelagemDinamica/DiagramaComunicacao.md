@@ -71,127 +71,137 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
 <div align="center">
     Figura 1: Legenda do Diagrama de Comunicação
     <br>
-    <img src="" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/LegendaDiagramaComunica%C3%A7%C3%A3o.drawio.png" width="500">
     <br>
     <b>Autora:</b> <a href="">Larissa Stéfane</a>.
     <br>
 </div>
 
+
+**Observação Importante:** Com o intuido de elaborar melhor os diagramas, foram elaboradas tabelas contendo os elementos/Participantes com suas descrições e relação com os requisitos elicitados e com os componentes do diagrama de componentes **(Tabelas 1 e 3)**. 
+Da mesma forma, foram criadas tabelas que mostram os vínculos entre os objetos **(Tabelas 2 e 4)**
+
 ## Aba Fórum
 
-Tabela 1: Participantes do Diagrama de Comunicação (Fórum)
+A tabela 1 mostra os objetos no diagrama de comunicação da aba do fórum.
 
-| #  | Elemento/Participante      | Descrição/Funcionalidade                                                                 |
-|----|----------------------------|------------------------------------------------------------------------------------------|
-| 1  | `entusiasta : Usuario`     | O usuário final que inicia a criação do tópico.                                          |
-| 2  | `: WebUI`                  | A interface no navegador onde o usuário preenche e submete o formulário do tópico.       |
-| 3  | `: APIGateway`             | Recebe a requisição da WebUI e a direciona para os serviços backend apropriados.       |
-| 4  | `: GestaoUsuarios`         | Componente que verifica se o usuário tem permissão para postar no subfórum.              |
-| 5  | `: ModuloForum`            | Orquestrador principal da lógica do fórum: cria tópico/post, chama outros serviços.       |
-| 6  | `topicoCriado : Topico`    | A instância específica do Tópico que está sendo criada neste fluxo.                      |
-| 7  | `postagemInicial : Postagem`| A instância da primeira Postagem associada ao tópico, criada neste fluxo.                |
-| 8  | `: ModuloModeracao`        | Componente que avalia se o conteúdo requer moderação e atualiza seu status.              |
-| 9  | `: ServicoBusca`           | Serviço responsável por indexar o novo conteúdo (tópico e postagem) para buscas futuras. |
-| 10 | `perfilUsuario : Perfil`   | Instância do Perfil do usuário, consultada (indiretamente) para dados de reputação.        |
-| 11 | `: Reputacao`              | Classe/Conceito representando a reputação. O Módulo Fórum interage para adicionar pontos.   |
-| 12 | `: ServicoNotificacoes`    | Serviço para enviar notificações (ex: para inscritos no subfórum, para moderadores).    |
-| 13 | `: ServicoMonitoramento`   | Serviço para registrar logs de eventos importantes (ex: submissão de tópico).            |
-| 14 | `: ServicoConfiguracao`    | Serviço para buscar configurações do fórum (ex: regras de moderação).                    |
-| 15 | `: BancoDeDados`           | Camada de persistência para salvar/buscar todos os dados (tópicos, posts, reputação, etc.). |
+**Tabela 1:** Participantes do Diagrama de Comunicação (Fórum)
+
+| #  | Elemento/Participante      | Descrição/Funcionalidade                                          | Relação Requisitos (RFs)        | Relação Componentes (Nome e #)                                 | Relação Classes (# e Nome)                     |
+|----|----------------------------|-------------------------------------------------------------------|---------------------------------|----------------------------------------------------------------|------------------------------------------------|
+| 1  | `entusiasta : Usuario`     | O usuário final que inicia a criação do tópico.                   | RF09, RF07, RF23, RF24, RF25   | (Ator Externo, interage com WebUI #3)                          | #01 Usuario                                    |
+| 2  | `: WebUI`                  | Interface no navegador para interação do usuário com o fórum.       | (Suporte visual para RFs do Fórum) | `WebUI` (#3)                                                   | (Usa dados de várias classes)                  |
+| 3  | `: APIGateway`             | Ponto de entrada API para requisições do fórum vindas da WebUI.   | (Infraestrutura)                | `APIGateway` (#11)                                             | (Orquestra chamadas a componentes/serviços)    |
+| 4  | `: GestaoUsuarios`         | Verifica permissões do usuário para postar.                       | (Suporte a regras RF09)         | `GestaoUsuarios` (#12)                                         | #01 Usuario, #07 Perfil                         |
+| 5  | `: ModuloForum`            | Orquestrador principal da lógica do fórum (criação, moderação...). | RF09, RF07, RF25, RF10          | `ModuloForum` (#26) (Parte do Subsistema Comunidade #25)       | #19 Forum, #20 Subforum, #21 Topico, #22 Postagem |
+| 6  | `topicoCriado : Topico`    | Instância do Tópico sendo criado.                                 | RF09                            | (Gerenciado por `ModuloForum` #26)                             | #21 Topico                                     |
+| 7  | `postagemInicial : Postagem`| Instância da primeira Postagem do tópico.                         | RF09                            | (Gerenciado por `ModuloForum` #26)                             | #22 Postagem                                   |
+| 8  | `: ModuloModeracao`        | Avalia conteúdo e aplica regras de moderação.                     | (Suporte a regras RF09, RF07)   | `ModuloModeracao` (#28) (Parte do Subsistema Comunidade #25) | (Usa #21 Topico, #22 Postagem)                 |
+| 9  | `: ServicoBusca`           | Indexa novo conteúdo para permitir buscas futuras.                | RF10                            | `ServicoBusca` (#14)                                           | (Indexa dados de #21 Topico, #22 Postagem, etc) |
+| 10 | `perfilUsuario : Perfil`   | Instância do Perfil do usuário (usado para Reputação).            | RF07, RF23                      | (Gerenciado por `GestaoUsuarios` #12, usado por ModForum #26) | #07 Perfil                                     |
+| 11 | `: Reputacao`              | Classe/Conceito representando a reputação (pontos adicionados).   | RF07                            | (Gerenciado por `GestaoUsuarios` #12, usado por ModForum #26) | #08 Reputacao                                  |
+| 12 | `: ServicoNotificacoes`    | Envia notificações (moderadores, inscritos, usuário rejeitado).   | RF12, (Suporte RF09)            | `ServicoNotificacoes` (#13)                                    | #09 Notificacao                                |
+| 13 | `: ServicoMonitoramento`   | Registra logs de eventos importantes.                             | (Suporte RNF05, RNF12)          | `ServicoMonitoramento` (#6)                                    | (Pode usar LogEntry - não definida)            |
+| 14 | `: ServicoConfiguracao`    | Fornece configurações específicas do fórum.                       | (Suporte a regras RF09)         | `ServicoConfiguracao` (#4)                                     | (Usa config.yaml #5)                           |
+| 15 | `: BancoDeDados`           | Armazena/Recupera dados persistentes do fórum e usuários.         | (Suporte a todos RFs)           | `BancoDeDados` (#34)                                           | (Persiste instâncias de várias classes)      |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+A tabela 2 mostra os vínculos presentes no diagrama de comunicação da aba do fórum.
 
-Tabela 2: Mensagens e Vínculos do Diagrama de Comunicação (Fórum)
+**Tabela 2:** Mensagens e Vínculos do Diagrama de Comunicação (Fórum)
 
-| Etapa        | Vínculo (Mensagem)                                                              | Tipo                                         | Origem -> Destino                           |
-|--------------|---------------------------------------------------------------------------------|----------------------------------------------|---------------------------------------------|
-| 1            | `exibirFormularioNovoTopico()`                                                  | Operação Lógica (Autochamada)                | :WebUI -> :WebUI                            |
-| 2            | `submeterNovoTopico(idSubforum, ..., titulo, textoPost, tags?)`               | Operação Lógica                              | :WebUI -> :APIGateway                       |
-| 2.1          | `logEvento('submissao_novo_topico')`                                            | Operação Lógica                              | :APIGateway -> :ServicoMonitoramento        |
-| 2.2          | `verificarPermissaoPostar(idUsuario, idSubforum)`                               | Operação Lógica                              | :APIGateway -> :GestaoUsuarios              |
-| [permConcedida] 2.3 | `criarTopicoEPostagem(idSubforum, idUsuario, titulo, textoPost, tags?)` | Operação Lógica                              | :APIGateway -> :ModuloForum                 |
-| 2.3.1        | `getConfigsForum(idSubforum)`                                                   | Operação Lógica                              | :ModuloForum -> :ServicoConfiguracao        |
-| 2.3.2        | `<<create>> inserirTopicoBD(titulo, idUsuario, ...)`                          | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
-| 2.3.3        | `<<create>> inserirPostagemBD(idTopicoCriado, textoPost, ...)`                | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
-| 2.3.4        | `atualizarRefUltimoPost(postagemInicial)`                                       | Operação Lógica                              | :ModuloForum -> `topicoCriado : Topico`     |
-| 2.3.5        | `inicializarEstado()`                                                           | Operação Lógica                              | :ModuloForum -> `postagemInicial : Postagem` |
-| 2.3.6        | `getReputacaoUsuarioBD(idUsuario)`                                              | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
-| 2.3.7        | `reputacaoDoUsuario.adicionarPontos(PONTOS_POST, 'Novo Post')`                  | Método da Classe (`Reputacao.adicionarPontos`) | :ModuloForum -> `: Reputacao`               |
-| 2.3.8        | `salvarReputacaoBD(reputacaoDoUsuario)`                                         | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
-| [reqMod] 2.3.9 | `marcarParaRevisao(postagemInicial)`                                            | Operação Lógica                              | :ModuloForum -> :ModuloModeracao            |
-| 2.3.9.1      | `atualizarStatusPostagemBD(idPostagem, 'PENDENTE')`                             | Operação Lógica                              | :ModuloModeracao -> :BancoDeDados           |
-| 2.3.9.2      | `notificarEquipeModeradores(idPostagem)`                                        | Operação Lógica                              | :ModuloModeracao -> :ServicoNotificacoes    |
-| * 2.3.10     | `associarTagAoTopico(topicoCriado, tag)`                                        | Operação Lógica                              | :ModuloForum -> :BancoDeDados               |
-| 2.3.11       | `indexarConteudo(topicoCriado)`                                                 | Operação Lógica                              | :ModuloForum -> :ServicoBusca               |
-| 2.3.11.1     | `atualizarIndice(topicoCriado)`                                                 | Operação Lógica (Autochamada)                | :ServicoBusca -> :ServicoBusca              |
-| 2.3.12       | `indexarConteudo(postagemInicial)`                                              | Operação Lógica                              | :ModuloForum -> :ServicoBusca               |
-| 2.3.12.1     | `atualizarIndice(postagemInicial)`                                              | Operação Lógica (Autochamada)                | :ServicoBusca -> :ServicoBusca              |
-| 2.3.13       | `notificarInscritos(idSubforum, topicoCriado)`                                  | Operação Lógica                              | :ModuloForum -> :ServicoNotificacoes        |
-| 3            | `redirecionarParaTopico(idTopicoCriado)`                                        | Operação Lógica (Autochamada)                | :WebUI -> :WebUI                            |
-| 4            | `exibirPaginaTopico(topicoCriado)`                                              | Operação Lógica                              | :WebUI -> entusiasta: Usuario               |
+| Etapa        | Vínculo (Mensagem)                                                              | Tipo                                         | Origem -> Destino                           | Relação Requisitos (RFs) | Relação Componentes (Origem -> Destino)              | Relação Classes (Método/Dados)               |
+|--------------|---------------------------------------------------------------------------------|----------------------------------------------|---------------------------------------------|--------------------------|------------------------------------------------------|----------------------------------------------|
+| 1            | `exibirFormularioNovoTopico()`                                                  | Operação Lógica (Autochamada)                | :WebUI -> :WebUI                            | RF09                     | #3 WebUI -> #3 WebUI                                 | (Lógica UI)                                  |
+| 2            | `submeterNovoTopico(...)`                                                       | Operação Lógica                              | :WebUI -> :APIGateway                       | RF09                     | #3 WebUI -> #11 APIGateway                           | (Payload com dados p/ Topico/Postagem)       |
+| 2.1          | `logEvento('submissao_novo_topico')`                                            | Operação Lógica                              | :APIGateway -> :ServicoMonitoramento        | RNF05, RNF12             | #11 APIGateway -> #6 ServicoMonitoramento            | (Log)                                        |
+| 2.2          | `verificarPermissaoPostar(...)`                                                 | Operação Lógica                              | :APIGateway -> :GestaoUsuarios              | (Regra implícita RF09)   | #11 APIGateway -> #12 GestaoUsuarios                 | (Verifica dados de Usuario #01)              |
+| [permConcedida] 2.3 | `criarTopicoEPostagem(...)`                                             | Operação Lógica                              | :APIGateway -> :ModuloForum                 | RF09                     | #11 APIGateway -> #26 ModuloForum                    | (Orquestra criação de Topico #21, Postagem #22)|
+| 2.3.1        | `getConfigsForum(...)`                                                          | Operação Lógica                              | :ModuloForum -> :ServicoConfiguracao        | (Regra implícita RF09)   | #26 ModuloForum -> #4 ServicoConfiguracao            | (Configuração)                               |
+| 2.3.2        | `<<create>> inserirTopicoBD(...)`                                               | Operação Lógica                              | :ModuloForum -> :BancoDeDados               | RF09                     | #26 ModuloForum -> #34 BancoDeDados                  | (Cria/Persiste Topico #21)                   |
+| 2.3.3        | `<<create>> inserirPostagemBD(...)`                                             | Operação Lógica                              | :ModuloForum -> :BancoDeDados               | RF09                     | #26 ModuloForum -> #34 BancoDeDados                  | (Cria/Persiste Postagem #22)                 |
+| 2.3.4        | `atualizarRefUltimoPost(postagemInicial)`                                       | Operação Lógica                              | :ModuloForum -> `topicoCriado : Topico`     | RF09                     | #26 ModuloForum -> (#21 Topico)                      | (Atualiza estado Topico #21)                 |
+| 2.3.5        | `inicializarEstado()`                                                           | Operação Lógica                              | :ModuloForum -> `postagemInicial : Postagem` | RF09                     | #26 ModuloForum -> (#22 Postagem)                    | (Atualiza estado Postagem #22)               |
+| 2.3.6        | `getReputacaoUsuarioBD(idUsuario)`                                              | Operação Lógica                              | :ModuloForum -> :BancoDeDados               | RF07                     | #26 ModuloForum -> #34 BancoDeDados                  | (Busca Reputacao #08)                        |
+| 2.3.7        | `reputacaoDoUsuario.adicionarPontos(...)`                                       | Método da Classe (`Reputacao.adicionarPontos`) | RF07                     | #26 ModuloForum -> (#08 Reputacao)                   | #08 Reputacao.adicionarPontos                |
+| 2.3.8        | `salvarReputacaoBD(reputacaoDoUsuario)`                                         | Operação Lógica                              | :ModuloForum -> :BancoDeDados               | RF07                     | #26 ModuloForum -> #34 BancoDeDados                  | (Persiste Reputacao #08)                     |
+| [reqMod] 2.3.9 | `marcarParaRevisao(postagemInicial)`                                          | Operação Lógica                              | :ModuloForum -> :ModuloModeracao            | (Regra implícita RF09)   | #26 ModuloForum -> #28 ModuloModeracao               | (Usa Postagem #22)                           |
+| 2.3.9.1      | `atualizarStatusPostagemBD(idPostagem, 'PENDENTE')`                             | Operação Lógica                              | :ModuloModeracao -> :BancoDeDados           | (Regra implícita RF09)   | #28 ModuloModeracao -> #34 BancoDeDados              | (Atualiza Postagem #22)                      |
+| 2.3.9.2      | `notificarEquipeModeradores(idPostagem)`                                        | Operação Lógica                              | :ModuloModeracao -> :ServicoNotificacoes    | (Regra implícita RF09)   | #28 ModuloModeracao -> #13 ServicoNotificacoes       | (Cria Notificacao #09)                       |
+| * 2.3.10     | `associarTagAoTopico(topicoCriado, tag)`                                        | Operação Lógica                              | :ModuloForum -> :BancoDeDados               | RF09                     | #26 ModuloForum -> #34 BancoDeDados                  | (Associa Tag a Topico #21)                   |
+| 2.3.11       | `indexarConteudo(topicoCriado)`                                                 | Operação Lógica                              | :ModuloForum -> :ServicoBusca               | RF10                     | #26 ModuloForum -> #14 ServicoBusca                  | (Usa Topico #21)                             |
+| 2.3.11.1     | `atualizarIndice(topicoCriado)`                                                 | Operação Lógica (Autochamada)                | :ServicoBusca -> :ServicoBusca              | RF10                     | #14 ServicoBusca -> #14 ServicoBusca                 | (Lógica interna de indexação)                |
+| 2.3.12       | `indexarConteudo(postagemInicial)`                                              | Operação Lógica                              | :ModuloForum -> :ServicoBusca               | RF10                     | #26 ModuloForum -> #14 ServicoBusca                  | (Usa Postagem #22)                           |
+| 2.3.12.1     | `atualizarIndice(postagemInicial)`                                              | Operação Lógica (Autochamada)                | :ServicoBusca -> :ServicoBusca              | RF10                     | #14 ServicoBusca -> #14 ServicoBusca                 | (Lógica interna de indexação)                |
+| 2.3.13       | `notificarInscritos(idSubforum, topicoCriado)`                                  | Operação Lógica                              | :ModuloForum -> :ServicoNotificacoes        | RF12                     | #26 ModuloForum -> #13 ServicoNotificacoes       | (Cria Notificacao #09, usa Topico #21)      |
+| 3            | `redirecionarParaTopico(idTopicoCriado)`                                        | Operação Lógica (Autochamada)                | :WebUI -> :WebUI                            | RF09                     | #3 WebUI -> #3 WebUI                                 | (Lógica UI)                                  |
+| 4            | `exibirPaginaTopico(topicoCriado)`                                              | Operação Lógica                              | :WebUI -> entusiasta: Usuario               | RF09                     | #3 WebUI -> (Ator)                                   | (Exibe dados do Topico #21)                  |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 
 ## Aba Jogos
 
-Tabela 3: Participantes do Diagrama de Comunicação (Jogos Educacionais)
+A tabela 3 mostra os objetos no diagrama de comunicação da aba dos jogos.
 
-| #  | Elemento/Participante          | Descrição/Funcionalidade                                                                 |
-|----|--------------------------------|------------------------------------------------------------------------------------------|
-| 01  | `entusiasta : Usuario`         | O usuário final que interage com a plataforma para jogar.                                  |
-| 02  | `: WebUI`                      | A interface com o usuário rodando no navegador, responsável por exibir e receber dados.      |
-| 03  | `: APIGateway`                 | Ponto de entrada da API backend, recebe requisições da WebUI e direciona aos serviços.     |
-| 04  | `: GestaoUsuarios`             | Componente responsável por gerenciar dados e permissões dos usuários.                      |
-| 05  | `: ModuloJogos`                | Componente backend central para a lógica dos jogos (iniciar, registrar resultado, etc.).   |
-| 06  | `jogoSel : Jogo`               | Instância específica da classe `Jogo`, contendo os dados/regras do jogo selecionado.        |
-| 07  | `sessaoAtual : SessaoJogo`     | Instância que representa a partida atual do jogo (criada ao iniciar).                      |
-| 08  | `: GestorAssetsEstaticos`      | Serviço responsável por fornecer URLs ou acesso aos arquivos de mídia do jogo (imagens, sons). |
-| 09 | `: ServicoCache`               | Serviço (opcional) para armazenar temporariamente dados do jogo e acelerar o carregamento. |
-| 10 | `: ModuloGamificacao`          | Componente backend responsável por aplicar regras de XP, conquistas e reputação.         |
-| 11 | `perfilUsuario : Perfil`       | Instância da classe `Perfil`, contendo dados de progresso e XP do usuário.                |
-| 12 | `: MotorRegrasGamificacao`     | Componente (ou conceito) que define como as recompensas (XP, conquistas) são calculadas.   |
-| 13 | `: ServicoNotificacoes`        | Serviço responsável por enviar notificações ao usuário (ex: nova conquista).             |
-| 14 | `: ServicoMonitoramento`       | Serviço para registrar logs de eventos importantes ou erros no sistema.                    |
-| 15 | `: ServicoConfiguracao`        | Serviço para buscar configurações gerais da aplicação ou específicas de um jogo.           |
-| 16 | `: BancoDeDados`               | Representa a camada de persistência onde todos os dados são armazenados/recuperados.      |
+**Tabela 3:** Participantes do Diagrama de Comunicação (Jogos Educacionais)
+
+| #  | Elemento/Participante          | Descrição/Funcionalidade                                                      | Relação Requisitos (RFs)          | Relação Componentes (Nome e #)                                    | Relação Classes (# e Nome)                                   |
+|----|--------------------------------|-------------------------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------|
+| 01  | `entusiasta : Usuario`         | O usuário final que interage com a plataforma para jogar.                     | RF08, RF05, RF06, RF22, RF23      | (Ator Externo, interage com WebUI #3)                             | #01 Usuario                                                  |
+| 02  | `: WebUI`                      | Interface no navegador para exibir jogos, receber input e mostrar feedback.     | (Suporte visual RFs de Jogos)     | `WebUI` (#3)                                                      | (Usa dados de Jogo #18, PontuacaoJogo [conceitual], etc.)    |
+| 03  | `: APIGateway`                 | Ponto de entrada API para requisições relacionadas aos jogos.                   | (Infraestrutura)                  | `APIGateway` (#11)                                                | (Orquestra chamadas a componentes/serviços)                  |
+| 04  | `: GestaoUsuarios`             | Gerencia dados do usuário (pode ser consultado para ID em ações logadas).       | (Suporte RF05, RF23)              | `GestaoUsuarios` (#12)                                            | #01 Usuario, #07 Perfil                                        |
+| 05  | `: ModuloJogos`                | Lógica principal dos jogos (iniciar, registrar resultado, gerenciar sessão).  | RF08, RF06, RF21, RF22            | `ModuloJogos` (#23) (Parte do Subsistema Conteudo Interativo #20) | (Usa #18 Jogo, SessaoJogo [não listada], PontuacaoJogo [não listada]) |
+| 06  | `jogoSel : Jogo`               | Instância específica da classe `Jogo`, com dados/regras do jogo selecionado.  | RF08                              | (Gerenciado por `ModuloJogos` #23)                                | #18 Jogo (Subclasse de #14 Conteudo)                         |
+| 07  | `sessaoAtual : SessaoJogo`     | Instância que representa a partida atual do jogo (criada ao iniciar).         | RF08                              | (Gerenciado por `ModuloJogos` #23)                                | (Retornada por Jogo.iniciar - não listada explicitamente)     |
+| 08  | `: GestorAssetsEstaticos`      | Fornece URLs/acesso aos arquivos de mídia do jogo.                             | RNF11 (Implícito)                 | `GestorAssetsEstaticos` (#7)                                      | (Gerencia Artefatos #8)                                      |
+| 09 | `: ServicoCache`               | Armazena dados do jogo temporariamente para acelerar carregamento.              | RNF02 (Opcional)                  | `ServicoCache` (#17)                                              | (Infraestrutura de Cache)                                    |
+| 10 | `: ModuloGamificacao`          | Aplica regras de XP, conquistas baseado na performance do jogo.               | RF05, RF07, RF22, RF23            | `ModuloGamificacao` (#27) (Parte do Subsistema Comunidade #25)    | (Usa #07 Perfil, #10 Conquista, #08 Reputacao)                 |
+| 11 | `perfilUsuario : Perfil`       | Instância do Perfil do usuário, onde XP é adicionado.                         | RF05, RF23                        | (Gerenciado por `GestaoUsuarios` #12, usado por ModGamif #27)      | #07 Perfil                                                     |
+| 12 | `: MotorRegrasGamificacao`     | Define como recompensas são calculadas (pode ser interno ao ModGamif).         | RF05                              | (Conceitual ou parte do `ModuloGamificacao` #27)                  | (Lógica de Negócio)                                          |
+| 13 | `: ServicoNotificacoes`        | Envia notificações ao usuário (ex: nova conquista).                           | RF12                              | `ServicoNotificacoes` (#13)                                       | #09 Notificacao                                              |
+| 14 | `: ServicoMonitoramento`       | Registra logs de eventos importantes do fluxo do jogo.                        | RNF05, RNF12 (Suporte)            | `ServicoMonitoramento` (#6)                                       | (Pode usar LogEntry)                                         |
+| 15 | `: ServicoConfiguracao`        | Busca configurações gerais ou específicas do jogo (ex: pontuação base).      | (Suporte RF08, RF21)              | `ServicoConfiguracao` (#4)                                        | (Usa config.yaml #5)                                         |
+| 16 | `: BancoDeDados`               | Persistência de dados do jogo, sessões, pontuações, perfil, etc.              | RF04, RF05, RF07, RF23 (Suporte) | `BancoDeDados` (#34)                                              | (Persiste instâncias de várias classes)                        |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+A tabela 4 mostra os vínculos presentes no diagrama de comunicação da aba dos jogos.
 
 
-Tabela 4: Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais)
+**Tabela 4:** Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais)
 
 
-| Etapa   | Vínculo (Mensagem)                                                              | Tipo                                            | Origem -> Destino                        |
-|---------|---------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------|
-| 1       | `solicitarInicioJogo(idJogo, idUsuario?)`                                       | Operação Lógica                                 | :WebUI -> :APIGateway                    |
-| 1.1     | `logEvento('req_inicio_jogo')`                                                  | Operação Lógica                                 | :APIGateway -> :ServicoMonitoramento     |
-| 1.2     | `iniciarJogo(idJogo, idUsuario?)`                                               | Operação Lógica                                 | :APIGateway -> :ModuloJogos              |
-| 1.2.1   | `getConfig(chave='jogo_config')`                                                | Operação Lógica                                 | :ModuloJogos -> :ServicoConfiguracao     |
-| 1.2.2   | `getCacheJogo(idJogo)`                                                          | Operação Lógica                                 | :ModuloJogos -> :ServicoCache            |
-| [cacheMiss] 1.2.3 | `buscarJogoDoBD(idJogo)`                                              | Operação Lógica                                 | :ModuloJogos -> :BancoDeDados            |
-| 1.2.4   | `getUrlsAssets(jogoSel.assets)`                                                 | Operação Lógica                                 | :ModuloJogos -> :GestorAssetsEstaticos   |
-| 1.2.5   | `sessaoAtual := <<create>> jogoSel.iniciar(entusiasta)`                         | Método da Classe (`Jogo.iniciar`)               | :ModuloJogos -> `jogoSel : Jogo`         |
-| * 2     | `atualizarInterfaceJogo(estadoSessao)`                                          | Operação Lógica (Autochamada)                   | :WebUI -> :WebUI                         |
-| * 2.1   | `getEstadoAtualizado()`                                                         | Operação Lógica/Método (`SessaoJogo` - implícito) | `sessaoAtual : SessaoJogo` -> :WebUI     |
-| 3       | `submeterResultado(idSessao, pontuacao)`                                        | Operação Lógica                                 | :WebUI -> :APIGateway                    |
-| 3.1     | `logEvento('submissao_resultado')`                                              | Operação Lógica                                 | :APIGateway -> :ServicoMonitoramento     |
-| 3.2     | `registrarResultado(idSessao, pontuacao, idUsuario?)`                           | Operação Lógica                                 | :APIGateway -> :ModuloJogos              |
-| 3.2.1   | `pontuacaoReg := jogoSel.registrarPontuacao(sessaoAtual)`                       | Método da Classe (`Jogo.registrarPontuacao`)    | :ModuloJogos -> `jogoSel : Jogo`         |
-| 3.2.2   | `salvarPontuacaoBD(pontuacaoReg)`                                               | Operação Lógica                                 | :ModuloJogos -> :BancoDeDados            |
-| [pontuacao > jogoSel.recorde] 3.2.3 | `atualizarRecordeBD(jogoSel, pontuacao)`            | Operação Lógica                                 | :ModuloJogos -> :BancoDeDados            |
-| 3.3     | `idUsuarioLogado := getUsuarioDaSessao(idSessao)`                               | Operação Lógica                                 | :ModuloJogos -> :GestaoUsuarios          |
-| [idUsuarioLogado != null] 3.4 | `registrarAcaoGamificacao('jogo_finalizado', idUsuarioLogado, pontuacaoReg)` | Operação Lógica                 | :ModuloJogos -> :ModuloGamificacao       |
-| 3.4.1   | `getPerfilDoBD(idUsuarioLogado)`                                                | Operação Lógica                                 | :ModuloGamificacao -> :BancoDeDados      |
-| 3.4.2   | `calcularRecompensas(acao, perfilUsuario, pontuacaoReg)`                        | Operação Lógica                                 | :ModuloGamificacao -> :MotorRegrasGamificacao |
-| 3.4.3   | `perfilUsuario.adicionarXp(xpCalculado)`                                        | Método da Classe (`Perfil.adicionarXp`)         | :ModuloGamificacao -> `perfilUsuario : Perfil` |
-| 3.4.4   | `salvarPerfilBD(perfilUsuario)`                                                 | Operação Lógica                                 | :ModuloGamificacao -> :BancoDeDados      |
-| 3.4.5   | `verificarDesbloqueioConquista(...)`                                            | Operação Lógica                                 | :ModuloGamificacao -> :BancoDeDados      |
-| [conquistaDesbloqueada] 3.4.6 | `enviarNotificacao(idUsuarioLogado, tipo='conquista', ...)` | Operação Lógica                 | :ModuloGamificacao -> :ServicoNotificacoes |
-| 3.5     | `<<destroy>> finalizarSessaoJogo(sessaoAtual)`                                  | Operação Lógica                                 | :ModuloJogos -> `sessaoAtual : SessaoJogo` |
-| 4       | `exibirFeedbackFinal(...)`                                                      | Operação Lógica                                 | :WebUI -> `entusiasta : Usuario`         |
+| Etapa        | Vínculo (Mensagem)                                                              | Tipo                                            | Origem -> Destino                        | Relação Requisitos (RFs) | Relação Componentes (Origem -> Destino)                     | Relação Classes (Método/Dados)                      |
+|--------------|---------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------|--------------------------|-----------------------------------------------------------|-----------------------------------------------------|
+| 1            | `solicitarInicioJogo(idJogo, idUsuario?)`                                       | Operação Lógica                                 | :WebUI -> :APIGateway                    | RF08                     | #3 WebUI -> #11 APIGateway                              | (Inicia fluxo do jogo)                              |
+| 1.1          | `logEvento('req_inicio_jogo')`                                                  | Operação Lógica                                 | :APIGateway -> :ServicoMonitoramento     | (Monitoramento)          | #11 APIGateway -> #6 ServicoMonitoramento                 | (Log)                                               |
+| 1.2          | `iniciarJogo(idJogo, idUsuario?)`                                               | Operação Lógica                                 | :APIGateway -> :ModuloJogos              | RF08                     | #11 APIGateway -> #23 ModuloJogos                         | (Orquestra início do jogo)                          |
+| 1.2.1        | `getConfig(chave='jogo_config')`                                                | Operação Lógica                                 | :ModuloJogos -> :ServicoConfiguracao     | (Suporte RF08)           | #23 ModuloJogos -> #4 ServicoConfiguracao               | (Configuração)                                      |
+| 1.2.2        | `getCacheJogo(idJogo)`                                                          | Operação Lógica                                 | :ModuloJogos -> :ServicoCache            | RNF02 (Opcional)         | #23 ModuloJogos -> #17 ServicoCache                     | (Cache)                                             |
+| [cacheMiss] 1.2.3 | `buscarJogoDoBD(idJogo)`                                              | Operação Lógica                                 | :ModuloJogos -> :BancoDeDados            | RF08                     | #23 ModuloJogos -> #34 BancoDeDados                     | (Busca dados Jogo #18)                              |
+| 1.2.4        | `getUrlsAssets(jogoSel.assets)`                                                 | Operação Lógica                                 | :ModuloJogos -> :GestorAssetsEstaticos   | RNF11 (Implícito)        | #23 ModuloJogos -> #7 GestorAssetsEstaticos             | (Assets)                                            |
+| 1.2.5        | `sessaoAtual := <<create>> jogoSel.iniciar(entusiasta)`                         | Método da Classe (`Jogo.iniciar`)               | :ModuloJogos -> `jogoSel : Jogo`         | RF08                     | #23 ModuloJogos -> (#18 Jogo)                           | #18 Jogo.iniciar                                    |
+| * 2          | `atualizarInterfaceJogo(estadoSessao)`                                          | Operação Lógica (Autochamada)                   | :WebUI -> :WebUI                         | RF08                     | #3 WebUI -> #3 WebUI                                      | (Lógica UI)                                         |
+| * 2.1        | `getEstadoAtualizado()`                                                         | Operação Lógica/Método (`SessaoJogo`)         | `sessaoAtual : SessaoJogo` -> :WebUI     | RF08                     | (SessaoJogo) -> #3 WebUI                                  | (Estado SessaoJogo)                                 |
+| 3            | `submeterResultado(idSessao, pontuacao)`                                        | Operação Lógica                                 | :WebUI -> :APIGateway                    | RF06                     | #3 WebUI -> #11 APIGateway                              | (Envia dados PontuacaoJogo)                         |
+| 3.1          | `logEvento('submissao_resultado')`                                              | Operação Lógica                                 | :APIGateway -> :ServicoMonitoramento     | (Monitoramento)          | #11 APIGateway -> #6 ServicoMonitoramento                 | (Log)                                               |
+| 3.2          | `registrarResultado(idSessao, pontuacao, idUsuario?)`                           | Operação Lógica                                 | :APIGateway -> :ModuloJogos              | RF06                     | #11 APIGateway -> #23 ModuloJogos                         | (Processa resultado)                                |
+| 3.2.1        | `pontuacaoReg := jogoSel.registrarPontuacao(sessaoAtual)`                       | Método da Classe (`Jogo.registrarPontuacao`)    | :ModuloJogos -> `jogoSel : Jogo`         | RF06                     | #23 ModuloJogos -> (#18 Jogo)                           | #18 Jogo.registrarPontuacao                         |
+| 3.2.2        | `salvarPontuacaoBD(pontuacaoReg)`                                               | Operação Lógica                                 | :ModuloJogos -> :BancoDeDados            | RF04, RF23               | #23 ModuloJogos -> #34 BancoDeDados                     | (Persiste PontuacaoJogo)                            |
+| [pont > rec] 3.2.3 | `atualizarRecordeBD(jogoSel, pontuacao)`            | Operação Lógica                                 | :ModuloJogos -> :BancoDeDados            | RF07 (Implícito)         | #23 ModuloJogos -> #34 BancoDeDados                     | (Atualiza Jogo #18)                                 |
+| 3.3          | `idUsuarioLogado := getUsuarioDaSessao(idSessao)`                               | Operação Lógica                                 | :ModuloJogos -> :GestaoUsuarios          | (Suporte RF05)           | #23 ModuloJogos -> #12 GestaoUsuarios                   | (Busca Usuario #01)                                 |
+| [idUser] 3.4   | `registrarAcaoGamificacao('jogo_finalizado', ...)`                              | Operação Lógica                                 | :ModuloJogos -> :ModuloGamificacao       | RF05, RF07, RF23         | #23 ModuloJogos -> #27 ModuloGamificacao                | (Inicia processo Gamificação)                       |
+| 3.4.1        | `getPerfilDoBD(idUsuarioLogado)`                                                | Operação Lógica                                 | :ModuloGamificacao -> :BancoDeDados      | RF05, RF23               | #27 ModuloGamificacao -> #34 BancoDeDados                 | (Busca Perfil #07)                                  |
+| 3.4.2        | `calcularRecompensas(...)`                                                      | Operação Lógica                                 | :ModuloGamificacao -> :MotorRegrasGamificacao | RF05                   | #27 ModuloGamificacao -> (MotorRegras)                    | (Lógica de Negócio)                                 |
+| 3.4.3        | `perfilUsuario.adicionarXp(xpCalculado)`                                        | Método da Classe (`Perfil.adicionarXp`)         | :ModuloGamificacao -> `perfilUsuario : Perfil` | RF05                   | #27 ModuloGamificacao -> (#07 Perfil)                     | #07 Perfil.adicionarXp                              |
+| 3.4.4        | `salvarPerfilBD(perfilUsuario)`                                                 | Operação Lógica                                 | :ModuloGamificacao -> :BancoDeDados      | RF05, RF23               | #27 ModuloGamificacao -> #34 BancoDeDados                 | (Persiste Perfil #07)                               |
+| 3.4.5        | `verificarDesbloqueioConquista(...)`                                            | Operação Lógica                                 | :ModuloGamificacao -> :BancoDeDados      | RF05                     | #27 ModuloGamificacao -> #34 BancoDeDados                 | (Verifica/Atualiza Conquista #10/UsuarioConquista #12) |
+| [conqDesbl] 3.4.6 | `enviarNotificacao(idUsuarioLogado, tipo='conquista', ...)`                | Operação Lógica                                 | :ModuloGamificacao -> :ServicoNotificacoes | RF12                   | #27 ModuloGamificacao -> #13 ServicoNotificacoes          | (Cria Notificacao #09)                              |
+| 3.5          | `<<destroy>> finalizarSessaoJogo(sessaoAtual)`                                  | Operação Lógica                                 | :ModuloJogos -> `sessaoAtual : SessaoJogo` | RF08                     | #23 ModuloJogos -> (SessaoJogo)                           | (Finaliza ciclo SessaoJogo)                         |
+| 4            | `exibirFeedbackFinal(...)`                                                      | Operação Lógica                                 | :WebUI -> `entusiasta : Usuario`         | RF06                     | #3 WebUI -> (Ator)                                      | (Exibe resultado/XP)                                |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
