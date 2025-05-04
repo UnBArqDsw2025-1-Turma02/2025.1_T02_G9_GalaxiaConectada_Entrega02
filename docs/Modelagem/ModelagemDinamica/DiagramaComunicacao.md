@@ -15,9 +15,67 @@
 
 ## Introdução
 
-O diagrama de colaboração (ou de comunicação), como é definido na Apostila UML - Unified Modeling Language - Linguagem de Modelagem Unificada em Português [1](#ref1), representa como os objetos de um sistema interagem entre si ao focar nos relacionamentos e nas trocas de mensagens, mais do que na ordem temporal dessas ações. Segundo a IBM [https://www.ibm.com/docs/pt-br/radfws/9.6.0?topic=SSRTLW_9.6.0/com.ibm.xtools.sequence.doc/topics/ccommndiag.htm], esse tipo de diagrama permite analisar o comportamento dinâmico do sistema ao identificar objetos participantes, dados trocados e caminhos de mensagens. 
+O diagrama de colaboração (ou de comunicação), como é definido na Apostila UML - Unified Modeling Language - Linguagem de Modelagem Unificada em Português [1](#ref1), representa como os objetos de um sistema interagem entre si ao focar nos relacionamentos e nas trocas de mensagens mais do que na ordem temporal dessas ações. Segundo a [IBM: Diagramas de comunicação](https://www.ibm.com/docs/pt-br/radfws/9.6.0?topic=SSRTLW_9.6.0/com.ibm.xtools.sequence.doc/topics/ccommndiag.htm) <a name="ref3"></a>, esse tipo de diagrama permite analisar o comportamento dinâmico do sistema ao identificar objetos participantes, dados trocados e caminhos de mensagens. 
 
-Dessa forma, como o desenvolvimento de diagramas de comunicação é essencial para visualizar como os componentes e objetos do sistema interagem entre si, especialmente em áreas com maior troca de mensagens, esse artefato apresenta os diagramas de comunicação para a aba de fórum e a aba de jogos. 
+Dessa forma, como o desenvolvimento de diagramas de comunicação é essencial para visualizar como os componentes e objetos do sistema interagem entre si, especialmente em áreas com maior troca de mensagens, esse artefato apresenta os diagramas de comunicação para a **aba de fórum** e a **aba de jogos**. 
+
+
+## Objetivos
+
+O objetivo deste documento é representar graficamente os principais fluxos de interação entre objetos dos módulos do fórum e dos jogos da plataforma Galáxia Conectada por meio de diagramas de comunicação (ou colaboração). De forma mais específica, busca-se:
+
+- Ilustrar a troca de mensagens entre instâncias de classes nos módulos Fórum e Jogos;
+
+- Demonstrar a organização estrutural das interações com foco nos relacionamentos entre os objetos;
+
+- Evidenciar a ordem sequencial das mensagens numeradas para facilitar o rastreamento dos comportamentos do sistema;
+
+- Apoiar a modelagem dinâmica da plataforma com base em dois cenários práticos: participação em tópicos do fórum e execução de jogos educativos.
+
+
+## Metodologia
+
+A elaboração dos diagramas de comunicação seguirá uma abordagem fundamentada na análise integrada dos artefatos previamente desenvolvidos no projeto Galáxia Conectada. 
+
+Sobre os módulos de foco neste artefato:
+
+- **Aba (Módulo) do Fórum**: O Fórum é o espaço comunitário central da "Galáxia Conectada", projetado para facilitar a interação e a troca de conhecimento entre os usuários. Nele, os membros podem criar novos tópicos de discussão sobre assuntos astronômicos ou dúvidas sobre a plataforma, postar respostas e comentários em tópicos existentes (RF09, RF24), além de potencialmente votar em posts úteis e usar tags para organização (RF09). 
+
+- **Aba (Módulo) dos Jogos**: Esta seção da plataforma "Galáxia Conectada" é dedicada a oferecer uma coleção de jogos e quizzes interativos (RF08, RF21) focados em temas astronômicos, o qual serve como uma ferramenta lúdica e complementar de aprendizado. Assim, o objetivo principal é engajar os usuários (entusiastas) de forma divertida e permitir  que testem seus conhecimentos.
+ 
+Para a construção dos diagramas, serão seguidas as etapas abaixo:
+
+1. Serão analisados os seguintes artefatos para embasamento dos diagramas:
+
+- [Requisitos Funcionais e Não Funcionais elicitados - Elaborados na entrega 1](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
+- [5W2H - Elaborado na Entrega 1]((https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H));
+- [Brainstorming](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/BrainStorm);
+- [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
+- [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md).
+
+
+2. Dois diagramas serão desenvolvidos, sendo um para o módulo Fórum (interação em tópicos) e outro para o módulo Jogos (início e encerramento de partidas);
+
+3. Os diagramas serão criados utilizando a ferramenta [Draw.io](https://www.drawio.com/blog/uml-component-diagrams);
+
+4. Será realizada uma revisão dos diagramas com base em checklist de boas práticas da UML para garantir a consistência e clareza da representação.
+
+## Sobre o Diagrama de Comunicação
+
+Conforme explicado em [Guia: Diagramas de colaboração UML](https://miro.com/pt/diagrama/o-que-e-diagrama-colaboracao-uml/) [5](#ref5), os Diagramas de Comunicação (também conhecidos como diagramas de Colaboração) apresentados a seguir ilustram as interações dinâmicas entre os diferentes objetos e componentes de sistema necessários para realizar cenários específicos nas abas de Fórum e Jogos Educacionais da plataforma "Galáxia Conectada". Diferente dos diagramas de sequência que enfatizam a ordem temporal, estes diagramas focam na estrutura da colaboração, mostrando os Vínculos (linhas de conexão) que existem entre os participantes (objetos/componentes como :WebUI, :ModuloForum, :ModuloJogos, entusiasta:Usuario, etc.) e como as Mensagens (representando chamadas de métodos ou comunicação) trafegam por esses vínculos para executar uma tarefa, como criar um novo tópico ou registrar a pontuação de um jogo. A sequência exata das interações é definida pela numeração anexada a cada mensagem, onde a notação decimal (ex: 1, 1.1, 1.2) indica o fluxo de controle e as chamadas aninhadas que ocorrem durante o processo, como é explicado em [Criar um diagrama de comunicação UML](https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-comunica%C3%A7%C3%A3o-uml-911956f4-5f19-4a58-97a3-bb14110a5ed1). [4](#ref4)
+
+Com base no que foi explicado em [Criar um diagrama de comunicação UML](https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-comunica%C3%A7%C3%A3o-uml-911956f4-5f19-4a58-97a3-bb14110a5ed1) [4](#ref4), para construir estes diagramas e representar detalhadamente as interações, foram utilizados elementos chave da UML. Dessa forma, os participantes são mostrados como Objetos/Linhas de Vida (retângulos nomeados), conectados por Vínculos (linhas sólidas) que representam os caminhos de comunicação. As Mensagens, indicadas por setas ao longo dos vínculos, são rotuladas com números de sequência decimais para denotar a ordem e o aninhamento, nomes de operações e, ocasionalmente, parâmetros. Além desses fundamentos, para capturar a complexidade dos cenários, foram empregados elementos avançados: a notação <<create>> para indicar a criação de novas instâncias (como sessaoAtual : SessaoJogo ou topicoCriado : Topico), Condições de Guarda ([]) para mostrar mensagens que só são enviadas se uma condição for verdadeira (ex: [permissaoConcedida]), Iteração (*) para mensagens repetidas (como na atualização do jogo), Autochamadas (mensagens com setas em loop no mesmo objeto, ex: atualizações da :WebUI), e a notação <<destroy>> para indicar o fim do ciclo de vida de um objeto (como a sessaoAtual). 
+
+Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
+
+<div align="center">
+    Figura 1: Legenda do Diagrama de Comunicação
+    <br>
+    <img src="" width="500">
+    <br>
+    <b>Autora:</b> <a href="">Larissa Stéfane</a>.
+    <br>
+</div>
 
 ## Aba Fórum
 
@@ -136,3 +194,34 @@ Tabela 4: Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais
 | 4       | `exibirFeedbackFinal(...)`                                                      | Operação Lógica                                 | :WebUI -> `entusiasta : Usuario`         |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+## Bibliografia
+
+<a name="ref1"></a>
+[1] APOSTILA UML. Seção sobre representação de Diagrama de Colaboração. Disponibilizada pela professora. Acesso em: 1 maio 2025.
+
+<a name="ref2"></a>
+[2] IBM. Criando Diagramas de Comunicação. Disponível em: https://www.ibm.com/docs/pt-br/dmrt/9.5.0?topic=diagrams-creating-communication. Acesso em: 2 maio 2025.
+
+<a name="ref3"></a>
+[3] IBM. Diagramas de comunicação. Disponível em: https://www.ibm.com/docs/pt-br/radfws/9.6.0?topic=SSRTLW_9.6.0/com.ibm.xtools.sequence.doc/topics/ccommndiag.htm. Acesso em: 1 maio 2025.
+
+<a name="ref4"></a>
+[4] MICROSOFT. Criar um diagrama de comunicação UML. Disponível em: https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-comunica%C3%A7%C3%A3o-uml-911956f4-5f19-4a58-97a3-bb14110a5ed1. Acesso em: 1 maio 2025.
+
+<a name="ref5"></a>
+[5] MIRO. Guia: Diagramas de colaboração UML. Disponível em: https://miro.com/pt/diagrama/o-que-e-diagrama-colaboracao-uml/. Acesso em: 2 maio 2025.
+
+<a name="ref6"></a>
+[6] OLIVEIRA, George. Diagrama de Comunicação. [Vídeo]. YouTube. Disponível em: https://www.youtube.com/watch?v=6feefuR-iqI. Acesso em: 1 maio 2025.
+
+## Histórico de versão
+
+
+| Versão | Alteração | Responsável | Data |
+| - | - | - | - |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 01/05/2024 |
+| 1.1 | Adição da metodologia e da seção de explicação  | Larissa Stéfane | 01/05/2024 |
+| 1.2 | Criação das tabelas da aba fórum | Larissa Stéfane | 01/05/2024 |
+| 1.3 | Criação das tabelas da aba de jogos | Larissa Stéfane | 02/05/2024 |
+| 1.4 | Explicação dos diagramas de comunicação | Larissa Stéfane | 02/05/2024 |
