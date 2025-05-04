@@ -55,12 +55,33 @@ Para a construção dos diagramas, serão seguidas as etapas abaixo:
 
 3. Será realizada uma verificação final com base em um checklist de boas práticas da UML, assegurando clareza, coerência e padronização na modelagem.
 
+## Sobre o Diagrama de Estados
+
+Os Diagramas de Máquina de Estados a seguir ilustram o ciclo de vida e o comportamento dinâmico das entidades Promoção e Fórum dentro da plataforma "Galáxia Conectada". Sendo assim, com base em [State Machine Diagrams](https://www.uml-diagrams.org/state-machine-diagrams.html) e [UML 2 Tutorial - State Machine Diagram
+](https://sparxsystems.com/resources/tutorials/uml2/state-diagram.html), eles mapeiam os diversos Estados possíveis para essas entidades (como Pendente Validação, Ativa, Fechado) e as Transições (setas) que ocorrem entre eles. Essas mudanças de estado são acionadas por Eventos específicos (ações do sistema, usuário ou tempo) e podem depender de Condições de Guarda ([]), frequentemente executando Ações (/) durante a transição. Para representar detalhadamente os fluxos, foram utilizados elementos como Estados Compostos (agrupando Subestados), Ações de Entrada/Saída/Do (entry/exit/do) e, no caso do Fórum, Regiões Ortogonais para modelar concorrência, o que permite uma visualização clara das regras que governam o comportamento dessas entidades ao longo do tempo.
+
+Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
+
+<div align="center">
+    Figura 1: Legenda do Diagrama de Estados
+    <br>
+    <img src="" width="500">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+
+**Observação Importante:** Com o intuido de elaborar melhor os diagramas, foram elaboradas tabelas contendo os estados com suas descrições e relação com os requisitos elicitados e com os componentes do diagrama de componentes **(Tabelas 1 e 3)**. 
+Da mesma forma, foram criadas tabelas que mostram as transições entre os estados. **(Tabelas 2 e 4)**
 
 ## Aba Promoção
 
-Tabela 1: Estados do Ciclo de Vida da Promoção Externa
+A tabela 1 mostra os estados presentes no diagrama de estados do módulo de promoções.
 
-| #  | Elemento                      | Descrição                                                                    | Relação com Requisitos (Exemplos) | Relação com Componentes (Gerenciador Principal) |
+**Tabela 1: Estados do Ciclo de Vida da Promoção** 
+
+| #  | EEstados                     | Descrição                                                                    | Relação com Requisitos (Exemplos) | Relação com Componentes (Gerenciador Principal) |
 |----|-------------------------------|------------------------------------------------------------------------------|-----------------------------------|---------------------------------------------------|
 | 1  | ⚫ (Estado Inicial)           | Ponto de entrada, representa a criação ou descoberta inicial da promoção.   | Implícito para RF19               | :BotImportadorPromocoes (#33)                     |
 | 2  | `Recém Descoberta`            | A promoção foi identificada pelo bot, mas ainda não processada internamente.   | Implícito para RF19               | :BotImportadorPromocoes (#33), :ModuloPromocoes (#31) |
@@ -80,7 +101,11 @@ Tabela 1: Estados do Ciclo de Vida da Promoção Externa
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
-Tabela 2: Transições do Ciclo de Vida da Promoção Externa
+
+A tabela 2 mostra as transições presentes no diagrama de estados do módulo de promoções.
+
+
+**Tabela 2: Transições do Ciclo de Vida da Promoção Externa**
 
 
 | Elementos entre a transição                    | Rótulo da transição                                                              | Relação com Requisitos (Exemplos)      | Relação com Componentes (Evento / Ação)                                       |
@@ -106,9 +131,38 @@ Tabela 2: Transições do Ciclo de Vida da Promoção Externa
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+A Figura 2 mostra o diagrama de estados das promoções
+
+
+<div align="center">
+    Figura 2: o Diagrama de Estados - Promoções
+    <br>
+    <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.pdf" target="_blank">
+  <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
+
 ## Aba Fórum
 
-Tabela 3: Estados do Ciclo de Vida do Tópico do Fórum
+A tabela 3 mostra os estados presentes no diagrama de estados do módulo de promoções.
+
+
+**Tabela 3: Estados do Ciclo de Vida do Tópico do Fórum**
 
 | #  | Elemento                      | Descrição                                                                                    | Relação com Requisitos (Exemplos)      | Relação com Componentes (Gerenciador/Influenciador)                                    |
 |----|-------------------------------|----------------------------------------------------------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------|
@@ -144,9 +198,9 @@ Tabela 3: Estados do Ciclo de Vida do Tópico do Fórum
 
 
 
+A tabela 4 mostra as transições presentes no diagrama de estados do módulo de promoções.
 
-
-Tabela 4: Transições do Ciclo de Vida do Tópico do Fórum
+**Tabela 4: Transições do Ciclo de Vida do Tópico do Fóruns
 
 
 | Elementos entre a transição                                    | Rótulo da transição                                                                          | Relação com Requisitos (Exemplos) | Relação com Componentes (Evento / Ação)                                                            |
@@ -179,7 +233,33 @@ Tabela 4: Transições do Ciclo de Vida do Tópico do Fórum
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+A figura 3 apresenta o diagrama de estados do Fórum
 
+<div align="center">
+    Figura 3: o Diagrama de Estados - Fórum
+    <br>
+    <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaAtividadeCientifico.drawio.pdf" target="_blank">
+  <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
+## Conclusão
+
+Em suma, os Diagramas de Máquina de Estados detalhados nesta seção forneceram uma modelagem visual rigorosa dos ciclos de vida das entidades de Promoção e do fórum, essenciais para a plataforma "Galáxia Conectada". Através da aplicação de elementos fundamentais e avançados da UML, como estados compostos, regiões ortogonais, condições de guarda e ações específicas de estado (entry/exit/do), foi possível representar de forma clara e precisa as complexas sequências de estados, os eventos que disparam as transições e as regras que governam o comportamento dessas entidades.
 ## Bibliografia
 
 <a name="ref1"></a>
@@ -205,3 +285,6 @@ Tabela 4: Transições do Ciclo de Vida do Tópico do Fórum
 | 1.1 | Adição do seção de explicação  | Larissa Stéfane | 04/05/2024 |
 | 1.2 | Criação das tabelas da aba de promoção | Larissa Stéfane | 04/05/2024 |
 | 1.3 | Criação das tabelas da aba de fórum | Larissa Stéfane | 04/05/2024 |
+| 1.4 |Complementação das tabelas | Larissa Stéfane | 04/05/2024 |
+| 1.5 | Adição dos Diagramas | Larissa Stéfane | 04/05/2024 |
+| 1.6 | Adição da conclusão | Larissa Stéfane | 04/05/2024 |
