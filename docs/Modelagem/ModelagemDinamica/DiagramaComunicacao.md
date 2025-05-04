@@ -141,6 +141,34 @@ A tabela 2 mostra os vínculos presentes no diagrama de comunicação da aba do 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 
+A Figura 2 mostra o diagrama de comunicação da aba do fórum
+
+
+<div align="center">
+    Figura 2: o Diagrama de Comunicação - Fórum
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoForumDiscurssoes.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaComunicacaoForumDiscurssoes.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoForumDiscurssoes.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
+
+
+
 ## Aba Jogos
 
 A tabela 3 mostra os objetos no diagrama de comunicação da aba dos jogos.
@@ -205,6 +233,34 @@ A tabela 4 mostra os vínculos presentes no diagrama de comunicação da aba dos
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+A figura 3 apresenta o diagrama de Comunicação da Aba de Jogos
+
+<div align="center">
+    Figura 3: o Diagrama de Comunicação - Jogos
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoJogosEducacionais.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaComunicacaoJogosEducacionais.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoJogosEducacionais.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
+## Conclusão
+
+Em conclusão, os Diagramas de Comunicação elaborados para os módulos de Fórum e Jogos Educacionais forneceram uma visão detalhada e estrutural das interações entre os diversos componentes e objetos da plataforma "Galáxia Conectada". Ao mapear os participantes, seus vínculos de comunicação e, crucialmente, a sequência numerada das mensagens trocadas – incorporando elementos avançados como criação de objetos, condições e iterações – estes diagramas elucidam como as diferentes partes do sistema colaboram para realizar funcionalidades chave, como a criação de um tópico ou a execução e pontuação de um jogo.
+
 ## Bibliografia
 
 <a name="ref1"></a>
@@ -235,3 +291,4 @@ A tabela 4 mostra os vínculos presentes no diagrama de comunicação da aba dos
 | 1.2 | Criação das tabelas da aba fórum | Larissa Stéfane | 01/05/2024 |
 | 1.3 | Criação das tabelas da aba de jogos | Larissa Stéfane | 02/05/2024 |
 | 1.4 | Explicação dos diagramas de comunicação | Larissa Stéfane | 02/05/2024 |
+| 1.5 | Adição dos diagramas | Larissa Stéfane | 02/05/2024 |
