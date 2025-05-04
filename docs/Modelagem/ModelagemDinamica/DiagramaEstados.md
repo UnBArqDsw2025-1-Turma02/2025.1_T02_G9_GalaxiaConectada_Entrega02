@@ -12,6 +12,49 @@
 - [Bibliografia](#Bibliografia)
 - [Histórico de versão](#Histórico-de-versão)
 
+## Introdução
+
+O **diagrama de estados**, também conhecido como **diagrama de máquina de estados**, segundo [fonte: O que é um diagrama de máquina de estados?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-maquina-de-estados-uml), é um tipo de diagrama comportamental da UML (Unified Modeling Language) utilizado para representar o comportamento dinâmico de um objeto ao ilustrar os estados que ele pode assumir ao longo do tempo e as transições causadas por eventos específicos. Com isso, com base no artigo [State Machine Diagrams](https://www.uml-diagrams.org/state-machine-diagrams.html), esse tipo de modelagem é especialmente útil para descrever sistemas reativos e orientados a eventos em que as ações dependem das entradas recebidas e permiti visualizar como o objeto responde a diferentes estímulos durante sua existência.
+
+No contexto do projeto Galáxia Conectada, serão elaborados dois diagramas de estados com base nas abas de **Fórum** e **Promoções**. Para isso, será descrito o comportamento de componentes interativos do sistema e as transições de estado que ocorrem nessas temáticas.
+
+## Objetivos
+
+O objetivo deste documento é representar, por meio de diagramas de estados, os comportamentos dinâmicos de elementos interativos dos módulos das promoções e do fórum da plataforma Galáxia Conectada. De forma mais específica, busca-se:
+
+- Representar os diferentes estados que determinados objetos da plataforma podem assumir durante sua execução;
+
+- Demonstrar as transições de estado com base em eventos, ações ou interações do usuário;
+
+- Auxiliar na compreensão dos fluxos internos e das mudanças comportamentais dos componentes da plataforma;
+
+- Apoiar a modelagem de sistemas reativos e orientados a eventos com uma representação visual clara e estruturada.
+
+
+## Metodologia
+
+A elaboração dos diagramas de estados será realizada com base na integração de artefatos previamente desenvolvidos no projeto da Galáxia Conectada, com o objetivo de representar visualmente os comportamentos dinâmicos de elementos interativos da plataforma. Assim, serão desenvolvidos **dois diagramas principais**, sendo um voltado para a **aba de promoções** e outro para a **aba de fórum**. 
+
+- **Módulo de Promoções Astronômicas**: Este módulo funciona como um agregador de ofertas, ao buscar e exibir promoções e descontos relevantes para entusiastas da astronomia (como livros, telescópios, etc.). Essas promoções serão capturadas por bots de sites de e-commerce externos. 
+
+- **Módulo de Fórum de Discussões:** É a área interativa da plataforma onde os usuários podem criar tópicos, fazer perguntas, compartilhar conhecimentos, responder a outros membros e discutir sobre astronomia e conteúdos relacionados. Com isso, o objetivo central é construir uma comunidade ativa, facilitar a troca de informações e o aprendizado entre pares, aumentar o engajamento e a retenção dos usuários na "Galáxia Conectada" através da interação social.
+
+
+Para a construção dos diagramas, serão seguidas as etapas abaixo:
+
+1. Inicialmente, serão analisados os seguintes artefatos como base para definição dos estados e transições:
+
+  - [Requisitos Funcionais e Não Funcionais elicitados - Elaborados na entrega 1](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
+
+  - [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
+    
+  - [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md).
+
+
+2. Os diagramas serão desenvolvidos utilizando a ferramenta [Draw.io](https://www.drawio.com/blog/uml-component-diagrams);
+
+3. Será realizada uma verificação final com base em um checklist de boas práticas da UML, assegurando clareza, coerência e padronização na modelagem.
+
 
 ## Aba Promoção
 
@@ -135,3 +178,30 @@ Tabela 4: Transições do Ciclo de Vida do Tópico do Fórum
 | `Excluído Permanentemente` -> ⊚ (Final Principal)               | *(implícito ou via job)* | Gerenciamento                     | :ModuloForum(#26) via :BD(#34)                                                               |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+
+## Bibliografia
+
+<a name="ref1"></a>
+[1] LUCIDCHART. O que é um diagrama de máquina de estados? Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-maquina-de-estados-uml. Acesso em: 4 maio 2025.
+
+<a name="ref2"></a>
+[2] SPARX SYSTEMS. UML 2 Tutorial – State Machine Diagram. Disponível em: https://sparxsystems.com/resources/tutorials/uml2/state-diagram.html. Acesso em: 4 maio 2025.
+
+<a name="ref3"></a>
+[3] UML-DIAGRAMS. State Machine Diagrams. Disponível em: https://www.uml-diagrams.org/state-machine-diagrams.html. Acesso em: 4 maio 2025.
+
+<a name="ref4"></a>
+[4] IBM. Máquinas de Estado. Disponível em: https://www.ibm.com/docs/pt-br/dmrt/9.5.0?topic=diagrams-state-machines. Acesso em: 4 maio 2025.
+
+<a name="ref5"></a>
+[5] RAMOS, Ricardo Argenton. UML – Aula III: Diagramas de Estado, Atividades, Componentes e Instalação. Engenharia de Software II, 2013.1. Disponível em: http://www.univasf.edu.br/~ricardo.aramos/disciplinas/ES_II_2013_1/UML_Aula3.pdf. Acesso em: 4 maio 2025.
+
+## Histórico de versão
+
+| Versão | Alteração | Responsável | Data |
+| - | - | - | - |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 04/05/2024 |
+| 1.1 | Adição do seção de explicação  | Larissa Stéfane | 04/05/2024 |
+| 1.2 | Criação das tabelas da aba de promoção | Larissa Stéfane | 04/05/2024 |
+| 1.3 | Criação das tabelas da aba de fórum | Larissa Stéfane | 04/05/2024 |
