@@ -185,7 +185,7 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 ## Bibliografia
 
 <a name="ref1"></a>  
-[1]APOSTILA UML. *Linguagem de Modelagem Unificada*. Universidade XYZ, 2023. (Documento interno). Acesso em: 25 abr. 2025.  
+[1]APOSTILA UML. *Linguagem de Modelagem Unificada*. Disponibilizado pela professora. Acesso em: 25 abr. 2025.  
 
 <a name="ref2"></a>  
 [2]UML DIAGRAMS. *Component Diagrams Overview*. Disponível em: https://www.uml-diagrams.org/component-diagrams.html. Acesso em: 25 abr. 2025. 
