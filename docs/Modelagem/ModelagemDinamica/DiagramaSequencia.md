@@ -97,6 +97,18 @@ A tabela 1 mostra os elementos e as sequências no diagrama em relação às tri
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+<div align="center">
+    Figura 2: o Diagrama de Sequência - Trilhas de Aprendizado
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaSequenciaConhecimento.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+
+
+
 
 ## Aba Promoções
 
@@ -120,6 +132,15 @@ A tabela 2 mostra os elementos e as sequências no diagrama em relação às pro
 | `8: clicarSalvarPromocaoFavorita(...)` ... `14: ...` | Usuário marca promoção como favorita, sistema registra a preferência. | Método `salvarPromocaoFavorita` (`ModuloPromocoes`, inf.), `inserirPromocaoFavorita` (BD, inf.). Relação Usuário-PromocaoExterna (favorito).                                                | RF19 (Permitir favoritar).                 | `ModuloPromocoes` consome `IPersistencia`.                                                                                                                                                       |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+<div align="center">
+    Figura 3: o Diagrama de Sequência - Promoções
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaSequenciaPromocao.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
 
 ## Conclusão
 
