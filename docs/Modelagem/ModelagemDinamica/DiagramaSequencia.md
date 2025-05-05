@@ -63,7 +63,7 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 <div align="center">
     Figura 1: Legenda do Diagrama de Sequência
     <br>
-    <img src="" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/LegendaDiagramaSequ%C3%AAncia.drawio.png" width="500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
