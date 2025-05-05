@@ -35,6 +35,10 @@ O objetivo deste documento é algumas das atividades desenvolvidas para a plataf
 
 A elaboração dos diagramas de atividade seguirá uma abordagem baseada na integração entre diferentes artefatos desenvolvidos anteriormente no projeto Galáxia Conectada. Isso com o  objetivo será representar visualmente o fluxo das ações executadas pelos usuários e pelo sistema em dois módulos principais da plataforma: **a aba Conhecimento (trilhas de aprendizado)** e a **aba Científico (notícias e artigos científicos)**. Para isso, serão feitas as seguintes etapas:
 
+- **Módulo de Trilhas de Aprendizado**: Esta é a espinha dorsal educacional da plataforma "Galáxia Conectada", oferecendo aos usuários entusiastas roteiros de estudo estruturados, conhecidos como "trilhas". Essas trilhas são cuidadosamente organizadas por tema (ex: Sistema Solar, Cosmologia), nível de dificuldade (iniciante a avançado) e categoria (RF01), e são apresentadas de forma lúdica, como "missões espaciais" (RF03), para aumentar o engajamento. 
+
+- **Módulo Científico: Notícias e Artigos**: uncionando como o centro de divulgação científica da plataforma, esta aba agrega e apresenta conteúdo atualizado sobre astronomia. Ela inclui um blog com artigos explicativos, possivelmente um glossário de termos técnicos (RF13), e notícias recentes do mundo científico, muitas das quais podem ser importadas e até traduzidas (RNF07) de fontes externas confiáveis (como portais da NASA) através de bots (RF14). 
+
 1. inicialmente serão realizadas análises dos seguintes artefatos:
      - [5W2H](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H)
      - Fluxo do [protótipo de alta fidelidade](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/DesignSprint/Prototipo)
@@ -64,6 +68,48 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 
 ## Aba Conhecimento Trilhas de Aprendizado
 
+A tabela 1 mostra as atividades presentes no diagrama das trilhas de aprendizado.
+
+**Tabela 1: Atividades das Trilhas de Aprendizado** 
+
+| Atividade                                     | Descrição Sucinta                                                           | Relação Requisitos (RFs) | Relação Classes (Nome)                                     | Relação Componentes (# Nome)              |
+|-----------------------------------------------|-----------------------------------------------------------------------------|--------------------------|------------------------------------------------------------|-------------------------------------------|
+| Acessar Plataforma                            | Usuário inicia a interação.                                                 | (Geral)                  | Usuario                                                    | Entusiasta                              |
+| Clicar na Aba "Trilhas"                       | Usuário navega para a seção de trilhas.                                     | RF01                     | Usuario                                                    | Entusiasta                              |
+| Solicitar Categorias de Trilhas               | UI pede dados das categorias ao backend.                                    | RF01                     | -                                                          | 3 WebUI                                 |
+| Buscar e Enviar Categorias                    | Backend busca categorias (BD) e envia para UI.                              | RF01                     | TrilhaEducacional (Categoria)                              | 21 ModuloEducacional, 34 BancoDeDados   |
+| Exibir Categorias na Tela                     | UI mostra as categorias.                                                    | RF01                     | TrilhaEducacional (Categoria)                              | 3 WebUI                                 |
+| Selecionar Categoria                          | Usuário escolhe uma categoria de interesse.                                 | RF01                     | Usuario                                                    | Entusiasta                              |
+| Solicitar Trilhas da Categoria                | UI pede trilhas da categoria ao backend.                                    | RF01                     | TrilhaEducacional                                          | 3 WebUI                                 |
+| Buscar e Enviar Trilhas                       | Backend busca trilhas (BD) e envia para UI.                                 | RF01                     | TrilhaEducacional                                          | 21 ModuloEducacional, 34 BancoDeDados   |
+| Exibir Trilhas da Categoria                   | UI mostra as trilhas.                                                       | RF01                     | TrilhaEducacional                                          | 3 WebUI                                 |
+| Selecionar Trilha                             | Usuário escolhe uma trilha específica para estudar.                         | RF01                     | Usuario                                                    | Entusiasta                              |
+| Solicitar Módulos e Progresso da Trilha       | UI pede módulos e progresso ao backend.                                     | RF01, RF02, RF04         | Modulo, ProgressoUsuarioTrilha                             | 3 WebUI                                 |
+| Processar Requisição de Módulos               | Backend inicia busca paralela de dados dos módulos e progresso.               | RF01, RF02, RF04         | -                                                          | 21 ModuloEducacional                    |
+| Buscar Metadados dos Módulos no BD            | (Paralelo) Backend busca info dos módulos.                                  | RF01, RF02               | Modulo                                                     | 21 ModuloEducacional, 34 BancoDeDados   |
+| Retornar Metadados Módulos                    | (Paralelo) BD retorna info dos módulos.                                     | RF01, RF02               | Modulo                                                     | 34 BancoDeDados                         |
+| Buscar Progresso do Usuário nos Módulos no BD | (Paralelo) Backend busca progresso.                                         | RF04                     | ProgressoUsuarioTrilha                                     | 21 ModuloEducacional, 34 BancoDeDados   |
+| Retornar Progresso do Usuário                 | (Paralelo) BD retorna progresso.                                            | RF04                     | ProgressoUsuarioTrilha                                     | 34 BancoDeDados                         |
+| Combinar Módulos e Progresso                  | Backend junta as informações recebidas em paralelo.                         | RF01, RF02, RF04         | Modulo, ProgressoUsuarioTrilha                             | 21 ModuloEducacional                    |
+| Enviar Lista de Módulos com Status para WebUI | Backend envia a lista combinada para UI.                                    | RF01, RF02, RF04         | Modulo, ProgressoUsuarioTrilha                             | 21 ModuloEducacional                    |
+| Exibir Módulos da Trilha                      | UI mostra os módulos e status.                                              | RF01, RF02, RF04         | Modulo, ProgressoUsuarioTrilha                             | 3 WebUI                                 |
+| Selecionar Módulo                             | Usuário escolhe um módulo para acessar o conteúdo.                          | RF02                     | Usuario                                                    | Entusiasta                              |
+| Solicitar Conteúdo do Módulo                  | UI pede o conteúdo do módulo ao backend.                                    | RF02                     | Conteudo, Artigo, Video, Quiz, Jogo                        | 3 WebUI                                 |
+| Buscar e Enviar Conteúdo                      | Backend busca conteúdo (BD) e envia para UI.                                | RF02                     | Conteudo, Artigo, Video, Quiz, Jogo                        | 21 ModuloEducacional, 34 BancoDeDados   |
+| Exibir Conteúdo do Módulo                     | UI mostra o conteúdo (aula, artigo, etc.).                                  | RF02                     | Conteudo, Artigo, Video, Quiz, Jogo                        | 3 WebUI                                 |
+| Visualizar/Interagir com Conteúdo             | Usuário consome o conteúdo.                                                 | RF02                     | Usuario, Conteudo                                          | Entusiasta                              |
+| Clicar em "Marcar como Concluído"             | Usuário indica finalização do módulo.                                       | RF04                     | Usuario                                                    | Entusiasta                              |
+| Enviar Requisição de Conclusão                | UI envia comando de conclusão ao backend.                                   | RF04                     | -                                                          | 3 WebUI                                 |
+| Receber Requisição e Verificar Status Atual   | Backend verifica se o módulo já estava concluído (BD).                      | RF04                     | ProgressoUsuarioTrilha                                     | 21 ModuloEducacional, 34 BancoDeDados   |
+| Informar Usuário "Módulo Já Concluído"        | (Se já concluído) UI exibe mensagem informativa.                            | RF04                     | -                                                          | 3 WebUI                                 |
+| Processar Conclusão do Módulo                 | (Se não concluído) Backend inicia o processo de registro.                   | RF04                     | ProgressoUsuarioTrilha                                     | 21 ModuloEducacional                    |
+| Atualizar Progresso da Trilha no BD           | Backend pede para atualizar o status no BD.                                 | RF04                     | ProgressoUsuarioTrilha                                     | 21 ModuloEducacional                    |
+| Registrar Progresso Atualizado                | BD salva o novo status.                                                     | RF04                     | ProgressoUsuarioTrilha                                     | 34 BancoDeDados                         |
+| Calcular e Registrar XP/Recompensas           | Backend calcula e salva XP/recompensas (BD).                                | RF05                     | Perfil, Conquista?                                         | 21 ModuloEducacional?, 12 GestaoUsuarios?, 34 BancoDeDados |
+| Exibir Feedback de Conclusão e XP             | UI mostra mensagem de sucesso e XP ganho.                                   | RF04, RF05, RF06         | Perfil                                                     | 3 WebUI                                 |
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
 A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 
 
@@ -92,6 +138,46 @@ A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 
 
 ## Aba Científico Notícias e Artigos
+
+A tabela 2 mostra as atividades presentes no diagrama de Científico: Notícias e Artigos
+
+**Tabela 2: Atividades de  Científico Notícias e Artigos** 
+
+| Atividade                                           | Descrição Sucinta                                                              | Relação Requisitos (RFs) | Relação Classes (Nome)                 | Relação Componentes (# Nome)                     |
+|-----------------------------------------------------|--------------------------------------------------------------------------------|--------------------------|----------------------------------------|--------------------------------------------------|
+| Acessar Plataforma                                  | Usuário inicia a interação.                                                    | (Geral)                  | Usuario                                | Entusiasta                               |
+| Clicar na Aba "Notícias/Artigos"                   | Usuário navega para a seção de notícias.                                       | RF13, RF14               | Usuario                                | Entusiasta                               |
+| Inserir Termos de Busca / Selecionar Filtros        | (Opcional) Usuário define critérios para refinar a lista.                      | RF10, RF13               | Usuario                                | Entusiasta                               |
+| Enviar Requisição de Busca/Filtro para Backend    | (Se Filtrou) UI envia critérios ao backend.                                    | RF10, RF13               | -                                      | 3 WebUI                                |
+| Solicitar Lista de Artigos (com/sem filtro)       | UI pede a lista (padrão ou filtrada) ao backend.                               | RF10, RF13, RF14         | Artigo, Noticia                        | 3 WebUI                                |
+| Processar Requisição da Lista                       | Backend prepara a consulta ao BD.                                              | RF10, RF13, RF14         | -                                      | 22 ModuloDivulgacao                      |
+| Construir e Executar Query no BD                    | Backend busca artigos no BD, aplicando filtros se houver.                      | RF10, RF13, RF14         | Artigo, Noticia                        | 22 ModuloDivulgacao, 34 BancoDeDados |
+| Retornar Lista de Artigos Encontrados               | BD retorna a lista de artigos correspondente.                                  | RF10, RF13, RF14         | Artigo, Noticia, FonteDeNoticias       | 34 BancoDeDados                        |
+| Formatar Lista e Enviar para WebUI                  | Backend prepara os dados para exibição.                                        | RF10, RF13, RF14         | Artigo, Noticia, FonteDeNoticias       | 22 ModuloDivulgacao                      |
+| Exibir Lista de Artigos (mostrando Origem)          | UI mostra a lista, incluindo a fonte.                                        | RF10, RF13, RF14         | Artigo, Noticia, FonteDeNoticias       | 3 WebUI                                |
+| Selecionar Artigo da Lista                          | Usuário clica em um artigo.                                                    | RF13, RF14               | Usuario                                | Entusiasta                               |
+| Solicitar Conteúdo Completo do Artigo               | UI pede o conteúdo detalhado ao backend.                                       | RF13, RF14               | Artigo, Noticia                        | 3 WebUI                                |
+| Processar Requisição de Conteúdo                    | Backend inicia a busca do conteúdo completo.                                   | RF13, RF14               | -                                      | 22 ModuloDivulgacao                      |
+| Buscar Dados Detalhados no BD                       | Backend busca texto, link original, fonte, etc., no BD.                        | RF13, RF14               | Artigo, Noticia, FonteDeNoticias       | 22 ModuloDivulgacao, 34 BancoDeDados |
+| Retornar Dados Completos do Artigo                  | BD retorna os detalhes.                                                        | RF13, RF14               | Artigo, Noticia, FonteDeNoticias       | 34 BancoDeDados                        |
+| Receber Dados e Verificar Região/Idioma Usuário   | Backend verifica localidade para possível tradução.                            | RNF07                    | Usuario, Perfil?                       | 22 ModuloDivulgacao, 18 ServicoLocalizacao? |
+| Traduzir Conteúdo do Artigo                 | (Se necessário) Backend realiza a tradução.                                    | RNF07                    | Artigo, Noticia                        | 22 ModuloDivulgacao, 18 ServicoLocalizacao? |
+| Formatar Conteúdo e Enviar para WebUI             | Backend prepara o conteúdo (original ou traduzido).                            | RF13, RF14, RNF07         | Artigo, Noticia                        | 22 ModuloDivulgacao                      |
+| Exibir Conteúdo Completo (...) com Botões           | UI mostra o artigo com origem, status tradução e botões.                       | RF13, RF14, RNF07         | Artigo, Noticia, FonteDeNoticias       | 3 WebUI                                |
+| Ler o Artigo (...)                                | Usuário lê o conteúdo.                                                         | RF13, RF14               | Usuario                                | Entusiasta                               |
+| Obter URL da Fonte Original                       | (Se clicou link) UI pega a URL.                                              | (Navegação)              | Artigo, Noticia                        | 3 WebUI                                |
+| Indicar Intenção de Acesso à Fonte Externa        | (Se clicou link) UI sinaliza direcionamento para fonte externa.                | (Navegação)              | -                                      | 3 WebUI -> Fontes Externas               |
+| Receber Requisição / Servir Página                | (Se clicou link) Fonte externa responde ao navegador.                          | (Navegação)              | -                                      | Fontes Externas                          |
+| Redirecionar Navegador / Exibir Página Externa    | (Se clicou link) Navegador exibe a página da fonte original.                   | (Navegação)              | -                                      | 3 WebUI / Navegador                      |
+| Exibir Mensagem/Pedido de Login                 | (Se tentou favoritar sem login) UI informa o usuário.                          | (Interação UI)           | -                                      | 3 WebUI                                |
+| Enviar Requisição para Favoritar                | (Se logado e clicou favoritar) UI envia pedido ao backend.                   | RF15 (Implícito)         | -                                      | 3 WebUI                                |
+| Processar Requisição Favorito                   | Backend inicia processo de salvar favorito e log (paralelo).                 | RF15 (Implícito)         | -                                      | 22 ModuloDivulgacao                      |
+| Salvar Artigo como Favorito no BD               | (Paralelo) Backend pede para salvar relação User-Artigo no BD.                | RF15 (Implícito)         | Usuario, Artigo/Noticia                | 22 ModuloDivulgacao, 34 BancoDeDados |
+| Registrar Favorito                              | (Paralelo) BD persiste a relação.                                             | RF15 (Implícito)         | (Relação Usuario-Artigo)               | 34 BancoDeDados                        |
+| Registrar Log (Favoritar Artigo)                | (Paralelo) Backend registra o evento.                                        | (Monitoramento)          | (Log)                                  | 22 ModuloDivulgacao, 6 ServicoMonitoramento? |
+| Salvar Entrada de Log                           | (Paralelo) BD ou Serviço de Log persiste o evento.                            | (Monitoramento)          | (Log)                                  | 34 BancoDeDados ou 6 ServicoMonitoramento |
+| Enviar Confirmação para WebUI                   | Backend envia sucesso para UI após salvar/logar.                               | RF15 (Implícito)         | -                                      | 22 ModuloDivulgacao                      |
+| Atualizar Interface (ícone favorito)            | UI mostra que o artigo foi favoritado.                                       | RF15 (Implícito)         | -                                      | 3 WebUI                                |
 
 A figura 3 apresenta o diagrama de atividades da aba de Científico
 
@@ -150,3 +236,4 @@ A conclusão do desenvolvimento desses diagramas de atividade para a plataforma 
 | 1.1 | Adição do tópico "Sobre o diagrama"  | Larissa Stéfane | 30/04/2024 |
 | 1.2 | Adição dos diagramas | Larissa Stéfane | 30/04/2024 |
 | 1.3 | Adição da legenda | Larissa Stéfane | 30/04/2024 |
+| 1.4 | Adição das tabelas 1 e 2 | Larissa Stéfane | 04/05/2024 |
