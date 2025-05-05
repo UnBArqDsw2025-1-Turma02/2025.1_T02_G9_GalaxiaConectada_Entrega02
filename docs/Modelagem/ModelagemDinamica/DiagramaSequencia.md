@@ -100,7 +100,7 @@ A tabela 1 mostra os elementos e as sequências no diagrama em relação às tri
 
 ## Aba Promoções
 
-*Cenário:** Usuário logado visualiza a lista de promoções (capturadas externamente por bots) e marca uma delas como favorita.
+**Cenário:** Usuário logado visualiza a lista de promoções (capturadas externamente por bots) e marca uma delas como favorita.
 
 A tabela 2 mostra os elementos e as sequências no diagrama em relação às promoções.
 
@@ -141,3 +141,10 @@ A elaboração dos diagramas de sequência permitiu representar com clareza os f
 [4] LUCIDCHART. O que é um diagrama de sequência UML? Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-sequencia-uml. Acesso em: 30 abr. 2025.
 
 ## Histórico de versão
+
+| Versão | Alteração | Responsável | Data |
+| - | - | - | - |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 30/04/2024 |
+| 1.1 | Adição do seção de explicação  | Larissa Stéfane | 30/05/2024 |
+| 1.2 | Adição dos diagramas | Larissa Stéfane | 01/05/2024 |
+| 1.3 | Adição das tabelas | Larissa Stéfane | 04/05/2024 |
