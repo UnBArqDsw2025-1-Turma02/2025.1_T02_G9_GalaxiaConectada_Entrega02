@@ -70,7 +70,11 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
 
 ## Elaboração do Diagrama
 
-A tabela 1 apresenta os pacotes presentes no diagrama.
+A estruturação da plataforma "Galáxia Conectada" em uma arquitetura modular e organizada é fundamental para sua compreensão e manutenibilidade, sendo o Diagrama de Pacotes a representação visual dessa organização lógica. Para fornecer um inventário claro e uma descrição detalhada de cada agrupamento funcional e técnico apresentado no referido diagrama, a Tabela 1 subsequente lista cada Pacote, sua Descrição concisa e sua Rastreabilidade com outros artefatos importantes do projeto, como Componentes, Requisitos Funcionais (RFs) ou Classes Chave. Assim, esta tabela serve como um dicionário dos blocos construtivos da visão macro da arquitetura, facilitando o entendimento do papel de cada pacote antes de se analisar suas interdependências.
+
+
+<details>
+  <summary><strong>Tabela 1:  Pacotes do Diagrama</strong></summary>
 
 **Tabela 1:** Pacotes do Diagrama
 
@@ -109,8 +113,12 @@ A tabela 1 apresenta os pacotes presentes no diagrama.
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
 
-A tabela 2 apresenta as dependências dos pacotes.
+Enquanto a Tabela 1 define os pacotes individualmente, a Tabela 2, a seguir, foca em elucidar as interconexões e os relacionamentos de dependência entre eles, conforme representados pelas setas no Diagrama de Pacotes. Reconhecendo que um diagrama com múltiplos pacotes e suas respectivas interações pode, por vezes, apresentar uma complexidade visual onde linhas de dependência se cruzam, esta tabela é crucial para a correta interpretação: ela detalha cada Pacote Dependente que qualifica a natureza da relação (como <<usar>> ou <<chamar>>), o Pacote Fornecedor (Destino) e uma Justificativa / Explicação para tal vínculo. Desta forma, a Tabela 2 funciona como um guia textual preciso e complementar à visualização gráfica.
+
+<details>
+  <summary><strong>Tabela 2: Dependências dos Pacotes</strong></summary>
 
 **Tabela 2:** Dependências dos Pacotes
 
@@ -199,6 +207,8 @@ A tabela 2 apresenta as dependências dos pacotes.
 | `Servidor.Infraestrutura.Mensageria`        | `<<reportarPara>>`   | `Servidor.ServicosCompartilhados.Monitoramento` | Loga publicação e consumo de mensagens.                                                                                                                 |
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 ## Diagrama de Pacotes
 
 **Observação:** Para visualizar a imagem em mamior definição, clique nela.
@@ -206,16 +216,15 @@ A tabela 2 apresenta as dependências dos pacotes.
 A Figura 2 mostra o diagrama de pacotes da Galáxia Conectada
 
 <div align="center">
-    Figura 2: o Diagrama de Pacotes
+    <b>Figura 2:</b> o Diagrama de Pacotes
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaPacotes001.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaPacotes001.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF](../Imagens/DiagramaPacotes.drawio.pdf)
-
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaPacotes.drawio.pdf">PDF do Diagrama de Pacotes</a></p>
 
 ### Diagrama Simplificado
 
@@ -224,15 +233,15 @@ Para complementar a visão detalhada e oferecer uma compreensão mais rápida da
 **Observação:** Para visualizar a imagem em mamior definição, clique nela.
 
 <div align="center">
-    Figura 3: o Diagrama de Pacotes - Simplificado
+    <b>Figura 3:</b> o Diagrama de Pacotes - Simplificado
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaPacotesSimplificado.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaPacotesSimplificado.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF - Diagrama Simpificado](../Imagens/DiagramaPacotesSimplificado.drawio.pdf)
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaPacotesSimplificado.drawio.pdf">PDF do Diagrama de Pacotes - Simplificado</a></p>
 
 
 ## Conclusão
@@ -274,3 +283,4 @@ Em suma, o Diagrama de Pacotes detalhado oferece um mapa estruturado da arquitet
 | 1.7 | Criação da Tabela de dependências | Larissa Stéfane | 06/05/2024 |
 | 1.8 | Reorganização da taela de dependências | Larissa Stéfane | 06/05/2024 |
 | 1.9 | Adição das figuras| Larissa Stéfane | 06/05/2024 |
+| 2.0 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
