@@ -68,7 +68,8 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 
 ## Aba Conhecimento Trilhas de Aprendizado
 
-A tabela 1 mostra as atividades presentes no diagrama das trilhas de aprendizado.
+
+Para complementar a representação visual do fluxo de interação do usuário com as Trilhas de Aprendizado, a Tabela 1 a seguir detalha cada uma das principais ações, decisões e estados presentes no diagrama correspondente. Esta tabulação foi elaborada com o intuito de facilitar a leitura e a compreensão sequencial do processo. Ao listar as atividades de forma ordenada e concisa, a tabela serve também como um guia de referência rápida,pois auxilia na análise dos diferentes caminhos e condições que compõem a jornada do usuário ao engajar-se com o conteúdo educativo da plataforma.
 
 
 <details>
@@ -133,7 +134,8 @@ A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 
 ## Aba Científico Notícias e Artigos
 
-A tabela 2 mostra as atividades presentes no diagrama de Científico: Notícias e Artigos
+Visando proporcionar maior clareza e um roteiro textual para o Diagrama de Atividades referente à Aba Científico (Notícias e Artigos), a Tabela 2 subsequente enumera e descreve as etapas e pontos de decisão que constituem este fluxo de navegação e consumo de conteúdo. A apresentação tabular das atividades foi concebida para auxiliar na interpretação da representação gráfica.
+
 
 **Tabela 2: Atividades de  Científico Notícias e Artigos** 
 
