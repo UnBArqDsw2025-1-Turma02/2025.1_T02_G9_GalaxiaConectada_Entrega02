@@ -20,13 +20,21 @@ No projeto Galáxia Conectada, uma plataforma educacional voltada ao ensino de a
 
 ## Objetivos
 
-O objetivo deste artefato é representar, de forma clara e estruturada, os componentes principais do sistema Galáxia Conectada por meio do Diagrama de Classes. Busca-se, com isso, garantir uma visualização precisa das entidades que compõem o sistema, suas responsabilidades e seus relacionamentos.
+O objetivo deste artefato é representar, de forma clara e estruturada, os componentes principais do sistema Galáxia Conectada por meio do Diagrama de Classes. Busca-se, com isso, garantir uma visualização precisa das entidades que compõem o sistema, suas responsabilidades e seus relacionamentos. Assim, os objetivos principais são:
+
+- Apresentar o Diagrama de Classes da plataforma Galáxia Conectada ao representar visualmente a estrutura estática do sistema;
+
+- Documentar a arquitetura lógica do sistema;
+
+- Fornecer uma base sólida para o desenvolvimento e manutenção do sistema;
+
+- Servir como referência para validação dos requisitos elicitados;
 
 ## Metodologia
 
-O Diagrama de Classes será desenvolvido utilizando a ferramenta [Draw.io](https://app.diagrams.net/), a qual permite a criação de diagramas UML de forma prática e visual. 
+1. O Diagrama de Classes será desenvolvido utilizando a ferramenta [Draw.io](https://app.diagrams.net/), a qual permite a criação de diagramas UML de forma prática e visual. 
 
-Como base para a definição das classes, serão utilizadas as informações coletadas na [Entrega 01 do projeto](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/), a qual inclui:
+2. Como base para a definição das classes, serão utilizadas as informações coletadas na [Entrega 01 do projeto](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/), a qual inclui:
 
 - [Requisitos funcionais e não funcionais Elicitados](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
 
@@ -34,12 +42,19 @@ Como base para a definição das classes, serão utilizadas as informações col
 
 - Informações organizadas por meio da metodologia [5W2H](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H)
 
-A partir dessa base, será feita uma investigação detalhada das entidades envolvidas no sistema. AEntão, serão definidas as classes do sistema, junto com seus atributos e métodos. Após compreender e definir bem as classes, serão analisados os relacionamentos de cada um delas. Por fim, o diagrama será elaborado e, em seguida, verificado de acordo com uma [tabela de verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md) baseada nos critérios sintáticos e semânticos da UML. Com isso, ajustes e melhorias serão aplicados conforme necessário.
+3. A partir dessa base, será feita uma investigação detalhada das classes envolvidas no sistema.
+
+4. Serão definidas as classes do sistema, junto com seus atributos e métodos. Após compreender e definir bem as classes, serão analisados os relacionamentos de cada um delas. 
+
+5. Por fim, o diagrama será elaborado e, em seguida, verificado de acordo com uma [tabela de verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md) baseada nos critérios sintáticos e semânticos da UML.
 
 
 ## Investigação das Classes Necessárias
 
-Antes de elaborar o diagrama diretamente no drawi.o, foi criada a tabela abaixo com base nas classes que seriam criadas ao se analisar os requisitos, os atores e as informações do 5W2H.
+Antes da modelagem visual do Diagrama de Classes na ferramenta Draw.io, foi realizado um exercício de identificação e concepção de todas as classes potenciais que comporiam a estrutura da plataforma "Galáxia Conectada". Este planejamento prévio, que considerou os requisitos funcionais, os atores e as principais funcionalidades do sistema, foi crucial para consolidar a compreensão da arquitetura de dados e dos componentes lógicos da plataforma. Assim como também visou facilitar a subsequente elaboração do diagrama em si. Com isso, a Tabela 1 apresenta de forma organizada as classes identificadas para o sistema.
+
+<details>
+  <summary><strong>**Tabela 1:** Classes do Sistema.</strong></summary>
 
 **Tabela 1:** Classes do Sistema.
 
@@ -81,10 +96,10 @@ Antes de elaborar o diagrama diretamente no drawi.o, foi criada a tabela abaixo 
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
 
-**Observação:** Inicialmente, tinha-se pensado em fazer o **usuário** como uma superclasse e **Aluno**, **Instrutor**, **Professor_Voluntário** e **Administrador** como suas subclasses. Contudo, percebeu-se que essa abordagem limita a representação de cenários reais onde uma única pessoa pode acumular múltiplas funções simultaneamente, como ser Instrutor e Professor_Voluntário ao mesmo tempo. **A herança estabelece uma relação "é um(a)", e assim força uma instância a pertencer a apenas uma das subclasses mais específicas, o que impede a combinação de papéis**. Por isso, optou-se por um modelo baseado em **composição: Usuario passa a ser uma classe comum**, representando a entidade central da pessoa ou conta no sistema, e ela se relaciona (agrega ou compõe) com outras classes que representam os diferentes Papéis (PapelAluno, PapelInstrutor, PapelProfessorVoluntario, PapelAdministrador). 
+**Observação Importante:** Inicialmente, tinha-se pensado em fazer o **usuário** como uma superclasse e **Aluno**, **Instrutor**, **Professor_Voluntário** e **Administrador** como suas subclasses. Contudo, percebeu-se que essa abordagem limita a representação de cenários reais onde uma única pessoa pode acumular múltiplas funções simultaneamente, como ser Instrutor e Professor_Voluntário ao mesmo tempo. **A herança estabelece uma relação "é um(a)", e assim força uma instância a pertencer a apenas uma das subclasses mais específicas, o que impede a combinação de papéis**. Por isso, optou-se por um modelo baseado em **composição: Usuario passa a ser uma classe comum**, representando a entidade central da pessoa ou conta no sistema, e ela se relaciona (agrega ou compõe) com outras classes que representam os diferentes Papéis (PapelAluno, PapelInstrutor, PapelProfessorVoluntario, PapelAdministrador). 
  
-
 
 ## Os Tipos de Relacionamentos
 
@@ -121,8 +136,12 @@ A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama 
 
 ### Os Relacionamentos no Diagrama de Classes
 
-Com base na análise da tabela das classes e no significado e relevância dos relacionamentos, a tabela 3 mostra os relacionamentos de cada uma das classes da tabela 1.
+Além da definição individual de cada classe, a representação de como elas se interconectam é um aspecto vital do Diagrama de Classes, uma vez que ilustra a dinâmica e as dependências estruturais do sistema. Dessa maneira, para elucidar a natureza e as implicações de cada tipo de ligação (como Associação, Agregação, Composição, Generalização e Dependência) utilizada no diagrama visual, elaborou-se também a tabela 3 específica para os relacionamentos. Esta tabela 3 auxiliar tem o objetivo de detalhar mostra os relacionamentos de cada uma das classes da tabela 1.
 
+<details>
+  <summary><strong>**Tabela 3:** Relacionamentos entre as classes.</strong></summary>
+
+**Tabela 3:** Relacionamentos entre as classes
 
 | **Classe**      | **Relacionamentos**  | **Observações**    |
 |-----------------|----------------------|--------------------|
@@ -153,6 +172,8 @@ Com base na análise da tabela das classes e no significado e relevância dos re
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 ## Diagrama de Classes 
 
 Para melhor compreensão do diagrama, a figura 1 mostra a legenda;
@@ -179,7 +200,7 @@ Abaixo, há o Diagrama de Classes criado:
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF](../Imagens/DiagramaClasses.pdf)
 
 <details>
   <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
