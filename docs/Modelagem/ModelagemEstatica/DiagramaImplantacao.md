@@ -13,7 +13,7 @@
 
 ## Introdução
 
-O diagrama de implantação, segundo o artigo [O que é um diagrama de implementação?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml), é um tipo de diagrama estrutural da UML que representa a implementação física de artefatos de software sobre os componentes de hardware. Neste diagrama, utilizam-se elementos gráficos como nódulos (caixas tridimensionais) para representar dispositivos ou ambientes de execução de software, e os artefatos são os produtos gerados pelo desenvolvimento, como arquivos executáveis, bibliotecas ou scripts. 
+O diagrama de implantação, segundo o artigo [O que é um diagrama de implementação?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [1](#ref1), é um tipo de diagrama estrutural da UML que representa a implementação física de artefatos de software sobre os componentes de hardware. Neste diagrama, utilizam-se elementos gráficos como nódulos (caixas tridimensionais) para representar dispositivos ou ambientes de execução de software, e os artefatos são os produtos gerados pelo desenvolvimento, como arquivos executáveis, bibliotecas ou scripts. 
 
 Com base nisso, o artigo [O Guia Fácil de Diagramas de Implantação UML](https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-implantacao/#:~:text=Um%20diagrama%20de%20implanta%C3%A7%C3%A3o%20%C3%A9,software%20f%C3%ADsico%20de%20um%20sistema.) fala que esse tipo de diagrama é essencial para entender a arquitetura de execução do sistema ao evidenciar tanto o hardware necessário quanto o middleware que interliga os elementos da solução. Assim, no contexto do projeto Galáxia Conectada, o diagrama de implantação é importante pois permite visualizar de forma clara como a plataforma será distribuída fisicamente — por exemplo, o servidor onde será hospedado os serviços.
 
@@ -47,6 +47,10 @@ A elaboração do diagrama de implantação será conduzida com o apoio da ferra
 
 A tabela 1 abaixo foi elaborada para auxiliar na análise dos tipos de nós necessários para a construção do Diagrama de Implantação do projeto Galáxia Conectada. 
 
+
+<details>
+  <summary><strong>Tabela 1: Base para Diagrama de Implantação</strong></summary>
+
 **Tabela 1**: Base para Diagrama de Implantação
 
 | # | Tipo de Nó  | Nome do Nó  | <<Estereótipo>> / Ícone Usado   | Descrição / Responsabilidade   | Artefatos / Componentes Implantados  | Ambiente de Execução / Software Chave  | Comunicação Principal (Para/De, Protocolo)  | Requisitos Atendidos  |
@@ -59,6 +63,8 @@ A tabela 1 abaixo foi elaborada para auxiliar na análise dos tipos de nós nece
 | 06 | Servidor            | `Servidor de Aplicação 2 - Jogos`     | `<<server>>`          | execução da aplicação de jogos. | `<<interface>> astronomia.war`<br>`web-tools-lib.jar`<br>`<<deployment spec>> web.xml`<br>`Componente Conteudo Interativo` | Java App Server (Tomcat, etc.) + JRE / Docker     | [De] Firewall (TCP/IP)<br> [Para] SGBD (TCP/IP)                                                                                                                                                                                                                                              | RF08, RF21, RF22, RNF02, RNF05    |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
 
 ## Diagrama de Implantação
 
@@ -82,18 +88,8 @@ Para melhor compreensão do diagrama, a figura 1 mostra a legenda;
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF](https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaImplantacao.pdf)
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaImplantacao.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/75556a84c6b754819462bcc143af4787c4a62dde/docs/Modelagem/Imagens/DiagramaImplantacao.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 ## Conclusão
 
@@ -131,3 +127,4 @@ A construção do Diagrama de Implantação para o projeto Galáxia Conectada te
 | 1.2 | Criação da tabela Base | Larissa Stéfane | 28/04/2024 |
 | 1.3 | Reestruturação da Tabela base | Larissa Stéfane | 29/04/2024 |
 | 1.4 | Adição do Diagrama de Implantação | Larissa Stéfane | 30/04/2024 |
+| 1.5 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
