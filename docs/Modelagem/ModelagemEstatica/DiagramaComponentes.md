@@ -90,10 +90,11 @@ Antes da modelagem visual do Diagrama de Componentes na ferramenta Draw.io, foi 
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 Além disso, a Tabela 1, apresentada a seguir, desempenha um outro papel fundamental: além de catalogar formalmente cada componente com seu tipo, nome, descrição, interfaces providas e requeridas, e observações, ela também detalha suas dependências, servindo como um guia complementar essencial para facilitar a leitura e a compreensão precisa da estrutura e das conexões representadas no diagrama.
 
 
-</details>
 
 ## Diagrama de Componentes
 
