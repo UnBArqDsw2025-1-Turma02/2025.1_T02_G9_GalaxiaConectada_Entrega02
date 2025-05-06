@@ -70,6 +70,10 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 
 A tabela 1 mostra as atividades presentes no diagrama das trilhas de aprendizado.
 
+
+<details>
+  <summary><strong>Tabela 1: Atividades das Trilhas de Aprendizado</strong></summary>
+
 **Tabela 1: Atividades das Trilhas de Aprendizado** 
 
 | Atividade                                     | Descrição Sucinta                                                           | Relação Requisitos (RFs) | Relação Classes (Nome)                                     | Relação Componentes (# Nome)              |
@@ -110,31 +114,21 @@ A tabela 1 mostra as atividades presentes no diagrama das trilhas de aprendizado
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 
 
 <div align="center">
-    Figura 2: o Diagrama de Atividade - Aba Conhecimento
+    <b>Figura 2:</b> Diagrama de Atividade – Aba Conhecimento
     <br>
-    <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
-
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.pdf" target="_blank">
-  <img src="../Imagens/DiagramaAtividadeTrilhaEducacional.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
-
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaAtividadeTrilhaEducacional.drawio.pdf">PDF da Aba Conhecimento</a></p>
 
 
 ## Aba Científico Notícias e Artigos
@@ -182,26 +176,15 @@ A tabela 2 mostra as atividades presentes no diagrama de Científico: Notícias 
 A figura 3 apresenta o diagrama de atividades da aba de Científico
 
 <div align="center">
-    Figura 3: o Diagrama de Atividade - Aba Científico
+    <b>Figura 3:</b> Diagrama de Atividade – Aba Científico
     <br>
-    <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaAtividadeCientifico.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
-
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaAtividadeCientifico.drawio.pdf" target="_blank">
-  <img src="../Imagens/DiagramaAtividadeCientifico.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaAtividadeCientifico.drawio.pdf">PDF da Aba Científico</a></p>
 
 
 
@@ -237,3 +220,4 @@ A conclusão do desenvolvimento desses diagramas de atividade para a plataforma 
 | 1.2 | Adição dos diagramas | Larissa Stéfane | 30/04/2024 |
 | 1.3 | Adição da legenda | Larissa Stéfane | 30/04/2024 |
 | 1.4 | Adição das tabelas 1 e 2 | Larissa Stéfane | 04/05/2024 |
+| 1.5 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
