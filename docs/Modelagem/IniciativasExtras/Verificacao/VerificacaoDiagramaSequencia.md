@@ -65,9 +65,7 @@ Após a elaboração, cada diagrama foi submetido a um processo de verificação
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
-## Observações
 
-*(Espaço reservado para observações específicas da verificação dos diagramas de sequência do projeto Galáxia Conectada).*
 
 ## Conclusão
 
