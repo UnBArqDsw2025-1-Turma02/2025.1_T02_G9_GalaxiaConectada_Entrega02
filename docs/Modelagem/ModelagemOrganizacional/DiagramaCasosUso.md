@@ -56,7 +56,7 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
 <div align="center">
     Figura 1: Legenda do Diagrama de Casos de Uso
     <br>
-    <img src="" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/725cd7a49c5a871bc729855e9f2b824492871fed/docs/Modelagem/Imagens/LegendaCasoUso.drawio.png" width="500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -64,20 +64,19 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
 
 ## Diagrama de Casos de Uso
 
-**Observação:** Para visualizar a imagem em mamior definição, clique nela.
 
 A Figura 2 mostra o diagrama de Casos de Uso da Galáxia Conectada
 
 <div align="center">
     Figura 2: o Diagrama de Casos de Uso
     <br>
-    <img src="">
+    <img src="../Imagens/DiagramaCasoUsoGalaxia.drawio.png">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF]()
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF](../Imagens/DiagramaCasoUsoGalaxia.drawio.pdf)
 
 ## Conclusão 
 
@@ -102,12 +101,10 @@ Portanto, o Diagrama de Casos de Uso elaborado consolida a visão funcional da p
 ## Histórico de versão
 
 
-| Versão | Alteração                                                                                              | Responsável       | Data       |
-| :----- | :----------------------------------------------------------------------------------------------------- | :---------------- | :--------- |
-| 1.0    | Criação da estrutura inicial do documento (Introdução, Objetivos).                                     | Larissa Stéfane   | 04/05/2025 |
-| 1.1    | Adição da seção de Metodologia e levantamento inicial das referências bibliográficas.                  | Larissa Stéfane   | 04/05/2025 |
-| 1.2    | Identificação dos Atores principais da plataforma com base nos requisitos e papéis definidos.          | Larissa Stéfane   | 04/05/2025 |
-| 1.3    | Levantamento e listagem inicial (bruta) dos Casos de Uso a partir dos Requisitos Funcionais.           | Larissa Stéfane   | 04/05/2025 |
-| 1.4    | Refinamento, agrupamento e simplificação da lista de Casos de Uso (visando ~30 UCs); Início da Seção 4. | Larissa Stéfane   | 05/05/2025 |
-| 1.5    | Definição dos relacionamentos principais (Associação Ator-UC, Generalização de Atores).                | Larissa Stéfane   | 05/05/2025 |
-| 1.6    | Adição de relacionamentos `<<include>>` / `<<extend>>` chave; Revisão da descrição na Seção 4.        | Larissa Stéfane   | 05/05/2025 |
+| Versão | Alteração                                                                      | Responsável       | Data       |
+| :----- | :----------------------------------------------------------------------------- | :---------------- | :--------- |
+| 1.0    | Criação da estrutura inicial do documento                                      | Larissa Stéfane   | 04/05/2025 |
+| 1.1    | Adição da seção de Metodologia                  | Larissa Stéfane   | 04/05/2025 |
+| 1.2    | Adição da explicação         | Larissa Stéfane   | 04/05/2025 |
+| 1.3    | Adição do Diagrama de Caso de Uso        | Larissa Stéfane   | 05/05/2025 |
+
