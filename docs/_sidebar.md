@@ -30,7 +30,7 @@
       - [2.3.2 Diagrama de Pacotes](/Modelagem/ModelagemOrganizacional/DiagramaPacotes.md)
 
     * 2.4. Participações 
-      - [2.4. Participações]()
+      - [2.4. Participações](/Modelagem/Participacoes)
 
     * 2.5.  iniciativas extras
       - [2.5.1 Cronograma Planejado](/Modelagem/IniciativasExtras/CronogramaPlanejado.md)
