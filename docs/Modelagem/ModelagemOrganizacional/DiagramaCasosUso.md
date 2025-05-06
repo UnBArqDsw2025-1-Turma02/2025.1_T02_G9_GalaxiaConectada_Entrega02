@@ -6,14 +6,13 @@
 - [Objetivos](#Objetivos)
 - [Metodologia](#Metodologia)
 - [Sobre o Diagrama de Casos de Uso](#Sobre-o-Diagrama-de-Casos-de-Uso)
-- [Elaboração do Diagrama](Elaboração-do-Diagrama)
 - [Diagrama de Casos de Uso](#Diagrama-de-Casos-de-Uso)
 - [Conclusão](#Conclusão)
 - [Bibliografia](#Bibliografia)
 - [Histórico de versão](#Histórico-de-versão)
 
 ## Introdução
-# Diagrama de Casos de Uso - Galáxia Conectada
+
 
 ## Introdução
 
@@ -62,6 +61,23 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
 </div>
+
+## Diagrama de Casos de Uso
+
+**Observação:** Para visualizar a imagem em mamior definição, clique nela.
+
+A Figura 2 mostra o diagrama de Casos de Uso da Galáxia Conectada
+
+<div align="center">
+    Figura 2: o Diagrama de Casos de Uso
+    <br>
+    <img src="">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF]()
 
 ## Conclusão 
 
