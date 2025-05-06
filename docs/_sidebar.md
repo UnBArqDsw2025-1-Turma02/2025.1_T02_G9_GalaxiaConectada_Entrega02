@@ -15,3 +15,4 @@
 - **2. Modelagem de SoftWare**
     * 2.1. Modelagem UML Estática
     - [2.1.1 Diagrama de Classes](/Modelagem/ModelagemEstatica/DiagramaClasses.md)
+    - [2.1.2 Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md)
