@@ -22,7 +22,7 @@ Neste artefato, procura-se apresentar o Diagrama de Pacotes da plataforma Galáx
 
 ## Objetivos
 
-COm o intuito de apresentar o Diagrama de Pacotes e destacar a estrutura modular do sistema, busca-se:
+Com o intuito de apresentar o Diagrama de Pacotes e destacar a estrutura modular do sistema, busca-se:
 
 - Representar a organização lógica dos elementos do sistema em pacotes distintos;
 
