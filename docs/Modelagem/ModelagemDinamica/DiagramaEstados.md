@@ -77,7 +77,11 @@ Da mesma forma, foram criadas tabelas que mostram as transições entre os estad
 
 ## Aba Promoção
 
-A tabela 1 mostra os estados presentes no diagrama de estados do módulo de promoções.
+O Diagrama de Máquina de Estados para o módulo de Promoções ilustra as diversas fases pelas quais uma PromocaoExterna pode passar ao longo de seu ciclo de vida na plataforma "Galáxia Conectada". Para detalhar e clarificar cada uma dessas fases, a Tabela 1 a seguir apresenta e descreve os diferentes estados definidos.
+
+
+<details>
+  <summary><strong>Tabela 1: Estados do Ciclo de Vida da Promoção</strong></summary>
 
 **Tabela 1: Estados do Ciclo de Vida da Promoção** 
 
@@ -101,8 +105,12 @@ A tabela 1 mostra os estados presentes no diagrama de estados do módulo de prom
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
 
-A tabela 2 mostra as transições presentes no diagrama de estados do módulo de promoções.
+Para complementar a compreensão dos estados de uma PromocaoExterna, a Tabela 2 se aprofunda nas transições que governam as mudanças entre esses diferentes estágios, conforme representado no Diagrama de Máquina de Estados do módulo de promoções. Esta tabela visa especificar os eventos gatilho (triggers), as condições de guarda (guards) que devem ser satisfeitas e as ações (actions) que são executadas durante cada mudança de estado. Ao fornecer esta visão estruturada, a tabela auxilia na leitura do diagrama.
+
+<details>
+  <summary><strong>Tabela 2: Transições do Ciclo de Vida da Promoção Externa</strong></summary>
 
 
 **Tabela 2: Transições do Ciclo de Vida da Promoção Externa**
@@ -131,35 +139,29 @@ A tabela 2 mostra as transições presentes no diagrama de estados do módulo de
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 A Figura 2 mostra o diagrama de estados das promoções
 
-
 <div align="center">
-    Figura 2: o Diagrama de Estados - Promoções
+    <b>Figura 2:</b> o Diagrama de Estados – Promoções
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.pdf">PDF do Diagrama de Estados – Promoções</a></p>
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaEstadosPromocao.drawio.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 
 ## Aba Fórum
 
-A tabela 3 mostra os estados presentes no diagrama de estados do módulo de promoções.
+O comportamento dinâmico de um Topico dentro do Fórum da plataforma "Galáxia Conectada" é modelado através de um Diagrama de Máquina de Estados específico, e para um entendimento aprofundado dos estágios possíveis desta entidade, a Tabela 3 subsequente descreve cada um dos estados que um tópico pode assumir.
+
+<details>
+  <summary><strong>Tabela 3: Estados do Ciclo de Vida do Tópico do Fórum</strong></summary>
 
 
 **Tabela 3: Estados do Ciclo de Vida do Tópico do Fórum**
@@ -194,13 +196,18 @@ A tabela 3 mostra os estados presentes no diagrama de estados do módulo de prom
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
 
 
 
+A evolução de um Topico do Fórum entre seus diversos estados é regida por transições específicas, as quais são detalhadas na Tabela 4. Esta tabela serve como um complemento fundamental ao Diagrama de Máquina de Estados dos Tópicos, explicando as dinâmicas de mudança de estado. Seu propósito é elucidar os eventos disparadores (como uma ação de um Moderador ou um critério temporal), as condições de guarda que precisam ser atendidas para que a transição ocorra, e as ações que podem ser executadas como resultado dessa mudança (por exemplo, de 'Aberto' para 'Fechado'). Dessa maneira, ao apresentar essas informações de forma organizada, a tabela auxilia na compreensão das regras que ditam o comportamento e o fluxo de vida dos tópicos no Fórum.
 
-A tabela 4 mostra as transições presentes no diagrama de estados do módulo de promoções.
 
-**Tabela 4: Transições do Ciclo de Vida do Tópico do Fóruns
+<details>
+  <summary><strong>Tabela 4: Transições do Ciclo de Vida do Tópico do Fóruns
+</strong></summary>
+
+**Tabela 4**: Transições do Ciclo de Vida do Tópico do Fóruns
 
 
 | Elementos entre a transição                                    | Rótulo da transição                                                                          | Relação com Requisitos (Exemplos) | Relação com Componentes (Evento / Ação)                                                            |
@@ -233,29 +240,21 @@ A tabela 4 mostra as transições presentes no diagrama de estados do módulo de
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 A figura 3 apresenta o diagrama de estados do Fórum
 
 <div align="center">
-    Figura 3: o Diagrama de Estados - Fórum
+    <b>Figura 3:</b> o Diagrama de Estados – Fórum
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosForum.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaEstadosForum.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaEstadosForum.drawio.pdf">PDF do Diagrama de Estados – Fórum</a></p>
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaEstadosForum.drawio.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosForum.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 ## Conclusão
 
@@ -288,3 +287,4 @@ Em suma, os Diagramas de Máquina de Estados detalhados nesta seção forneceram
 | 1.4 |Complementação das tabelas | Larissa Stéfane | 04/05/2024 |
 | 1.5 | Adição dos Diagramas | Larissa Stéfane | 04/05/2024 |
 | 1.6 | Adição da conclusão | Larissa Stéfane | 04/05/2024 |
+| 1.7 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
