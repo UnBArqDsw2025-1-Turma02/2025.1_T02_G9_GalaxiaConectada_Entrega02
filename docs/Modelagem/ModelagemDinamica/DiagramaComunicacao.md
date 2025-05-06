@@ -83,7 +83,11 @@ Da mesma forma, foram criadas tabelas que mostram os vínculos entre os objetos 
 
 ## Aba Fórum
 
-A tabela 1 mostra os objetos no diagrama de comunicação da aba do fórum.
+Para elucidar os elementos que interagem e colaboram no Diagrama de Comunicação referente às funcionalidades do Fórum da plataforma "Galáxia Conectada", a Tabela 1 a seguir identifica e descreve cada participante (objetos ou instâncias de classes) envolvido. Esta tabela tem como objetivo fornecer uma visão detalhada de cada elemento que troca mensagens ao detalhar a sua funcionalidade no contexto específico das interações do fórum. 
+
+<details>
+  <summary><strong>Tabela 1: Participantes do Diagrama de Comunicação (Fórum)</strong></summary>
+
 
 **Tabela 1:** Participantes do Diagrama de Comunicação (Fórum)
 
@@ -107,7 +111,13 @@ A tabela 1 mostra os objetos no diagrama de comunicação da aba do fórum.
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
-A tabela 2 mostra os vínculos presentes no diagrama de comunicação da aba do fórum.
+</details>
+
+Para complementar a identificação dos participantes, a Tabela 2 se aprofunda na dinâmica das interações do Fórum ao detalhar a sequência, o conteúdo e as características das mensagens trocadas e dos vínculos estabelecidos no Diagrama de Comunicação correspondente. O propósito desta tabela é servir como um guia para a leitura do diagrama.
+
+<details>
+  <summary><strong>Tabela 2: Mensagens e Vínculos do Diagrama de Comunicação (Fórum) (Fórum)</strong></summary>
+
 
 **Tabela 2:** Mensagens e Vínculos do Diagrama de Comunicação (Fórum)
 
@@ -145,33 +155,25 @@ A Figura 2 mostra o diagrama de comunicação da aba do fórum
 
 
 <div align="center">
-    Figura 2: o Diagrama de Comunicação - Fórum
+    <b>Figura 2:</b> Diagrama de Comunicação – Fórum
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoForumDiscurssoes.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComunicacaoForumDiscurssoes.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
-
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaComunicacaoForumDiscurssoes.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoForumDiscurssoes.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComunicacaoForumDiscurssoes.pdf">PDF do Diagrama de Comunicação – Fórum</a></p>
 
 
 
 
 ## Aba Jogos
 
-A tabela 3 mostra os objetos no diagrama de comunicação da aba dos jogos.
+A fim de detalhar os colaboradores envolvidos nos cenários de interação dos Jogos Educacionais, conforme ilustrado no respectivo Diagrama de Comunicação, a Tabela 3 apresenta uma listagem descritiva de cada participante e seu papel funcional. Esta tabulação visa clarificar as responsabilidades de cada objeto ou instância dentro do fluxo dos jogos, vinculando-os aos Requisitos Funcionais (RFs) específicos que implementam, aos Componentes arquiteturais relacionados e às Classes do modelo de domínio que lhes dão origem. 
+
+<details>
+  <summary><strong>Tabela 3: Participantes do Diagrama de Comunicação (Jogos Educacionais)</strong></summary>
 
 **Tabela 3:** Participantes do Diagrama de Comunicação (Jogos Educacionais)
 
@@ -196,8 +198,13 @@ A tabela 3 mostra os objetos no diagrama de comunicação da aba dos jogos.
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
-A tabela 4 mostra os vínculos presentes no diagrama de comunicação da aba dos jogos.
+</details>
 
+Para uma análise minuciosa do fluxo de mensagens e das conexões representadas no Diagrama de Comunicação dos Jogos Educacionais, a Tabela 4 subsequente cataloga e explica cada interação fundamental entre os participantes. Através desta tabela, busca-se facilitar a compreensão do diagrama ao mapear a sequência da comunicação, ao identificar o conteúdo de cada mensagem (vínculo), seu tipo, o remetente e o destinatário. Para enriquecer o entendimento, a tabela também correlaciona essas trocas de mensagens com os Requisitos Funcionais (RFs) atendidos e as interações entre Componentes e os métodos/dados das Classes.
+
+<details>
+  <summary><strong>Tabela 4: Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais)
+</strong></summary>
 
 **Tabela 4:** Mensagens e Vínculos do Diagrama de Comunicação (Jogos Educacionais)
 
@@ -233,29 +240,23 @@ A tabela 4 mostra os vínculos presentes no diagrama de comunicação da aba dos
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 A figura 3 apresenta o diagrama de Comunicação da Aba de Jogos
 
 <div align="center">
-    Figura 3: o Diagrama de Comunicação - Jogos
+    <b>Figura 3:</b> Diagrama de Comunicação – Jogos
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoJogosEducacionais.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComunicacaoJogosEducacionais.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComunicacaoJogosEducacionais.pdf">PDF do Diagrama de Comunicação – Jogos</a></p>
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
 
-<a href="../Imagens/DiagramaComunicacaoJogosEducacionais.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComunicacaoJogosEducacionais.png" alt="Abrir PDF" width="1000">
-</a>
 
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 ## Conclusão
 
@@ -292,3 +293,4 @@ Em conclusão, os Diagramas de Comunicação elaborados para os módulos de Fór
 | 1.3 | Criação das tabelas da aba de jogos | Larissa Stéfane | 02/05/2024 |
 | 1.4 | Explicação dos diagramas de comunicação | Larissa Stéfane | 02/05/2024 |
 | 1.5 | Adição dos diagramas | Larissa Stéfane | 02/05/2024 |
+| 1.6 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
