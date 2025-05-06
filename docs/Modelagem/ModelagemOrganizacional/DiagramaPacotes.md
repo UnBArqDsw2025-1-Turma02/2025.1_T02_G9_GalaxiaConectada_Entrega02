@@ -201,6 +201,8 @@ A tabela 2 apresenta as dependências dos pacotes.
 
 ## Diagrama de Pacotes
 
+**Observação:** Para visualizar a imagem em mamior definição, clique nela.
+
 A Figura 2 mostra o diagrama de pacotes da Galáxia Conectada
 
 <div align="center">
@@ -218,6 +220,8 @@ A Figura 2 mostra o diagrama de pacotes da Galáxia Conectada
 ### Diagrama Simplificado
 
 Para complementar a visão detalhada e oferecer uma compreensão mais rápida da estrutura de alto nível, apresenta-se também um Diagrama de Pacotes simplificado. Esta versão foca nos principais agrupamentos lógicos (como as camadas Apresentacao, Servidor, e os subsistemas principais dentro do backend) e nas dependências mais críticas.
+
+**Observação:** Para visualizar a imagem em mamior definição, clique nela.
 
 <div align="center">
     Figura 3: o Diagrama de Pacotes - Simplificado
