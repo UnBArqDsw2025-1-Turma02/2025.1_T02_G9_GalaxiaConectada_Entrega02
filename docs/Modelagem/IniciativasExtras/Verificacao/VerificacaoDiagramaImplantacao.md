@@ -13,19 +13,19 @@
 
 ## Introdução
 
-O Diagrama de Implantação, segundo a especificação UML (Object Management Group, 2017), é um diagrama estrutural que modela a arquitetura física de um sistema. Ele mostra como os artefatos de software (executáveis, bibliotecas, arquivos de configuração, etc.) são distribuídos e implantados nos nós de hardware (servidores, dispositivos) e ambientes de execução (sistemas operacionais, containers) (LUCID SOFTWARE INC., 2024; FOWLER, 2003). No contexto do projeto Galáxia Conectada, este diagrama é crucial para visualizar a topologia de implantação da plataforma, incluindo servidores web, bancos de dados e possíveis integrações com serviços externos.
+O Diagrama de Implantação, segundo a [especificação UML](https://www.omg.org/spec/UML/) [7](#ref7), é um diagrama estrutural que modela a arquitetura física de um sistema. Ele mostra como os artefatos de software (executáveis, bibliotecas, arquivos de configuração, etc.) são distribuídos e implantados nos nós de hardware (servidores, dispositivos) e ambientes de execução (sistemas operacionais, containers) ([Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [5](#ref5); [Fowler (2003)](https://www.amazon.com/UML-Distilled-Standard-Modeling-Language/dp/0321193687) [3](#ref3)). No contexto do projeto Galáxia Conectada, este diagrama é crucial para visualizar a topologia de implantação da plataforma, incluindo servidores web, bancos de dados e possíveis integrações com serviços externos.
 
-A verificação deste diagrama assegura que a representação da infraestrutura física e da distribuição dos componentes de software esteja correta, completa e alinhada com os requisitos não funcionais do sistema, como desempenho, escalabilidade e segurança (LUCID SOFTWARE INC., 2024). Identificar problemas nesta fase ajuda a evitar custos e dificuldades na etapa de implantação real do sistema.
+A verificação deste diagrama assegura que a representação da infraestrutura física e da distribuição dos componentes de software esteja correta, completa e alinhada com os requisitos não funcionais do sistema, como desempenho, escalabilidade e segurança ([Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [5](#ref5)). Identificar problemas nesta fase ajuda a evitar custos e dificuldades na etapa de implantação real do sistema.
 
 ## Objetivos
 
-Este artefato tem como objetivo realizar a verificação do Diagrama de Implantação criado para o projeto Galáxia Conectada. A finalidade é garantir que ele represente com precisão a arquitetura física planejada para o sistema, que todos os nós, artefatos e conexões relevantes estejam modelados corretamente conforme os padrões UML (Object Management Group, 2017; UML-DIAGRAMS, 2024) e que o diagrama seja consistente com os demais artefatos de arquitetura e os requisitos do projeto.
+Este artefato tem como objetivo realizar a verificação do Diagrama de Implantação criado para o projeto Galáxia Conectada. A finalidade é garantir que ele represente com precisão a arquitetura física planejada para o sistema, que todos os nós, artefatos e conexões relevantes estejam modelados corretamente conforme os padrões UML ([UML Spec](https://www.omg.org/spec/UML/) [7](#ref7); [UML Diagrams](https://www.uml-diagrams.org/deployment-diagrams-overview.html) [11](#ref11)) e que o diagrama seja consistente com os demais artefatos de arquitetura e os requisitos do projeto.
 
 ## Metodologia
 
-Similarmente à verificação de outros diagramas UML no projeto, a metodologia para o Diagrama de Implantação envolveu, primeiramente, o estudo dos conceitos e da notação UML específica para este diagrama (LUCID SOFTWARE INC., 2024; FOWLER, 2003; VISUAL PARADIGM, 2024). Com base na arquitetura de software definida e nos requisitos de infraestrutura do Galáxia Conectada, foi elaborado um esboço do diagrama, identificando os nós de hardware e software e os artefatos a serem implantados (IBM CORPORATION, 2024; EDRAWSOFT, 2024; MAURO DE BONI, 2023).
+Similarmente à verificação de outros diagramas UML no projeto, a metodologia para o Diagrama de Implantação envolveu, primeiramente, o estudo dos conceitos e da notação UML específica para este diagrama ([Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [5](#ref5); [Fowler (2003)](https://www.amazon.com/UML-Distilled-Standard-Modeling-Language/dp/0321193687) [3](#ref3); [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/) [12](#ref12)). Com base na arquitetura de software definida e nos requisitos de infraestrutura do Galáxia Conectada, foi elaborado um esboço do diagrama, identificando os nós de hardware e software e os artefatos a serem implantados ([IBM](https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams) [4](#ref4); [Edraw](https://www.edrawsoft.com/pt/deployment-chart-example.html) [2](#ref2); [Mauro de Boni](https://www.youtube.com/watch?v=eFFq3SLMQJ4) [6](#ref6)).
 
-Posteriormente, aplicou-se um processo de verificação sistemática utilizando tabelas de checklist. Cada item das tabelas foi cuidadosamente analisado em relação ao diagrama proposto. As inconsistências ou omissões identificadas foram corrigidas para garantir a conformidade com as boas práticas de modelagem de implantação (LUCID SOFTWARE INC., 2024; VISUAL PARADIGM, 2024) e os objetivos do projeto.
+Posteriormente, aplicou-se um processo de verificação sistemática utilizando tabelas de checklist. Cada item das tabelas foi cuidadosamente analisado em relação ao diagrama proposto. As inconsistências ou omissões identificadas foram corrigidas para garantir a conformidade com as boas práticas de modelagem de implantação ([Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [5](#ref5); [Visual Paradigm](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/) [12](#ref12)) e os objetivos do projeto.
 
 ## Tabela de Verificação para os Nós (Dispositivos e Ambientes de Execução)
 
@@ -69,40 +69,53 @@ Posteriormente, aplicou-se um processo de verificação sistemática utilizando 
 
 ## Conclusão
 
-A verificação do Diagrama de Implantação do projeto Galáxia Conectada foi essencial para validar a arquitetura física proposta para o sistema. Através da aplicação das tabelas de verificação, foi possível assegurar que a disposição dos artefatos de software nos nós de hardware e ambientes de execução está corretamente modelada, em conformidade com os padrões UML (Object Management Group, 2017) e alinhada aos requisitos do sistema. Este processo contribui para mitigar riscos relacionados à implantação e garante uma visão clara da infraestrutura necessária para a operação da plataforma (LUCID SOFTWARE INC., 2024; IBM CORPORATION, 2024).
+A verificação do Diagrama de Implantação do projeto Galáxia Conectada foi essencial para validar a arquitetura física proposta para o sistema. Através da aplicação das tabelas de verificação, foi possível assegurar que a disposição dos artefatos de software nos nós de hardware e ambientes de execução está corretamente modelada, em conformidade com os padrões UML ([UML Spec](https://www.omg.org/spec/UML/) [7](#ref7)) e alinhada aos requisitos do sistema. Este processo contribui para mitigar riscos relacionados à implantação e garante uma visão clara da infraestrutura necessária para a operação da plataforma ([Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [5](#ref5); [IBM](https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams) [4](#ref4)).
 
 ## Bibliografia
 
-APOSTILA UML. Seção sobre Diagrama de Implantação. Disponibilizada pela professora. Acesso em: 05 mai. 2025.
+<a name="ref1"></a>
+[1] APOSTILA UML. Seção sobre Diagrama de Implantação. Disponibilizada pela professora. Acesso em: 05 mai. 2025.
 
-EDRAWSOFT. Exemplos de Diagrama de Implantação UML. Edraw, 2024. Disponível em: https://www.edrawsoft.com/pt/deployment-chart-example.html. Acesso em: 28 abr. 2025.
+<a name="ref2"></a>
+[2] EDRAWSOFT. Exemplos de Diagrama de Implantação UML. Edraw, 2024. Disponível em: https://www.edrawsoft.com/pt/deployment-chart-example.html. Acesso em: 28 abr. 2025.
 
-FOWLER, Martin. **UML Distilled**: A Brief Guide to the Standard Object Modeling Language. 3rd ed. Addison-Wesley Professional, 2003.
+<a name="ref3"></a>
+[3] FOWLER, Martin. **UML Distilled**: A Brief Guide to the Standard Object Modeling Language. 3rd ed. Addison-Wesley Professional, 2003.
 
-IBM CORPORATION. Diagramas de implantação. IBM Documentation, 2024. Disponível em: https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams. Acesso em: 28 abr. 2025.
+<a name="ref4"></a>
+[4] IBM CORPORATION. Diagramas de implantação. IBM Documentation, 2024. Disponível em: https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams. Acesso em: 28 abr. 2025.
 
-LUCID SOFTWARE INC. O que é diagrama de implementação UML. Lucidchart, 2024. Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml. Acesso em: 28 abr. 2025.
+<a name="ref5"></a>
+[5] LUCID SOFTWARE INC. O que é diagrama de implementação UML. Lucidchart, 2024. Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml. Acesso em: 28 abr. 2025.
 
-MAURO DE BONI. Tutorial Draw.io: Como Fazer Diagrama de Implantação da UML. YouTube, 2023. Disponível em: https://www.youtube.com/watch?v=eFFq3SLMQJ4. Acesso em: 30 abr. 2025.
+<a name="ref6"></a>
+[6] MAURO DE BONI. Tutorial Draw.io: Como Fazer Diagrama de Implantação da UML. YouTube, 2023. Disponível em: https://www.youtube.com/watch?v=eFFq3SLMQJ4. Acesso em: 30 abr. 2025.
 
-Object Management Group (OMG). Unified Modeling Language (UML) Specification. Version 2.5.1. 2017. Disponível em: https://www.omg.org/spec/UML/. Acesso em: 05 mai. 2025.
+<a name="ref7"></a>
+[7] Object Management Group (OMG). Unified Modeling Language (UML) Specification. Version 2.5.1. 2017. Disponível em: https://www.omg.org/spec/UML/. Acesso em: 05 mai. 2025.
 
-PROFESSOR PAIVA. Curso de UML - Diagrama de Implantação. YouTube, 2022. Disponível em: https://www.youtube.com/watch?v=DgERD0HgggQ. Acesso em: 30 abr. 2025.
+<a name="ref8"></a>
+[8] PROFESSOR PAIVA. Curso de UML - Diagrama de Implantação. YouTube, 2022. Disponível em: https://www.youtube.com/watch?v=DgERD0HgggQ. Acesso em: 30 abr. 2025.
 
-SPARX SYSTEMS. Deployment Diagram. Enterprise Architect UML Tutorials, 2024. Disponível em: https://sparxsystems.com/resources/tutorials/uml/deployment-diagram.html. Acesso em: 05 mai. 2025.
+<a name="ref9"></a>
+[9] SPARX SYSTEMS. Deployment Diagram. Enterprise Architect UML Tutorials, 2024. Disponível em: https://sparxsystems.com/resources/tutorials/uml/deployment-diagram.html. Acesso em: 05 mai. 2025.
 
-TUTORIALSPOINT. UML - Deployment Diagrams. TutorialsPoint, 2024. Disponível em: https://www.tutorialspoint.com/uml/uml_deployment_diagram.htm. Acesso em: 05 mai. 2025.
+<a name="ref10"></a>
+[10] TUTORIALSPOINT. UML - Deployment Diagrams. TutorialsPoint, 2024. Disponível em: https://www.tutorialspoint.com/uml/uml_deployment_diagram.htm. Acesso em: 05 mai. 2025.
 
-UML-DIAGRAMS. Deployment Diagrams Overview. UML Diagrams.org, 2024. Disponível em: https://www.uml-diagrams.org/deployment-diagrams-overview.html. Acesso em: 28 abr. 2025.
+<a name="ref11"></a>
+[11] UML-DIAGRAMS. Deployment Diagrams Overview. UML Diagrams.org, 2024. Disponível em: https://www.uml-diagrams.org/deployment-diagrams-overview.html. Acesso em: 28 abr. 2025.
 
-VISUAL PARADIGM. What is Deployment Diagram?. Visual Paradigm Guide, 2024. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/. Acesso em: 28 abr. 2025.
+<a name="ref12"></a>
+[12] VISUAL PARADIGM. What is Deployment Diagram?. Visual Paradigm Guide, 2024. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/. Acesso em: 28 abr. 2025.
 
 ## Histórico de versão
 
-| Versão | Alteração                                                      | Responsável     | Data       |
-| :----- | :------------------------------------------------------------- | :-------------- | :--------- |
-| 1.0    | Elaboração inicial do documento de verificação                  | Larissa Stéfane  | 05/05/2025 |
-| 1.1    | Adição das tabelas de verificação                              | Larissa Stéfane   | 05/05/2025 |
-| 2.0    | Adição de referências bibliográficas e links na rastreabilidade | Larissa Stéfane  | 05/05/2025 |
-| 3.0    | Ajuste da formatação da bibliografia (ABNT) e rastreabilidade  | Larissa Stéfane   | 05/05/2025 |
+| Versão | Alteração                                                              | Responsável     | Data       |
+| :----- | :--------------------------------------------------------------------- | :-------------- | :--------- |
+| 1.0    | Elaboração inicial do documento de verificação                          | Larissa Stéfane | 05/05/2025 |
+| 1.1    | Adição das tabelas de verificação                                      | Larissa Stéfane | 05/05/2025 |
+| 2.0    | Adição de referências bibliográficas e links na rastreabilidade         | Larissa Stéfane   | 05/05/2025 |
+| 3.0    | Ajuste da formatação da bibliografia (ABNT) e rastreabilidade          | Larissa Stéfane    | 05/05/2025 |
+| 4.0    | Ajuste da formatação da bibliografia (âncoras) e citações no texto | Larissa Stéfane   | 05/05/2025 |
 
