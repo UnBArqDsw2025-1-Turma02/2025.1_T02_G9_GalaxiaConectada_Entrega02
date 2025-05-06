@@ -54,7 +54,7 @@ O objetivo deste artefato é representar, de forma clara e estruturada, os compo
 Antes da modelagem visual do Diagrama de Classes na ferramenta Draw.io, foi realizado um exercício de identificação e concepção de todas as classes potenciais que comporiam a estrutura da plataforma "Galáxia Conectada". Este planejamento prévio, que considerou os requisitos funcionais, os atores e as principais funcionalidades do sistema, foi crucial para consolidar a compreensão da arquitetura de dados e dos componentes lógicos da plataforma. Assim como também visou facilitar a subsequente elaboração do diagrama em si. Com isso, a Tabela 1 apresenta de forma organizada as classes identificadas para o sistema.
 
 <details>
-  <summary><strong>**Tabela 1:** Classes do Sistema.</strong></summary>
+  <summary><strong>Tabela 1: Classes do Sistema.</strong></summary>
 
 **Tabela 1:** Classes do Sistema.
 
@@ -107,7 +107,7 @@ Com o objetivo de construir o diagrama da forma mais completa e mais correta pos
 
 ### Os relacionamentos:
 
-A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama de classes.
+A tabela 2 mostra os Tipos de Relacionamentos que serão utilizados no diagrama de classes.
 
 **Tabela 2:** Tipos de Relacionamentos
 
@@ -139,7 +139,7 @@ A tabela 1 mostra os Tipos de Relacionamentos que serão utilizados no diagrama 
 Além da definição individual de cada classe, a representação de como elas se interconectam é um aspecto vital do Diagrama de Classes, uma vez que ilustra a dinâmica e as dependências estruturais do sistema. Dessa maneira, para elucidar a natureza e as implicações de cada tipo de ligação (como Associação, Agregação, Composição, Generalização e Dependência) utilizada no diagrama visual, elaborou-se também a tabela 3 específica para os relacionamentos. Esta tabela 3 auxiliar tem o objetivo de detalhar mostra os relacionamentos de cada uma das classes da tabela 1.
 
 <details>
-  <summary><strong>**Tabela 3:** Relacionamentos entre as classes.</strong></summary>
+  <summary><strong>Tabela 3: Relacionamentos entre as classes.</strong></summary>
 
 **Tabela 3:** Relacionamentos entre as classes
 
@@ -246,3 +246,4 @@ A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibil
 | 1.7 | Adição da Tabela de Relacionamentos | Larissa Stéfane | 26/04/2024 |
 | 1.8 | Adição do Diagrama de Classes| Larissa Stéfane | 27/04/2024 |
 | 1.9 | Adição da legenda| Larissa Stéfane | 29/04/2024 |
+| 2.0 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
