@@ -14,6 +14,59 @@
 
 ## Introdução
 
+O Diagrama de Pacotes é um dos diagramas estruturais da UML (Unified Modeling Language) utilizado para representar, de forma hierárquica e organizada, os agrupamentos lógicos dos elementos de um sistema, como classes, casos de uso, componentes, entre outros. Conforme definido na APOSTILA UML [1](#ref1), o pacote é um mecanismo de propósito geral que permite reunir elementos semanticamente relacionados, o que facilita a visualização e o gerenciamento modular de grandes sistemas.
+
+Segundo o [Diagrama de Pacotes: Definição, Componentes](https://gitmind.com/pt/diagrama-de-pacotes.html#:~:text=Um%20diagrama%20de%20pacotes%20pode,outros%20campos%20em%20pacotes%20simplificados.) [2](#ref2) , o diagrama de pacotes simplifica a leitura de sistemas complexos e torna visíveis suas dependências e relacionamentos de alto nível. Cada pacote pode conter elementos empacotáveis, como diagramas, documentos e outros pacotes, e relaciona-se a outros por meio de dependências, importações e extensões. 
+
+Neste artefato, procura-se apresentar o Diagrama de Pacotes da plataforma Galáxia Conectada, que visa ilustrar os principais agrupamentos funcionais e estruturais do sistema.
+
+## Objetivos
+
+COm o intuito de apresentar o Diagrama de Pacotes e destacar a estrutura modular do sistema, busca-se:
+
+- Representar a organização lógica dos elementos do sistema em pacotes distintos;
+
+- Evidenciar relações de dependência entre pacotes;
+
+- Facilitar a compreensão da arquitetura em camadas da plataforma;
+
+- Contribuir para a manutenibilidade, escalabilidade e reutilização dos componentes do software;
+
+- Apoiar a futura modelagem de diagramas derivados, como os diagramas de classes, componentes e sequência;
+
+## Metodologia
+
+Para a construção do diagrama, serão seguidas as etapas abaixo:
+
+1. Serão analisados os seguintes artefatos para agrupamento e análise de informações:
+
+- [Requisitos Funcionais e Não Funcionais elicitados - Elaborados na entrega 1](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
+- [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
+- [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md);
+- [Diagrama de Casos de Uso]().
+
+
+Após a análise dos dados, serão feitas as seguintes etapas:
+
+1. Organização dos elementos identificados em pacotes temáticos.
+2. Organização e compreensão das tependências entre os pacotes.
+3. Modelagem do diagrama no Draw.io.
+4. Validação da coerência do diagrama por meio de [Verificação Diagrama Pacotes]().
+
+## Sobre o Diagrama de Pacotes
+
+O Diagrama de Pacotes a seguir, elaborado com base nos princípios de [Diagrama de Pacotes: Definição, Componentes](https://gitmind.com/pt/diagrama-de-pacotes.html#:~:text=Um%20diagrama%20de%20pacotes%20pode,outros%20campos%20em%20pacotes%20simplificados.) [2](#ref2) e [Diagrama de Pacotes](https://docentes.ifrn.edu.br/diegooliveira/disciplinas/pds/aula-14-diagrama-de-pacotes) [5](#ref5), apresenta a organização arquitetural do sistema em módulos lógicos (Pacotes) e as suas interconexões. Com isso, a estrutura adota uma abordagem em camadas, separando Apresentacao (frontend) do Servidor (backend), o qual é subdividido em pacotes como Aplicacao, Dominio (regras de negócio/entidades), Infraestrutura (detalhes técnicos) e ServicosCompartilhados. Além disso, as Dependências são clarificadas por Estereótipos (<<verbo>>), como <<usar>> ou <<chamar>>, o qual declara a natureza das interações. 
+
+Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
+
+<div align="center">
+    Figura 1: Legenda do Diagrama de Estados
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/LegendaDiagramaPacote.drawio.png" width="500">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
 
 ## Elaboração do Diagrama
 
@@ -174,9 +227,9 @@ A tabela 2 apresenta as dependências dos pacotes.
 | 1.2 | Criação da Tabela de Pacotes | Larissa Stéfane | 05/05/2024 |
 | 1.3 | Reorganização da Tabela de Pacotes | Larissa Stéfane | 05/05/2024 |
 | 1.4 | Adição de elementos na  Tabela de Pacotes | Larissa Stéfane | 05/05/2024 |
-| 1.5 | Adição de elementos na  Tabela de Pacotes | Larissa Stéfane | 05/05/2024 |
-| 1.5 | Adição de elementos na  Tabela de Pacotes | Larissa Stéfane | 05/05/2024 |
-| 1.6 | Reorganização da Tabela de Pacotes | Larissa Stéfane | 05/05/2024 |
-| 1.7 | Criação da Tabela de dependências | Larissa Stéfane | 05/05/2024 |
-| 1.8 | Reorganização da taela de dependências | Larissa Stéfane | 05/05/2024 |
+| 1.5 | Adição de elementos na  Tabela de Pacotes | Larissa Stéfane | 06/05/2024 |
+| 1.5 | Adição de elementos na  Tabela de Pacotes | Larissa Stéfane | 06/05/2024 |
+| 1.6 | Reorganização da Tabela de Pacotes | Larissa Stéfane | 06/05/2024 |
+| 1.7 | Criação da Tabela de dependências | Larissa Stéfane | 06/05/2024 |
+| 1.8 | Reorganização da taela de dependências | Larissa Stéfane | 06/05/2024 |
 
