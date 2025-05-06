@@ -206,26 +206,29 @@ A Figura 2 mostra o diagrama de pacotes da Galáxia Conectada
 <div align="center">
     Figura 2: o Diagrama de Pacotes
     <br>
-    <img src="../Imagens/DiagramaPacotes.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaPacotes001.drawio.png">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF](../Imagens/DiagramaPacotes.drawio.pdf)
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaPacotes.drawio.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 ### Diagrama Simplificado
+
+Para complementar a visão detalhada e oferecer uma compreensão mais rápida da estrutura de alto nível, apresenta-se também um Diagrama de Pacotes simplificado. Esta versão foca nos principais agrupamentos lógicos (como as camadas Apresentacao, Servidor, e os subsistemas principais dentro do backend) e nas dependências mais críticas.
+
+<div align="center">
+    Figura 3: o Diagrama de Pacotes - Simplificado
+    <br>
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaPacotesSimplificado.drawio.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF - Diagrama Simpificado](../Imagens/DiagramaPacotesSimplificado.drawio.pdf)
 
 
 ## Conclusão
