@@ -68,15 +68,16 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
 A Figura 2 mostra o diagrama de Casos de Uso da Galáxia Conectada
 
 <div align="center">
-    Figura 2: o Diagrama de Casos de Uso
+    <b>Figura 2:</b> o Diagrama de Casos de Uso
     <br>
-    <img src="../Imagens/DiagramaCasoUsoGalaxia.drawio.png">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaCasoUsoGalaxia.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-    <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique aqui [PDF](../Imagens/DiagramaCasoUsoGalaxia.drawio.pdf)
+<p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaCasoUsoGalaxia.drawio.pdf">PDF do Diagrama de Casos de Uso</a></p>
+
 
 ## Conclusão 
 
@@ -107,4 +108,4 @@ Portanto, o Diagrama de Casos de Uso elaborado consolida a visão funcional da p
 | 1.1    | Adição da seção de Metodologia                  | Larissa Stéfane   | 04/05/2025 |
 | 1.2    | Adição da explicação         | Larissa Stéfane   | 04/05/2025 |
 | 1.3    | Adição do Diagrama de Caso de Uso        | Larissa Stéfane   | 05/05/2025 |
-
+| 1.4 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
