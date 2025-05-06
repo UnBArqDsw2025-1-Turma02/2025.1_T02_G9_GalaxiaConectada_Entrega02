@@ -197,6 +197,40 @@ A tabela 2 apresenta as dependências dos pacotes.
 | `Servidor.Infraestrutura.Mensageria`        | `<<implementar>>`    | `Servidor.Aplicacao.*` ou `Dominio.*`      | Implementa interfaces para publicação/consumo de eventos/mensagens.                                                                                       |
 | `Servidor.Infraestrutura.Mensageria`        | `<<ler>>`            | `Servidor.ServicosCompartilhados.Configuracao` | Lê configurações do broker de mensagens.                                                                                                                  |
 | `Servidor.Infraestrutura.Mensageria`        | `<<reportarPara>>`   | `Servidor.ServicosCompartilhados.Monitoramento` | Loga publicação e consumo de mensagens.                                                                                                                 |
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+## Diagrama de Pacotes
+
+A Figura 2 mostra o diagrama de pacotes da Galáxia Conectada
+
+<div align="center">
+    Figura 2: o Diagrama de Pacotes
+    <br>
+    <img src="../Imagens/DiagramaPacotes.drawio.png">
+    <br>
+    <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+    <br>
+</div>
+
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+
+<details>
+  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
+
+<a href="../Imagens/DiagramaPacotes.drawio.pdf" target="_blank">
+  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/DiagramaEstadosPromocao.drawio.png" alt="Abrir PDF" width="1000">
+</a>
+
+<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
+
+### Diagrama Simplificado
+
+
+## Conclusão
+
+Em suma, o Diagrama de Pacotes detalhado oferece um mapa estruturado da arquitetura lógica da plataforma "Galáxia Conectada". Desse modo, a organização modular em pacotes com responsabilidades bem definidas, como Apresentacao, Aplicacao, Dominio e Infraestrutura, juntamente com a visualização explícita das dependências entre eles é fundamental para gerenciar a complexidade do sistema. Essa abordagem facilita a compreensão da estrutura geral e a localização de funcionalidades como também promove um guia essencial para o desenvolvimento e a evolução coesa do código-fonte.
 
 ## Bibliografia
 
@@ -232,4 +266,4 @@ A tabela 2 apresenta as dependências dos pacotes.
 | 1.6 | Reorganização da Tabela de Pacotes | Larissa Stéfane | 06/05/2024 |
 | 1.7 | Criação da Tabela de dependências | Larissa Stéfane | 06/05/2024 |
 | 1.8 | Reorganização da taela de dependências | Larissa Stéfane | 06/05/2024 |
-
+| 1.9 | Adição das figuras| Larissa Stéfane | 06/05/2024 |
