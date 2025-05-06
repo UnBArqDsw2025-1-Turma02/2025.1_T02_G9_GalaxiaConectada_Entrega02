@@ -125,7 +125,7 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
 </div>
 
 <p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
-<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf">PDF do Pacote do Site</a></p>
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf">PDF do Site</a></p>
 
 
 
@@ -138,7 +138,7 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
 </div>
 
 <p><strong>Observação:</strong> Caso deseje visualizar ou baixar em PDF, clique aqui: 
-<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComponentesPacoteBACKhend.drawio.pdf">PDF do Pacote do Backend</a></p>
+<a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComponentesPacoteBACKhend.drawio.pdf">PDF  do Backend</a></p>
 
 
 
