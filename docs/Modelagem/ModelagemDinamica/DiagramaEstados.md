@@ -65,7 +65,7 @@ Para melhor compreensão dos diagramas, a figura 1 mostra a legenda;
 <div align="center">
     Figura 1: Legenda do Diagrama de Estados
     <br>
-    <img src="" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/LegendaDiagramaEstados.drawio.png" width="500">
     <br>
     <b>Autora:</b> <a href="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/d0f7346c983978b09834d2cdf563b31756a226ef/docs/Modelagem/Imagens/LegendaDiagramaEstados.drawio.png">Larissa Stéfane</a>.
     <br>
