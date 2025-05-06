@@ -42,8 +42,10 @@ A metodologia adotada para a elaboração do Diagrama de Componentes do projeto 
 
 ## Investigação dos Componentes Necessários
 
+Antes da modelagem visual do Diagrama de Componentes na ferramenta Draw.io, foi realizada a identificação e a definição de todos os componentes chave e subsistemas que constituiriam a arquitetura da plataforma "Galáxia Conectada". Com isso, a Tabela 1 detalha os componentes identificados para a plataforma, especificando seus tipos, descrições, interfaces e dependências.
 
-A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento da Galáxia Conectada.
+<details>
+  <summary><strong>Tabela 1: Componentes e suas dependências.</strong></summary>
 
 **Observação:** Varios componentes foram pensados de acordo com os requisitos elicitaos, então suas refeRências estão na coluna de observações.
 
@@ -89,7 +91,7 @@ A tabela 1 mostra os possíveis componentes necessários para o desenvolvimento 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 
-
+</details>
 
 ## Diagrama de Componentes
 
@@ -118,18 +120,8 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique [Diagrama de Componentes: Pacote do Site em PDF](https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf)
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="https://github.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/blob/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.pdf" target="_blank">
-  <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/53cf0acfd5aa2490e948ad1c33379fc1ae75b03d/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 <div align="center">
     Figura 3: o Diagrama de Componentes: Pacote do Backend
@@ -140,41 +132,19 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique [o Diagrama de Componentes: Pacote do Backend em PDF](/Imagens/DiagramaComponentesPacoteBACKhend.drawio.pdf)
 
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.pdf" target="_blank">
-  <img src="../Imagens/DiagramaComponentesPacoteBACKhend.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
 
 <div align="center">
     Figura 4: o Diagrama de Componentes Completo
     <br>
-    <img src="../Imagens/DiagramaComponentesCompleto.drawio.png" alt="Diagrama Completo" width="1500">
+    <img src="/Imagens/DiagramaComponentesCompleto.drawio.png" alt="Diagrama Completo" width="1500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
 </div>
 
-**Observação:** Caso deseje visualizar ou baixar em PDF, clique na mensagem abaixo e o pdf será mostrado. Para baixá-lo, basta clicar nele.
-
-<details>
-  <summary size="20"><b> Ver em PDF e baixá-lo </b></summary> 
-
-<a href="../Imagens/DiagramaComponentesCompleto.drawio.pdf" target="_blank">
-  <img src="../Imagens/DiagramaComponentesCompleto.drawio.png" alt="Abrir PDF" width="1000">
-</a>
-
-<b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
-
-</details>
-
+**Observação:** Caso deseje visualizar ou baixar em PDF, clique [ o Diagrama de Componentes Completo em PDF](/Imagens/DiagramaComponentesCompleto.drawio.pdf)
 
 
 
@@ -224,3 +194,4 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 | 1.9 | Adição do Diagrama | Larissa Stéfane | 27/04/2024 |
 | 2.0 | Reestruturação da tabela e adição da legenda | Larissa Stéfane | 28/04/2024 |
 | 2.1 | Adição dos novos Diagramas | Larissa Stéfane | 29/04/2024 |
+| 2.2 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
