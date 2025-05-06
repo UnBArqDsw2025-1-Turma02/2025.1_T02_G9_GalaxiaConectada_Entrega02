@@ -13,9 +13,9 @@
 
 ## Introdução
 
-O diagrama de implantação, segundo o artigo [O que é um diagrama de implementação?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [1](#ref1), é um tipo de diagrama estrutural da UML que representa a implementação física de artefatos de software sobre os componentes de hardware. Neste diagrama, utilizam-se elementos gráficos como nódulos (caixas tridimensionais) para representar dispositivos ou ambientes de execução de software, e os artefatos são os produtos gerados pelo desenvolvimento, como arquivos executáveis, bibliotecas ou scripts. 
+O diagrama de implantação, segundo o artigo [O que é um diagrama de implementação?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [2](#ref2), é um tipo de diagrama estrutural da UML que representa a implementação física de artefatos de software sobre os componentes de hardware. Neste diagrama, utilizam-se elementos gráficos como nódulos (caixas tridimensionais) para representar dispositivos ou ambientes de execução de software, e os artefatos são os produtos gerados pelo desenvolvimento, como arquivos executáveis, bibliotecas ou scripts. 
 
-Com base nisso, o artigo [O Guia Fácil de Diagramas de Implantação UML](https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-implantacao/#:~:text=Um%20diagrama%20de%20implanta%C3%A7%C3%A3o%20%C3%A9,software%20f%C3%ADsico%20de%20um%20sistema.) fala que esse tipo de diagrama é essencial para entender a arquitetura de execução do sistema ao evidenciar tanto o hardware necessário quanto o middleware que interliga os elementos da solução. Assim, no contexto do projeto Galáxia Conectada, o diagrama de implantação é importante pois permite visualizar de forma clara como a plataforma será distribuída fisicamente — por exemplo, o servidor onde será hospedado os serviços.
+Com base nisso, o artigo [O Guia Fácil de Diagramas de Implantação UML](https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-implantacao/#:~:text=Um%20diagrama%20de%20implanta%C3%A7%C3%A3o%20%C3%A9,software%20f%C3%ADsico%20de%20um%20sistema.) [1](#ref1) fala que esse tipo de diagrama é essencial para entender a arquitetura de execução do sistema ao evidenciar tanto o hardware necessário quanto o middleware que interliga os elementos da solução. Assim, no contexto do projeto Galáxia Conectada, o diagrama de implantação é importante pois permite visualizar de forma clara como a plataforma será distribuída fisicamente — por exemplo, o servidor onde será hospedado os serviços.
 
 ## Objetivos
 
@@ -98,16 +98,16 @@ A construção do Diagrama de Implantação para o projeto Galáxia Conectada te
 ## Bibliografia
 
 <a name="ref1"></a>
-[1] LUCID SOFTWARE INC. O que é diagrama de implementação UML. Lucidchart, 2024. Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml. Acesso em: 28 abr. 2025.
+[1] CREATELY. O Guia Fácil de Diagramas de Implantação UML. Creately Blog, 2024. Disponível em: https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-implantacao/. Acesso em: 6 mai. 2025.
 
 <a name="ref2"></a>
-[2] IBM CORPORATION. Diagramas de implantação. IBM Documentation, 2024. Disponível em: https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams. Acesso em: 28 abr. 2025.
+[2] EDRAWSOFT. Exemplos de Diagrama de Implantação UML. Edraw, 2024. Disponível em: https://www.edrawsoft.com/pt/deployment-chart-example.html. Acesso em: 28 abr. 2025.
 
 <a name="ref3"></a>
-[3] VISUAL PARADIGM. What is Deployment Diagram?. Visual Paradigm Guide, 2024. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/. Acesso em: 28 abr. 2025.
+[3] IBM CORPORATION. Diagramas de implantação. IBM Documentation, 2024. Disponível em: https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams. Acesso em: 28 abr. 2025.
 
 <a name="ref4"></a>
-[4] EDRAWSOFT. Exemplos de Diagrama de Implantação UML. Edraw, 2024. Disponível em: https://www.edrawsoft.com/pt/deployment-chart-example.html. Acesso em: 28 abr. 2025.
+[4] LUCID SOFTWARE INC. O que é diagrama de implementação UML. Lucidchart, 2024. Disponível em: https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml. Acesso em: 28 abr. 2025.
 
 <a name="ref5"></a>
 [5] MAURO DE BONI. Tutorial Draw.io: Como Fazer Diagrama de Implantação da UML. YouTube, 2023. Disponível em: https://www.youtube.com/watch?v=eFFq3SLMQJ4. Acesso em: 30 abr. 2025.
@@ -117,6 +117,10 @@ A construção do Diagrama de Implantação para o projeto Galáxia Conectada te
 
 <a name="ref7"></a>
 [7] UML-DIAGRAMS. Deployment Diagrams Overview. UML Diagrams.org, 2024. Disponível em: https://www.uml-diagrams.org/deployment-diagrams-overview.html. Acesso em: 28 abr. 2025.
+
+<a name="ref8"></a>
+[8] VISUAL PARADIGM. What is Deployment Diagram?. Visual Paradigm Guide, 2024. Disponível em: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-deployment-diagram/. Acesso em: 28 abr. 2025.
+
 
 ## Histórico de versão
 
