@@ -1,39 +1,30 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
-Demais diretrizes constam no Moodle.
-
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)(Turma)_(Grupo)_(NomeDoProjeto)_(Entrega_02)*. !!** 
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2025.1(T01)_G1_Embarcado_Entrega_02*. !!**  
- 
- (Apague esses comentários)
-
-# Nome do Projeto
+# 🌠 Galáxia Conectada 🌙
 
 **Código da Disciplina**: FGA0208<br>
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 09<br>
 **Entrega**: 02<br>
 
 ## Alunos
-|Matrícula | Aluno |
-| -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
 
-## Sobre 
-Contextualize, usando referências, links, e outros materiais como fontes.
+| Matrícula   | Aluna                             | Foto                                               |
+|-------------|-----------------------------------|----------------------------------------------------|
+| 21/1039573  | Larissa Stéfane Barboza Santos    | <img src="https://github.com/SkywalkerSupreme.png" width="100"/> |
 
-## Screenshots da Segunda Entrega
-Adicione 2 ou mais screenshots em termos de artefatos realizados na entrega.
+
+
+## Sobre o projeto
+
+O projeto Galáxia Conectada está sendo desenvolvido como parte da disciplina de Arquitetura e Desenho de Software com o objetivo de criar uma plataforma educacional interativa voltada para a divulgação científica da astronomia. A iniciativa busca proporcionar uma experiência imersiva e acessível para entusiastas e curiosos da área, por meio de recursos como trilhas de aprendizado, jogos educativos, fóruns de discussão, agenda astronômica, glossário de termos, artigos explicativos e promoções temáticas
+
+## Screenshots da Primeira Entrega
+
+
 
 ## Há algo a ser executado?
 
 ( ) SIM
 
-( ) NÃO
+(X ) NÃO
 
 Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados na execução.
 
