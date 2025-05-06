@@ -18,7 +18,6 @@
 
 ## Bibliografia
 
-## Referências
 
 [1](#ref1). **Lucidchart.** *Diagrama de caso de uso UML: O que é, como fazer e exemplos.* Disponível em: [https://www.lucidchart.com/pages/pt/diagrama-de-caso-de-uso-uml](https://www.lucidchart.com/pages/pt/diagrama-de-caso-de-uso-uml). Acesso em: 05 mai. 2025.
 
