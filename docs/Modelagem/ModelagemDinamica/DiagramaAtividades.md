@@ -59,7 +59,7 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 <div align="center">
     Figura 1: Legenda do Diagrama de Atividades
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/5850e355e01ff1a380ebb122ca19172098febbf1/docs/Modelagem/Imagens/LegendaDiagramaAtividade.drawio.png" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/LegendaDiagramaAtividade.drawio.png" width="500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
     <br>
@@ -136,6 +136,8 @@ A figura 2 apresenta o diagrama de atividades da aba de conhecimento.
 
 Visando proporcionar maior clareza e um roteiro textual para o Diagrama de Atividades referente à Aba Científico (Notícias e Artigos), a Tabela 2 subsequente enumera e descreve as etapas e pontos de decisão que constituem este fluxo de navegação e consumo de conteúdo. A apresentação tabular das atividades foi concebida para auxiliar na interpretação da representação gráfica.
 
+<details>
+  <summary><strong>Tabela 2: Atividades de  Científico Notícias e Artigos</strong></summary>
 
 **Tabela 2: Atividades de  Científico Notícias e Artigos** 
 
@@ -174,6 +176,8 @@ Visando proporcionar maior clareza e um roteiro textual para o Diagrama de Ativi
 | Salvar Entrada de Log                           | (Paralelo) BD ou Serviço de Log persiste o evento.                            | (Monitoramento)          | (Log)                                  | 34 BancoDeDados ou 6 ServicoMonitoramento |
 | Enviar Confirmação para WebUI                   | Backend envia sucesso para UI após salvar/logar.                               | RF15 (Implícito)         | -                                      | 22 ModuloDivulgacao                      |
 | Atualizar Interface (ícone favorito)            | UI mostra que o artigo foi favoritado.                                       | RF15 (Implícito)         | -                                      | 3 WebUI                                |
+
+</details>
 
 A figura 3 apresenta o diagrama de atividades da aba de Científico
 
