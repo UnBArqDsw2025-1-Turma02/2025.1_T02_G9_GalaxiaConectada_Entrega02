@@ -150,6 +150,7 @@ Para complementar a identificação dos participantes, a Tabela 2 se aprofunda n
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
 
 A Figura 2 mostra o diagrama de comunicação da aba do fórum
 
