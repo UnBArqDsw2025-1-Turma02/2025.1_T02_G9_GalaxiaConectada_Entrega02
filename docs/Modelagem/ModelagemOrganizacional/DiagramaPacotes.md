@@ -205,6 +205,7 @@ Enquanto a Tabela 1 define os pacotes individualmente, a Tabela 2, a seguir, foc
 | `Servidor.Infraestrutura.Mensageria`        | `<<implementar>>`    | `Servidor.Aplicacao.*` ou `Dominio.*`      | Implementa interfaces para publicação/consumo de eventos/mensagens.                                                                                       |
 | `Servidor.Infraestrutura.Mensageria`        | `<<ler>>`            | `Servidor.ServicosCompartilhados.Configuracao` | Lê configurações do broker de mensagens.                                                                                                                  |
 | `Servidor.Infraestrutura.Mensageria`        | `<<reportarPara>>`   | `Servidor.ServicosCompartilhados.Monitoramento` | Loga publicação e consumo de mensagens.                                                                                                                 |
+
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 </details>
