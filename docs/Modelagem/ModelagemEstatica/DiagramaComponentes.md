@@ -50,6 +50,7 @@ Antes da modelagem visual do Diagrama de Componentes na ferramenta Draw.io, foi 
 **Observação:** Varios componentes foram pensados de acordo com os requisitos elicitaos, então suas refeRências estão na coluna de observações.
 
 **Tabela 1:** Componentes
+
 | #  | Tipo de Elemento | Nome (Componente/Pacote/Subsistema)    | Descrição   | Interfaces Providas   | Interfaces Requeridas | Dependências  | Observações  |
 | -- | ---------------- | -------------------------------------- | ----------- | --------------------- | --------------------- | ------------- | ------------ |
 | 1  | Pacote           | `<<package>> Galáxia Conectada Site`       | Pacote raiz que contém todos os elementos da plataforma web.                                                                                                              | -                                                                                   | -                                                                                                                                                                                         | -                                                                                                                                                                                                           |                                                                                                                                                  |
