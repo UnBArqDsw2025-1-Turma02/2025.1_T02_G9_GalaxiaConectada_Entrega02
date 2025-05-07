@@ -75,6 +75,9 @@ Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma lege
 
 A tabela 1 mostra os elementos e as sequências no diagrama em relação às trilhas de aprendizado.
 
+<details>
+  <summary><strong>Tabela 1:  Sequência das trilhas de aprendizado</strong></summary>
+
 **Tabela 1: Sequência das trilhas de aprendizado** 
 
 | Elemento do Diagrama de Sequência          | Descrição na Sequência                                                                 | Relação com Diagrama de Classes                                                                                                                                                                                                                                                                                                                                   | Relação com Requisitos (RFs)                     | Relação com Diagrama de Componentes                                                                                                                                                                                                                                                                                                |
@@ -97,6 +100,8 @@ A tabela 1 mostra os elementos e as sequências no diagrama em relação às tri
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
+</details>
+
 <div align="center">
     Figura 2: o Diagrama de Sequência - Trilhas de Aprendizado
     <br>
@@ -108,13 +113,15 @@ A tabela 1 mostra os elementos e as sequências no diagrama em relação às tri
 
 
 
-
-
 ## Aba Promoções
 
 **Cenário:** Usuário logado visualiza a lista de promoções (capturadas externamente por bots) e marca uma delas como favorita.
 
 A tabela 2 mostra os elementos e as sequências no diagrama em relação às promoções.
+
+<details>
+  <summary><strong>Tabela 2: Sequência das promoções</strong></summary>
+
 
 **Tabela 2: Sequência das promoções** 
 
@@ -132,6 +139,8 @@ A tabela 2 mostra os elementos e as sequências no diagrama em relação às pro
 | `8: clicarSalvarPromocaoFavorita(...)` ... `14: ...` | Usuário marca promoção como favorita, sistema registra a preferência. | Método `salvarPromocaoFavorita` (`ModuloPromocoes`, inf.), `inserirPromocaoFavorita` (BD, inf.). Relação Usuário-PromocaoExterna (favorito).                                                | RF19 (Permitir favoritar).                 | `ModuloPromocoes` consome `IPersistencia`.                                                                                                                                                       |
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
+
+</details>
 
 <div align="center">
     Figura 3: o Diagrama de Sequência - Promoções
@@ -168,3 +177,4 @@ A elaboração dos diagramas de sequência permitiu representar com clareza os f
 | 1.1 | Adição do seção de explicação  | Larissa Stéfane | 30/05/2024 |
 | 1.2 | Adição dos diagramas | Larissa Stéfane | 01/05/2024 |
 | 1.3 | Adição das tabelas | Larissa Stéfane | 04/05/2024 |
+| 1.4 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
