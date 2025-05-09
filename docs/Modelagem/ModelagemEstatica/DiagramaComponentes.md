@@ -32,10 +32,10 @@ A metodologia adotada para a elaboração do Diagrama de Componentes do projeto 
     - [Requisitos elicitados e documentados na primeira etapa](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
     - [Modelo HW2H (How, What, Why, How much)](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H);
     - [Protótipo de alta fidelidade](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/DesignSprint/Prototipo);
-    - [Diagrama de Classes](DiagramaClasses.md) construído na modelagem estática;
+    - [Diagrama de Classes](/Modelagem/ModelagemEstatica/DiagramaClasses.md) construído na modelagem estática;
 
 2. O diagrama será desenvolvido utilizando a plataforma Draw.io.
-3. Será aplicada uma [verificação por meio de um checklist](../IniciativasExtras/Verificacao/VerificacaoDiagramaComponentes.md) de boas práticas de UML;, 
+3. Será aplicada uma [verificação por meio de um checklist](https://unbarqdsw2025-1-turma02.github.io/2025.1_T02_G9_GalaxiaConectada_Entrega02/#/Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaComponentes) de boas práticas de UML;, 
 
 
 ## Investigação dos Componentes Necessários
