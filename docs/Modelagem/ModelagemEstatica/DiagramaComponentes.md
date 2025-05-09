@@ -13,7 +13,7 @@
 
 ## Introdução
 
-Segundo a Apostila UML – Linguagem de Modelagem Unificada [1](#ref1) e o guia da plataforma UML Diagrams [2](#ref2), um **componente** é uma unidade física de software (código-fonte, biblioteca, executável) que encapsula um conjunto de funcionalidades. Com base nisso, o **Diagrama de Componentes** representa visualmente esses módulos e suas dependências, e assim mostra quais artefatos (ex.: arquivos .jar, .dll, .py) são necessários para executar cada parte do sistema. No projeto Galáxia Conectada, esse diagrama expõe módulos como Interface Web, API de Cursos, Serviço de Notificações, Banco de Dados e Integração com APIs externas (ex.: NASA).
+Segundo a Apostila UML – Linguagem de Modelagem Unificada [1](#ref1) e o guia da [plataforma UML Diagrams](https://www.uml-diagrams.org/component-diagrams.html) [2](#ref2), um **componente** é uma unidade física de software (código-fonte, biblioteca, executável) que encapsula um conjunto de funcionalidades. Com base nisso, o **Diagrama de Componentes** representa visualmente esses módulos e suas dependências, e assim mostra quais artefatos (ex.: arquivos .jar, .dll, .py) são necessários para executar cada parte do sistema. No projeto Galáxia Conectada, esse diagrama expõe módulos como Interface Web, API de Cursos, Serviço de Notificações, Banco de Dados e Integração com APIs externas (ex.: NASA).
 
 ## Objetivos
 
@@ -25,19 +25,17 @@ Tem em base o conceito de componentes e diagrama de componentes, busca-se os seg
 
 ## Metodologia
 
-A metodologia adotada para a elaboração do Diagrama de Componentes do projeto Galáxia Conectada será estruturada em quatro etapas principais, com o objetivo de garantir consistência com os artefatos previamente desenvolvidos.
-
-### Etapas da metodologia:
+A metodologia adotada para a elaboração do Diagrama de Componentes do projeto Galáxia Conectada será estruturada em quatro etapas principais, com o objetivo de garantir consistência com os artefatos previamente desenvolvidos:
 
 1. inicialmente será realizado o levantamento arquitetural, no qual serão identificados os módulos centrais do sistema a partir de:
     - [Rich Picture](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/RichPicture)  elaborado na etapa inicial do projeto;
     - [Requisitos elicitados e documentados na primeira etapa](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
     - [Modelo HW2H (How, What, Why, How much)](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H);
     - [Protótipo de alta fidelidade](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/DesignSprint/Prototipo);
-    - [Diagrama de Classes](/DiagramaClasses.md) construído na modelagem estática;
+    - [Diagrama de Classes](DiagramaClasses.md) construído na modelagem estática;
 
 2. O diagrama será desenvolvido utilizando a plataforma Draw.io.
-3. Será aplicada uma [verificação por meio de um checklist](.../IniciativasExtras/Verificacao/VerificacaoDiagramaComponentes.md) de boas práticas de UML;, 
+3. Será aplicada uma [verificação por meio de um checklist](../IniciativasExtras/Verificacao/VerificacaoDiagramaComponentes.md) de boas práticas de UML;, 
 
 
 ## Investigação dos Componentes Necessários
@@ -93,7 +91,7 @@ Antes da modelagem visual do Diagrama de Componentes na ferramenta Draw.io, foi 
 
 </details>
 
-Além disso, a Tabela 1, apresentada a seguir, desempenha um outro papel fundamental: além de catalogar formalmente cada componente com seu tipo, nome, descrição, interfaces providas e requeridas, e observações, ela também detalha suas dependências, servindo como um guia complementar essencial para facilitar a leitura e a compreensão precisa da estrutura e das conexões representadas no diagrama.
+Além disso, a Tabela 1, apresentada acima, desempenha um outro papel fundamental: além de catalogar formalmente cada componente com seu tipo, nome, descrição, interfaces providas e requeridas, e observações, ela também detalha suas dependências. Assim, serve como um guia complementar para facilitar a leitura e a compreensão precisa da estrutura e das conexões representadas no diagrama.
 
 
 
@@ -104,7 +102,7 @@ Para melhor compreensão do diagrama, a figura 1 mostra a legenda;
 <div align="center">
     <b>Figura 1:</b> Legenda do Diagrama de Componentes  
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/LegendaDiagramaComponentes.png" width="500">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/LegendaDiagramaComponentes.png" width="500">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 </div>
@@ -120,7 +118,7 @@ Para facilitar a leitura e a compreensão da estrutura do sistema, o diagrama de
 <div align="center">
     <b>Figura 2:</b> Diagrama de Componentes – Pacote do Site  
     <br>
-    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" width="1000">
+    <img src="https://raw.githubusercontent.com/UnBArqDsw2025-1-Turma02/2025.1_T02_G9_GalaxiaConectada_Entrega02/refs/heads/main/docs/Modelagem/Imagens/DiagramaComponentesSite.drawio.png" width="1000">
     <br>
     <b>Autora:</b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 </div>
