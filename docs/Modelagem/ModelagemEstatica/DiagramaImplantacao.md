@@ -29,19 +29,17 @@ Com isso, ao elaborar o diagrama de implantação, busca-se os seguintes objetiv
 
 ## Metodologia:
 
-A elaboração do diagrama de implantação será conduzida com o apoio da ferramenta Draw.io ao utilizar como base os materiais previamente desenvolvidos ao longo do projeto. Com isso, a construção seguirá uma abordagem sistemática, a partir da análise dos requisitos, diagramas e estrutura do sistema. 
-
-### Etapas da metodologia:
+A elaboração do diagrama de implantação será conduzida com o apoio da ferramenta Draw.io ao utilizar como base os materiais previamente desenvolvidos ao longo do projeto. Com isso, a construção seguirá uma abordagem sistemática, a partir da análise dos requisitos, diagramas e estrutura do sistema. Assim, as etapas da metodologia:
 
 1. Inicialmente será realizada uma análise do material base a partir de:
 
   - [Requisitos elicitados e documentados na primeira etapa](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
-  - [Diagrama de Classes](/DiagramaClasses.md);
-  - [Diagrama de Componentes](/DiagramaComponentes.md);
+  - [Diagrama de Classes](DiagramaClasses.md);
+  - [Diagrama de Componentes](DiagramaComponentes.md);
 
 2. Com base nessa análise, será criada uma tabela de apoio organizando os tipos de nós (hardware, software, containers etc.) necessários para a modelagem.
 3. Ao utilizar a ferramenta **Draw.io**, será elaborada a versão inicial do diagrama de implantação, com identificação dos nós, artefatos e relações.
-4. Após a construção, o diagrama passará por uma fase de verificação, com o objetivo de garantir sua coerência.
+4. Após a construção, o diagrama passará por uma fase de [verificação](Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaImplantacao.md), com o objetivo de garantir sua coerência.
 
 ## Tabela de Análise
 
