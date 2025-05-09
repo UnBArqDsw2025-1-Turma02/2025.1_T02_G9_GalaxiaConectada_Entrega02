@@ -287,10 +287,10 @@ Em conclusão, os Diagramas de Comunicação elaborados para os módulos de Fór
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 01/05/2024 |
-| 1.1 | Adição da metodologia e da seção de explicação  | Larissa Stéfane | 01/05/2024 |
-| 1.2 | Criação das tabelas da aba fórum | Larissa Stéfane | 01/05/2024 |
-| 1.3 | Criação das tabelas da aba de jogos | Larissa Stéfane | 02/05/2024 |
-| 1.4 | Explicação dos diagramas de comunicação | Larissa Stéfane | 02/05/2024 |
-| 1.5 | Adição dos diagramas | Larissa Stéfane | 02/05/2024 |
-| 1.6 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 01/05/2025 |
+| 1.1 | Adição da metodologia e da seção de explicação  | Larissa Stéfane | 01/05/2025 |
+| 1.2 | Criação das tabelas da aba fórum | Larissa Stéfane | 01/05/2025 |
+| 1.3 | Criação das tabelas da aba de jogos | Larissa Stéfane | 02/05/2025 |
+| 1.4 | Explicação dos diagramas de comunicação | Larissa Stéfane | 02/05/2025 |
+| 1.5 | Adição dos diagramas | Larissa Stéfane | 02/05/2025 |
+| 1.6 | Ajustes no artefato| Larissa Stéfane | 06/05/2025 |
