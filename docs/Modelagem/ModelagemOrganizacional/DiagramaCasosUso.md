@@ -11,12 +11,10 @@
 - [Bibliografia](#Bibliografia)
 - [Histórico de versão](#Histórico-de-versão)
 
-## Introdução
-
 
 ## Introdução
 
-O Diagrama de Casos de Uso é um dos diagramas comportamentais da UML (Unified Modeling Language), fundamental para capturar os requisitos funcionais de um sistema sob a perspectiva do usuário. Conforme descrito por [Diagrama de caso de uso UML: O que é, como fazer e exemplos](https://www.lucidchart.com/pages/pt/diagrama-de-caso-de-uso-uml) [3][(#ref3) e [O que é UML e Diagramas de Caso de Uso: Introdução Prática à UML](https://www.devmedia.com.br/o-que-e-uml-e-diagramas-de-caso-de-uso-introducao-pratica-a-uml/23408) [2](#ref2), ele identifica quem interage com o sistema (Atores) e o que esses atores podem fazer (Casos de Uso) ao definir o escopo e as funcionalidades principais da aplicação de forma visual e intuitiva. Portanto, segundo a [IBM](https://www.ibm.com/docs/pt-br/rsm/7.5.0?topic=diagrams-use-case) [4](#ref4), este diagrama é essencial para comunicar o propósito e o comportamento esperado do sistema para diferentes stakeholders.
+O Diagrama de Casos de Uso é um dos diagramas comportamentais da UML (Unified Modeling Language), fundamental para capturar os requisitos funcionais de um sistema sob a perspectiva do usuário. Conforme descrito por [Diagrama de caso de uso UML: O que é, como fazer e exemplos](https://www.lucidchart.com/pages/pt/diagrama-de-caso-de-uso-uml) [3](#ref3) e [O que é UML e Diagramas de Caso de Uso: Introdução Prática à UML](https://www.devmedia.com.br/o-que-e-uml-e-diagramas-de-caso-de-uso-introducao-pratica-a-uml/23408) [2](#ref2), ele identifica quem interage com o sistema (Atores) e o que esses atores podem fazer (Casos de Uso) ao definir o escopo e as funcionalidades principais da aplicação de forma visual e intuitiva. Portanto, segundo a [IBM](https://www.ibm.com/docs/pt-br/rsm/7.5.0?topic=diagrams-use-case) [4](#ref4), este diagrama é essencial para comunicar o propósito e o comportamento esperado do sistema para diferentes stakeholders.
 
 Neste artefato, procura-se apresentar o Diagrama de Casos de Uso da plataforma Galáxia Conectada, que visa ilustrar as principais funcionalidades disponíveis para os diferentes tipos de usuários e sistemas externos que interagem com ela.
 
@@ -36,16 +34,15 @@ Para a construção do diagrama, Serão seguidas as etapas abaixo:
 1.  Serão analisados os seguintes artefatos para identificação de atores, funcionalidades e escopo:
     - [Requisitos Funcionais e Não Funcionais elicitados - Elaborados na entrega 1](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
     - [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
-    - [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md);
+    - [Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md);
     - [BrainStorming realizado na entrega 1](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/BrainStorm).
 
 2.  Após a análise dos dados, serão feitas as seguintes etapas:
-    * Identificação dos Atores principais.
-    * Identificação dos Casos de Uso essenciais a partir dos requisitos funcionais.
-    * Definição do Limite do Sistema, englobando os Casos de Uso pertencentes à "Galáxia Conectada".
-    * Identificação dos Relacionamentos entre Atores e Casos de Uso (Associação) e entre Atores (Generalização).
-    * Modelagem do diagrama utilizando a ferramenta Draw.io.
-    * Validação da cobertura dos requisitos essenciais e da consistência do diagrama por meio de [Verificação Diagrama Casos de Uso]() ().
+    1. Identificação dos Atores principais.
+    2. Identificação dos Casos de Uso essenciais a partir dos requisitos funcionais.
+    3.  Definição do Limite do Sistema, englobando os Casos de Uso pertencentes à "Galáxia Conectada".
+    4.  Identificação dos Relacionamentos entre Atores e Casos de Uso (Associação) e entre Atores (Generalização).
+    5.  Modelagem do diagrama utilizando a ferramenta Draw.io.
 
 ## Sobre o Diagrama de Casos de Uso
 
@@ -81,7 +78,7 @@ A Figura 2 mostra o diagrama de Casos de Uso da Galáxia Conectada
 
 ## Conclusão 
 
-Portanto, o Diagrama de Casos de Uso elaborado consolida a visão funcional da plataforma e estabelece de forma clara quem são os Atores que interagem com o sistema e quais Casos de Uso (funcionalidades) estão disponíveis para eles, delimitando assim o escopo do projeto. COm isso, ele serve como um pilar fundamental para guiar as fases subsequentes de análise, design detalhado, desenvolvimento do sistema.
+Portanto, o Diagrama de Casos de Uso elaborado consolida a visão funcional da plataforma e estabelece de forma clara quem são os Atores que interagem com o sistema e quais Casos de Uso (funcionalidades) estão disponíveis para eles, ao delimitar,assim, o escopo do projeto. COm isso, ele serve como um pilar fundamental para guiar as fases subsequentes de análise, design detalhado, desenvolvimento do sistema.
 
 ## Bibliografia
 
