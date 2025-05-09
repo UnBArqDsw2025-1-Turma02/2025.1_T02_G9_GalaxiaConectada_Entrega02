@@ -30,6 +30,7 @@
 
   - 2.5. Iniciativas Extras
     - [2.5.1 Cronograma Planejado](/Modelagem/IniciativasExtras/CronogramaPlanejado.md)
+    - [2.5.2 Cronograma Executado](/Modelagem/IniciativasExtras/CronogramaExecutado.md)
     - 2.5.3 Verificação dos Diagramas
       - [2.5.3.1 Verificação do Diagrama de Classes](/Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaClasses.md)
       - [2.5.3.2 Verificação do Diagrama de Componentes](/Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaComponentes.md)
