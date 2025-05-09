@@ -32,7 +32,6 @@ Com o intuito de apresentar o Diagrama de Pacotes e destacar a estrutura modular
 
 - Contribuir para a manutenibilidade, escalabilidade e reutilização dos componentes do software;
 
-- Apoiar a futura modelagem de diagramas derivados, como os diagramas de classes, componentes e sequência;
 
 ## Metodologia
 
@@ -42,8 +41,8 @@ Para a construção do diagrama, serão seguidas as etapas abaixo:
 
 - [Requisitos Funcionais e Não Funcionais elicitados - Elaborados na entrega 1](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
 - [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
-- [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md);
-- [Diagrama de Casos de Uso]().
+- [Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md);
+- [Diagrama de Casos de Uso](/Modelagem/ModelagemOrganizacional/DiagramaCasosUso.md).
 
 
 Após a análise dos dados, serão feitas as seguintes etapas:
@@ -51,7 +50,7 @@ Após a análise dos dados, serão feitas as seguintes etapas:
 1. Organização dos elementos identificados em pacotes temáticos.
 2. Organização e compreensão das tependências entre os pacotes.
 3. Modelagem do diagrama no Draw.io.
-4. Validação da coerência do diagrama por meio de [Verificação Diagrama Pacotes]().
+
 
 ## Sobre o Diagrama de Pacotes
 
