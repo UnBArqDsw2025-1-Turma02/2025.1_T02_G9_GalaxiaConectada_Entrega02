@@ -281,11 +281,11 @@ Em suma, os Diagramas de Máquina de Estados detalhados nesta seção forneceram
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 04/05/2024 |
-| 1.1 | Adição do seção de explicação  | Larissa Stéfane | 04/05/2024 |
-| 1.2 | Criação das tabelas da aba de promoção | Larissa Stéfane | 04/05/2024 |
-| 1.3 | Criação das tabelas da aba de fórum | Larissa Stéfane | 04/05/2024 |
-| 1.4 |Complementação das tabelas | Larissa Stéfane | 04/05/2024 |
-| 1.5 | Adição dos Diagramas | Larissa Stéfane | 04/05/2024 |
-| 1.6 | Adição da conclusão | Larissa Stéfane | 04/05/2024 |
-| 1.7 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 04/05/2025 |
+| 1.1 | Adição do seção de explicação  | Larissa Stéfane | 04/05/2025 |
+| 1.2 | Criação das tabelas da aba de promoção | Larissa Stéfane | 04/05/2025 |
+| 1.3 | Criação das tabelas da aba de fórum | Larissa Stéfane | 04/05/2025 |
+| 1.4 |Complementação das tabelas | Larissa Stéfane | 04/05/2025 |
+| 1.5 | Adição dos Diagramas | Larissa Stéfane | 04/05/2025 |
+| 1.6 | Adição da conclusão | Larissa Stéfane | 04/05/2025 |
+| 1.7 | Ajustes no artefato| Larissa Stéfane | 06/05/2025 |
