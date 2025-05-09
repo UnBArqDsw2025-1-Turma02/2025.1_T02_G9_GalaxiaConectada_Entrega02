@@ -61,13 +61,10 @@ Similarmente à verificação de outros diagramas UML no projeto, a metodologia 
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
-## Observações
-
-
 
 ## Conclusão
 
-A verificação do Diagrama de Implantação do projeto Galáxia Conectada foi essencial para validar a arquitetura física proposta para o sistema. Através da aplicação das tabelas de verificação, foi possível assegurar que a disposição dos artefatos de software nos nós de hardware e ambientes de execução está corretamente modelada, em conformidade com os padrões UML ([UML Spec](https://www.omg.org/spec/UML/) [7](#ref7)) e alinhada aos requisitos do sistema. Este processo contribui para mitigar riscos relacionados à implantação e garante uma visão clara da infraestrutura necessária para a operação da plataforma ([Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-implementacao-uml) [5](#ref5); [IBM](https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=topologies-deployment-diagrams) [4](#ref4)).
+A verificação do Diagrama de Implantação do projeto Galáxia Conectada foi essencial para validar a arquitetura física proposta para o sistema. Através da aplicação das tabelas de verificação, foi possível assegurar que a disposição dos artefatos de software. Este processo contribui para mitigar riscos relacionados à implantação e garante uma visão clara da infraestrutura necessária para a operação da plataforma.
 
 ## Bibliografia
 
