@@ -51,18 +51,17 @@ Para a construção dos diagramas, serão seguidas as etapas abaixo:
 - [5W2H - Elaborado na Entrega 1]((https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H));
 - [Brainstorming](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/BrainStorm);
 - [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
-- [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md).
+- [Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md).
 
 
 2. Dois diagramas serão desenvolvidos, sendo um para o módulo Fórum (interação em tópicos) e outro para o módulo Jogos (início e encerramento de partidas);
 
 3. Os diagramas serão criados utilizando a ferramenta [Draw.io](https://www.drawio.com/blog/uml-component-diagrams);
 
-4. Será realizada uma revisão dos diagramas com base em checklist de boas práticas da UML para garantir a consistência e clareza da representação.
 
 ## Sobre o Diagrama de Comunicação
 
-Conforme explicado em [Guia: Diagramas de colaboração UML](https://miro.com/pt/diagrama/o-que-e-diagrama-colaboracao-uml/) [5](#ref5), os Diagramas de Comunicação (também conhecidos como diagramas de Colaboração) apresentados a seguir ilustram as interações dinâmicas entre os diferentes objetos e componentes de sistema necessários para realizar cenários específicos nas abas de Fórum e Jogos Educacionais da plataforma "Galáxia Conectada". Diferente dos diagramas de sequência que enfatizam a ordem temporal, estes diagramas focam na estrutura da colaboração, mostrando os Vínculos (linhas de conexão) que existem entre os participantes (objetos/componentes como :WebUI, :ModuloForum, :ModuloJogos, entusiasta:Usuario, etc.) e como as Mensagens (representando chamadas de métodos ou comunicação) trafegam por esses vínculos para executar uma tarefa, como criar um novo tópico ou registrar a pontuação de um jogo. A sequência exata das interações é definida pela numeração anexada a cada mensagem, onde a notação decimal (ex: 1, 1.1, 1.2) indica o fluxo de controle e as chamadas aninhadas que ocorrem durante o processo, como é explicado em [Criar um diagrama de comunicação UML](https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-comunica%C3%A7%C3%A3o-uml-911956f4-5f19-4a58-97a3-bb14110a5ed1). [4](#ref4)
+Conforme explicado em [Guia: Diagramas de colaboração UML](https://miro.com/pt/diagrama/o-que-e-diagrama-colaboracao-uml/) [5](#ref5), os Diagramas de Comunicação (também conhecidos como diagramas de Colaboração) apresentados a seguir ilustram as interações dinâmicas entre os diferentes objetos e componentes de sistema necessários para realizar cenários específicos nas abas de Fórum e Jogos Educacionais da plataforma "Galáxia Conectada". Diferente dos diagramas de sequência que enfatizam a ordem temporal, estes diagramas focam na estrutura da colaboração ao mostrar os Vínculos (linhas de conexão) que existem entre os participantes (objetos/componentes como :WebUI, :ModuloForum, :ModuloJogos, entusiasta:Usuario, etc.) e como as Mensagens (as quais representam chamadas de métodos ou comunicação) trafegam por esses vínculos para executar uma tarefa, como criar um novo tópico ou registrar a pontuação de um jogo. Além disso, a sequência exata das interações é definida pela numeração anexada a cada mensagem, onde a notação decimal (ex: 1, 1.1, 1.2) indica o fluxo de controle e as chamadas aninhadas que ocorrem durante o processo, como é explicado em [Criar um diagrama de comunicação UML](https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-comunica%C3%A7%C3%A3o-uml-911956f4-5f19-4a58-97a3-bb14110a5ed1). [4](#ref4)
 
 Com base no que foi explicado em [Criar um diagrama de comunicação UML](https://support.microsoft.com/pt-br/topic/criar-um-diagrama-de-comunica%C3%A7%C3%A3o-uml-911956f4-5f19-4a58-97a3-bb14110a5ed1) [4](#ref4), para construir estes diagramas e representar detalhadamente as interações, foram utilizados elementos chave da UML. Dessa forma, os participantes são mostrados como Objetos/Linhas de Vida (retângulos nomeados), conectados por Vínculos (linhas sólidas) que representam os caminhos de comunicação. As Mensagens, indicadas por setas ao longo dos vínculos, são rotuladas com números de sequência decimais para denotar a ordem e o aninhamento, nomes de operações e, ocasionalmente, parâmetros. Além desses fundamentos, para capturar a complexidade dos cenários, foram empregados elementos avançados: a notação <<create>> para indicar a criação de novas instâncias (como sessaoAtual : SessaoJogo ou topicoCriado : Topico), Iteração (*) para mensagens repetidas (como na atualização do jogo), Autochamadas (mensagens com setas em loop no mesmo objeto, ex: atualizações da :WebUI), e a notação <<destroy>> para indicar o fim do ciclo de vida de um objeto (como a sessaoAtual). 
 
@@ -116,7 +115,7 @@ Para elucidar os elementos que interagem e colaboram no Diagrama de Comunicaçã
 Para complementar a identificação dos participantes, a Tabela 2 se aprofunda na dinâmica das interações do Fórum ao detalhar a sequência, o conteúdo e as características das mensagens trocadas e dos vínculos estabelecidos no Diagrama de Comunicação correspondente. O propósito desta tabela é servir como um guia para a leitura do diagrama.
 
 <details>
-  <summary><strong>Tabela 2: Mensagens e Vínculos do Diagrama de Comunicação (Fórum) (Fórum)</strong></summary>
+  <summary><strong>Tabela 2: Mensagens e Vínculos do Diagrama de Comunicação (Fórum)</strong></summary>
 
 
 **Tabela 2:** Mensagens e Vínculos do Diagrama de Comunicação (Fórum)
@@ -261,7 +260,7 @@ A figura 3 apresenta o diagrama de Comunicação da Aba de Jogos
 
 ## Conclusão
 
-Em conclusão, os Diagramas de Comunicação elaborados para os módulos de Fórum e Jogos Educacionais forneceram uma visão detalhada e estrutural das interações entre os diversos componentes e objetos da plataforma "Galáxia Conectada". Ao mapear os participantes, seus vínculos de comunicação e, crucialmente, a sequência numerada das mensagens trocadas – incorporando elementos avançados como criação de objetos, condições e iterações – estes diagramas elucidam como as diferentes partes do sistema colaboram para realizar funcionalidades chave, como a criação de um tópico ou a execução e pontuação de um jogo.
+Em conclusão, os Diagramas de Comunicação elaborados para os módulos de Fórum e Jogos Educacionais forneceram uma visão detalhada e estrutural das interações entre os diversos componentes e objetos da plataforma "Galáxia Conectada". Ao mapear os participantes, seus vínculos de comunicação e, crucialmente, a sequência numerada das mensagens trocadas – ao incorporar elementos avançados como criação de objetos, condições e iterações – estes diagramas elucidam como as diferentes partes do sistema colaboram para realizar funcionalidades chave, como a criação de um tópico ou a execução e pontuação de um jogo.
 
 ## Bibliografia
 
