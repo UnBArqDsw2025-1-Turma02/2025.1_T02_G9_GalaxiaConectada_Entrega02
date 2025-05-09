@@ -189,8 +189,8 @@ A elaboração dos diagramas de sequência permitiu representar com clareza os f
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 30/04/2024 |
-| 1.1 | Adição do seção de explicação  | Larissa Stéfane | 30/05/2024 |
-| 1.2 | Adição dos diagramas | Larissa Stéfane | 01/05/2024 |
-| 1.3 | Adição das tabelas | Larissa Stéfane | 04/05/2024 |
-| 1.4 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 30/04/2025 |
+| 1.1 | Adição do seção de explicação  | Larissa Stéfane | 30/05/2025 |
+| 1.2 | Adição dos diagramas | Larissa Stéfane | 01/05/2025 |
+| 1.3 | Adição das tabelas | Larissa Stéfane | 04/05/2025 |
+| 1.4 | Ajustes no artefato| Larissa Stéfane | 06/05/2025 |
