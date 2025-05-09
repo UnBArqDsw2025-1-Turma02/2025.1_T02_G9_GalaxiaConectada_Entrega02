@@ -226,14 +226,14 @@ A elaboração do Diagrama de Classes para o projeto Galáxia Conectada possibil
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
-| 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2024 |
-| 1.2 | Criação da tabela de investigação das classes | Larissa Stéfane | 25/04/2024 |
-| 1.3 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
-| 1.4 | Adição da análise dos tipos de relacionamentos | Larissa Stéfane | 26/04/2024 |
-| 1.5 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2024 |
-| 1.6 | Reorganização das super e subclasses | Larissa Stéfane | 26/04/2024 |
-| 1.7 | Adição da Tabela de Relacionamentos | Larissa Stéfane | 26/04/2024 |
-| 1.8 | Adição do Diagrama de Classes| Larissa Stéfane | 27/04/2024 |
-| 1.9 | Adição da legenda| Larissa Stéfane | 29/04/2024 |
-| 2.0 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2025 |
+| 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2025 |
+| 1.2 | Criação da tabela de investigação das classes | Larissa Stéfane | 25/04/2025 |
+| 1.3 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2025 |
+| 1.4 | Adição da análise dos tipos de relacionamentos | Larissa Stéfane | 26/04/2025 |
+| 1.5 | Adição de mais elementos na  tabela de investigação das classes | Larissa Stéfane | 26/04/2025 |
+| 1.6 | Reorganização das super e subclasses | Larissa Stéfane | 26/04/2025 |
+| 1.7 | Adição da Tabela de Relacionamentos | Larissa Stéfane | 26/04/2025 |
+| 1.8 | Adição do Diagrama de Classes| Larissa Stéfane | 27/04/2025 |
+| 1.9 | Adição da legenda| Larissa Stéfane | 29/04/2025 |
+| 2.0 | Ajustes no artefato| Larissa Stéfane | 06/05/2025 |
