@@ -48,12 +48,12 @@ Para a construção dos diagramas, serão seguidas as etapas abaixo:
 
   - [Diagrama de Classe](/Modelagem/ModelagemEstatica/DiagramaClasses.md);
     
-  - [Diagrama de Componentes](docs/Modelagem/ModelagemEstatica/DiagramaComponentes.md).
+  - [Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md).
 
 
 2. Os diagramas serão desenvolvidos utilizando a ferramenta [Draw.io](https://www.drawio.com/blog/uml-component-diagrams);
 
-3. Será realizada uma verificação final com base em um checklist de boas práticas da UML, assegurando clareza, coerência e padronização na modelagem.
+3. Será realizada uma verificação final com base em um [checklist](/Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaEstados.md) de boas práticas da UML, assegurando clareza, coerência e padronização na modelagem.
 
 ## Sobre o Diagrama de Estados
 
