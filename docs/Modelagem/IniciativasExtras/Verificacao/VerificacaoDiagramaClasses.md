@@ -99,6 +99,6 @@ A verificação do Diagrama de Classes desenvolvido para o projeto Galáxia Cone
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
-| 1.1 | Adição da tabela de verificação das classes| Larissa Stéfane | 25/04/2024 |
-| 1.2 | Adição da tabela de verificação do diagrama das classes | Larissa Stéfane | 25/04/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2025 |
+| 1.1 | Adição da tabela de verificação das classes| Larissa Stéfane | 25/04/2025 |
+| 1.2 | Adição da tabela de verificação do diagrama das classes | Larissa Stéfane | 25/04/2025 |
