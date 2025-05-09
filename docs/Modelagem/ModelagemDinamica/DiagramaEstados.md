@@ -258,7 +258,8 @@ A figura 3 apresenta o diagrama de estados do Fórum
 
 ## Conclusão
 
-Em suma, os Diagramas de Máquina de Estados detalhados nesta seção forneceram uma modelagem visual rigorosa dos ciclos de vida das entidades de Promoção e do fórum, essenciais para a plataforma "Galáxia Conectada". Através da aplicação de elementos fundamentais e avançados da UML, como estados compostos, regiões ortogonais, condições de guarda e ações específicas de estado (entry/exit/do), foi possível representar de forma clara e precisa as complexas sequências de estados, os eventos que disparam as transições e as regras que governam o comportamento dessas entidades.
+Em suma, os Diagramas de Máquina de Estados detalhados nesta seção forneceram uma modelagem visual dos ciclos de vida das entidades de Promoção e do fórum, essenciais para a plataforma "Galáxia Conectada". Através da aplicação de elementos fundamentais e avançados da UML, como estados compostos, regiões ortogonais, condições de guarda e ações específicas de estado (entry/exit/do), foi possível representar de forma clara e precisa as complexas sequências de estados, os eventos que disparam as transições e as regras que governam o comportamento dessas entidades.
+
 ## Bibliografia
 
 <a name="ref1"></a>
