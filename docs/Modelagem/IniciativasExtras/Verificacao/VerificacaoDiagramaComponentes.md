@@ -86,6 +86,6 @@ A verificação do Diagrama de Componentes do sistema **Galáxia Conectada** dem
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
-| 1.1 | Adição de novas referências, links e critérios | Larissa Stéfane | 25/04/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2025 |
+| 1.1 | Adição de novas referências, links e critérios | Larissa Stéfane | 25/04/2025 |
 
