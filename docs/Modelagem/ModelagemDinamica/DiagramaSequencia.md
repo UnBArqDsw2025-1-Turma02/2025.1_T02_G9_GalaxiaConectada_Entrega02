@@ -15,7 +15,7 @@
 
 ## Introdução
 
-Ao se desenvolver diagramas de sequência, é essencial compreender que eles representam uma das formas de modelar o comportamento dinâmico de um sistema. Sendo assim, de acordo com a Apostila UML - Unified Modeling Language - Linguagem de Modelagem Unificada em Português [1](#ref1), esse tipo de diagrama descreve, de maneira visual e cronológica, a troca de mensagens entre diferentes objetos envolvidos em uma interação, no cado deste documento, sobre **a aba de trilhas de aprendizado** e da **aba de promoções**. Assim, um ponto importanto sobre a estrutura básica do diagrama de sequência é composta por dois eixos: o eixo vertical, que representa o tempo (de cima para baixo), e o eixo horizontal, que representa os objetos envolvidos, cada um com sua respectiva linha de vida, como é descrito em [IBM - Diagramas de Sequência](https://www.ibm.com/docs/pt-br/rsm/7.5.0?topic=uml-sequence-diagrams) [3](#ref3).
+Ao se desenvolver diagramas de sequência, é essencial compreender que eles representam uma das formas de modelar o comportamento dinâmico de um sistema. Sendo assim, de acordo com a Apostila UML - Unified Modeling Language - Linguagem de Modelagem Unificada em Português [1](#ref1), esse tipo de diagrama descreve, de maneira visual e cronológica, a troca de mensagens entre diferentes objetos envolvidos em uma interação, no caso deste documento, sobre **a aba de trilhas de aprendizado** e da **aba de promoções**. Assim, um ponto importanto sobre a estrutura básica do diagrama de sequência é composta por dois eixos: o eixo vertical, que representa o tempo (de cima para baixo), e o eixo horizontal, que representa os objetos envolvidos, cada um com sua respectiva linha de vida, como é descrito em [IBM - Diagramas de Sequência](https://www.ibm.com/docs/pt-br/rsm/7.5.0?topic=uml-sequence-diagrams) [3](#ref3).
 
 Para o projeto Galáxia Conectada, a elaboração dos diagramas de sequência será baseada nas interações pensadas previamente nos diagramas de classes e de componentes,com o intuito de garantir uma coerência com a estrutura lógica e modular da aplicação. 
 
@@ -36,11 +36,21 @@ De forma mais específica, os diagramas desenvolvidos visam representar os segui
 
 1. **Aba Conhecimento: Trilha de aprendizado**: A navegação e o progresso do usuário em uma trilha de aprendizado ;
 
-2. **Aba Promoções:**: A navegação do usuário na aba de promoções.
+2. **Aba Promoções:** A navegação do usuário na aba de promoções.
 
 ## Metodologia 
 
-A elaboração dos diagramas de sequência seguirá uma abordagem iterativa, com base em alguns dos artefatos previamente construídos no desenvolvimento da plataforma Galáxia Conectada. Com base nisso, o processo adotado visa observar o comportamento do sistema por meio da representação temporal das interações. Para isso, foram realizadas as seguintes etapas:
+A elaboração dos diagramas de sequência seguirá uma abordagem iterativa, com base em alguns dos artefatos previamente construídos no desenvolvimento da plataforma Galáxia Conectada. Com base nisso, o processo adotado visa observar o comportamento do sistema por meio da representação temporal das interações. 
+
+Os módulos trabalhados são:
+
+- **Aba Conhecimento: Trilhas de Aprendizado**: A aba "Conhecimento: Trilhas de Aprendizado" é o coração educacional da plataforma "Galáxia Conectada", onde os usuários encontram jornadas de estudo sobre astronomia, organizadas de forma lógica por temas, níveis de dificuldade e categorias específicas.
+
+- **Aba de Promoções**: A "Aba de Promoções" na "Galáxia Conectada" serve como um hub para a comunidade de entusiastas encontrarem ofertas e descontos em produtos e serviços relacionados à astronomia, como telescópios, livros, cursos externos ou acessórios.
+
+
+
+Para isso, foram realizadas as seguintes etapas:
 
 1. Análise dos seguintes artefatos de apoio ao entendimento comportamental:
 
@@ -49,7 +59,7 @@ A elaboração dos diagramas de sequência seguirá uma abordagem iterativa, com
   - [Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md)
 
 2. Após a análise. serão contriídos dois diagramas de sequência na ferramenta Draw.io. 
-3. Por fim, será aplicada uma verificação por meio de checklist com critérios de consistência, completude e conformidade com a UML.
+3. Por fim, será aplicada uma verificação por meio de [checklist](/Modelagem/IniciativasExtras/Verificacao/VerificacaoDiagramaSequencia.md) com critérios de consistência, completude e conformidade com a UML.
 
 
 ## Sobre o Diagrama de Sequência
@@ -102,6 +112,10 @@ A tabela 1 mostra os elementos e as sequências no diagrama em relação às tri
 
 </details>
 
+
+Com base na tabela 1, abaixo, na figura 2, há o diagrama de Sequência - Trilhas de Aprendizado
+
+
 <div align="center">
     Figura 2: o Diagrama de Sequência - Trilhas de Aprendizado
     <br>
@@ -141,6 +155,8 @@ A tabela 2 mostra os elementos e as sequências no diagrama em relação às pro
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
 </details>
+
+Com base na tabela 2, abaixo, na figura 3, há o diagrama de Sequência - Promoções
 
 <div align="center">
     Figura 3: o Diagrama de Sequência - Promoções
