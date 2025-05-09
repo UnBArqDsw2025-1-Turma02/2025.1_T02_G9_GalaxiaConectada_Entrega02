@@ -33,11 +33,13 @@ O objetivo deste documento é algumas das atividades desenvolvidas para a plataf
 
 ## Metodologia
 
-A elaboração dos diagramas de atividade seguirá uma abordagem baseada na integração entre diferentes artefatos desenvolvidos anteriormente no projeto Galáxia Conectada. Isso com o  objetivo será representar visualmente o fluxo das ações executadas pelos usuários e pelo sistema em dois módulos principais da plataforma: **a aba Conhecimento (trilhas de aprendizado)** e a **aba Científico (notícias e artigos científicos)**. Para isso, serão feitas as seguintes etapas:
+A elaboração dos diagramas de atividade seguirá uma abordagem baseada na integração entre diferentes artefatos desenvolvidos anteriormente no projeto Galáxia Conectada. Isso com o  objetivo será representar visualmente o fluxo das ações executadas pelos usuários e pelo sistema em dois módulos principais da plataforma: **a aba Conhecimento (trilhas de aprendizado)** e a **aba Científico (notícias e artigos científicos)**.
 
 - **Módulo de Trilhas de Aprendizado**: Esta é a espinha dorsal educacional da plataforma "Galáxia Conectada", oferecendo aos usuários entusiastas roteiros de estudo estruturados, conhecidos como "trilhas". Essas trilhas são cuidadosamente organizadas por tema (ex: Sistema Solar, Cosmologia), nível de dificuldade (iniciante a avançado) e categoria (RF01), e são apresentadas de forma lúdica, como "missões espaciais" (RF03), para aumentar o engajamento. 
 
 - **Módulo Científico: Notícias e Artigos**: uncionando como o centro de divulgação científica da plataforma, esta aba agrega e apresenta conteúdo atualizado sobre astronomia. Ela inclui um blog com artigos explicativos, possivelmente um glossário de termos técnicos (RF13), e notícias recentes do mundo científico, muitas das quais podem ser importadas e até traduzidas (RNF07) de fontes externas confiáveis (como portais da NASA) através de bots (RF14). 
+
+ Para isso, serão feitas as seguintes etapas:
 
 1. inicialmente serão realizadas análises dos seguintes artefatos:
      - [5W2H](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/ArtefatoGeneralista/5W2H)
@@ -45,16 +47,14 @@ A elaboração dos diagramas de atividade seguirá uma abordagem baseada na inte
      - [Diagrama de classes](/Modelagem/ModelagemEstatica/DiagramaClasses.md)
      - [Diagrama de Componentes](/Modelagem/ModelagemEstatica/DiagramaComponentes.md)
 3.  Os diagramas serão desenvolvidos na ferramenta Draw.io.
-4.  Será aplicada uma [verificação por meio de um checklist](.../IniciativasExtras/Verificacao/VerificacaoDiagramaAtividades.md) de boas práticas de UML;, 
+4.  Será aplicada uma [verificação por meio de um checklist](/IniciativasExtras/Verificacao/VerificacaoDiagramaAtividades.md) de boas práticas de UML;, 
 
 
 ## Sobre o Diagrama de Atividades
 
 Ao se desenvolver os diagramas de atividade, é necessário levar em consideração que esse tipo de representação tem como objetivo principal demonstrar o fluxo de ações dentro de um processo ao ilustrar como as atividades ocorrem e se conectam. Com base nisso, no projeto da **Galáxia Conectada**, foram elaborados dois diagramas de atividades: um para a **aba Conhecimento**, que compreende as trilhas de aprendizado, e outro para a **aba Científico**, que apresenta notícias e artigos da área de astronomia. Ambos foram estruturados para refletir a sequência das operações esperadas no sistema, conforme as funcionalidades previamente definidas nos diagramas de classes e de componentes.
 
-A estrutura do diagrama de atividades utiliza elementos visuais específicos para representar os passos e decisões envolvidos em um fluxo. Entre eles, destaca-se o nó inicial, que marca o ponto de partida da atividade, e o nó final, que encerra o fluxo [UML Activity Diagram Controls](https://www.uml-diagrams.org/activity-diagrams-controls.html) [5](#ref5). As ações são representadas por retângulos arredondados e indicam as tarefas a serem executadas. Setas conectam essas ações, indicando o fluxo de controle. Há ainda nós de decisão, que permitem desviar o fluxo com base em condições, e nós de mesclagem, que reúnem caminhos alternativos. Para representar tarefas simultâneas, utilizam-se nós de bifurcação (fork) e junção (join). Além disso, os diagramas foram organizados em swimlanes (raias), que atribuem responsabilidades específicas a diferentes partes do sistema, evidenciando “quem faz o quê”, como foi mensionado no conteúdo de Modelagem de Sistemas Orientada a Objetos com UML.
-
-Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma legenda para os diagramas elaborados.
+A estrutura do diagrama de atividades utiliza elementos visuais específicos para representar os passos e decisões envolvidos em um fluxo. Entre eles, destaca-se o nó inicial, que marca o ponto de partida da atividade, e o nó final, que encerra o fluxo, segundo [UML Activity Diagram Controls](https://www.uml-diagrams.org/activity-diagrams-controls.html) [5](#ref5). As ações são representadas por retângulos arredondados e indicam as tarefas a serem executadas. Para melhor compreensão dos elementos, a figura 1 abaixo funciona como uma legenda para os diagramas elaborados.
 
 <div align="center">
     Figura 1: Legenda do Diagrama de Atividades
