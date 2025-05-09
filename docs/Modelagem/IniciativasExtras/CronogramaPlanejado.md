@@ -65,5 +65,5 @@ Este documento apresenta o cronograma planejado para a execução dos três mód
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 24/04/2024 |
-| 1.1 | Adição das etapas de verificação dos diagramas| Larissa Stéfane | 25/04/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 24/04/2025 |
+| 1.1 | Adição das etapas de verificação dos diagramas| Larissa Stéfane | 25/04/2025 |
