@@ -25,7 +25,7 @@ Este artefato tem como objetivo realizar a verificação do Diagrama de Implanta
 
 Similarmente à verificação de outros diagramas UML no projeto, a metodologia para o Diagrama de Implantação envolveu, primeiramente, o estudo dos conceitos e da notação UML específica para este diagrama .Com base na arquitetura de software definida e nos requisitos de infraestrutura do Galáxia Conectada, foi elaborado um esboço do diagrama. Posteriormente, aplicou-se um processo de verificação sistemática utilizando tabelas de checklist abaixo. Cada item das tabelas foi analisado em relação ao diagrama proposto. As inconsistências ou omissões identificadas foram corrigidas para garantir a conformidade com as boas práticas de modelagem de implantação.
 
-## Tabela de Verificação para os Nós (Dispositivos e Ambientes de Execução)
+## Tabela de Verificação para os Nós
 
 **Tabela 1:** Perguntas para a verificação dos Nós no Diagrama de Implantação.
 
@@ -42,7 +42,7 @@ Similarmente à verificação de outros diagramas UML no projeto, a metodologia 
 
 <b> Autora: </b> <a href="https://github.com/SkywalkerSupreme">Larissa Stéfane</a>.
 
-## Tabela de Verificação para Artefatos e Caminhos de Comunicação
+## Tabela de Verificação Caminhos de Comunicação
 
 **Tabela 2:** Perguntas para a verificação dos Artefatos e Caminhos de Comunicação.
 
