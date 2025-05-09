@@ -187,16 +187,16 @@ O Diagrama de Componentes apresenta de forma estruturada os módulos físicos do
 
 | Versão | Alteração | Responsável | Data |
 | - | - | - | - |
-| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2024 |
-| 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2024 |
-| 1.2 | Criação da tabela de investigação dos componentes | Larissa Stéfane | 26/04/2024 |
-| 1.3 | Atualização das tabela dos componentes | Larissa Stéfane | 27/04/2024 |
-| 1.4 | Correção da tabela dos componentes | Larissa Stéfane | 27/04/2024 |
-| 1.5 | Criação da tabela de ligações ente os componentes | Larissa Stéfane | 27/04/2024 |
-| 1.6 | Atualização da tabela de componentes | Larissa Stéfane | 27/04/2024 |
-| 1.7 | Atualização da tabela de ligações | Larissa Stéfane | 27/04/2024 |
-| 1.8 | Reorganização da tabela de componentes e retirada da tabela de ligações | Larissa Stéfane | 27/04/2024 |
-| 1.9 | Adição do Diagrama | Larissa Stéfane | 27/04/2024 |
-| 2.0 | Reestruturação da tabela e adição da legenda | Larissa Stéfane | 28/04/2024 |
-| 2.1 | Adição dos novos Diagramas | Larissa Stéfane | 29/04/2024 |
-| 2.2 | Ajustes no artefato| Larissa Stéfane | 06/05/2024 |
+| 1.0 | Elaboração do documento| Larissa Stéfane | 25/04/2025 |
+| 1.1 | Adição da Metodologia  | Larissa Stéfane | 25/04/2025 |
+| 1.2 | Criação da tabela de investigação dos componentes | Larissa Stéfane | 26/04/2025 |
+| 1.3 | Atualização das tabela dos componentes | Larissa Stéfane | 27/04/2025 |
+| 1.4 | Correção da tabela dos componentes | Larissa Stéfane | 27/04/2025 |
+| 1.5 | Criação da tabela de ligações ente os componentes | Larissa Stéfane | 27/04/2025 |
+| 1.6 | Atualização da tabela de componentes | Larissa Stéfane | 27/04/2025 |
+| 1.7 | Atualização da tabela de ligações | Larissa Stéfane | 27/04/2025 |
+| 1.8 | Reorganização da tabela de componentes e retirada da tabela de ligações | Larissa Stéfane | 27/04/2025 |
+| 1.9 | Adição do Diagrama | Larissa Stéfane | 27/04/2025 |
+| 2.0 | Reestruturação da tabela e adição da legenda | Larissa Stéfane | 28/04/2025 |
+| 2.1 | Adição dos novos Diagramas | Larissa Stéfane | 29/04/2025 |
+| 2.2 | Ajustes no artefato| Larissa Stéfane | 06/05/2025 |
