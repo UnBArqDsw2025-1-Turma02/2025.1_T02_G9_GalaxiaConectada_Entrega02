@@ -34,8 +34,8 @@ A elaboração do diagrama de implantação será conduzida com o apoio da ferra
 1. Inicialmente será realizada uma análise do material base a partir de:
 
   - [Requisitos elicitados e documentados na primeira etapa](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G9_GalaxiaConectada_Entrega01/#/Base/IniciativaExtra/RequisitosElicitados);
-  - [Diagrama de Classes](DiagramaClasses.md);
-  - [Diagrama de Componentes](DiagramaComponentes.md);
+  - [Diagrama de Classes](https://unbarqdsw2025-1-turma02.github.io/2025.1_T02_G9_GalaxiaConectada_Entrega02/#/Modelagem/ModelagemEstatica/DiagramaClasses);
+  - [Diagrama de Componentes](https://unbarqdsw2025-1-turma02.github.io/2025.1_T02_G9_GalaxiaConectada_Entrega02/#/Modelagem/ModelagemEstatica/DiagramaComponentes);
 
 2. Com base nessa análise, será criada uma tabela de apoio organizando os tipos de nós (hardware, software, containers etc.) necessários para a modelagem.
 3. Ao utilizar a ferramenta **Draw.io**, será elaborada a versão inicial do diagrama de implantação, com identificação dos nós, artefatos e relações.
